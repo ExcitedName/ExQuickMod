@@ -599,7 +599,7 @@ public static void VanillaMaterial() {
 			"PVP",
 			"PPP",
 							
-				'P', Ingredients.WoodPulpDish, 'V', Storage.H2OHotVat
+				'P', Ingredients.WoodPulp, 'V', Storage.H2OHotJar
 		});
 	
 		

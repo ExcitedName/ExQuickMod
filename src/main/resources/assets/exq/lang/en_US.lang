@@ -68,6 +68,24 @@ tile.Gelatin Lamp(Spectral).name=Gelatin Lamp(Spectral)
 
 //Ingredients
 
+	//Dist
+item.DistMin.name=Distillery(Miner)
+item.DistTra.name=Distillery(Traveller)
+item.DistIro.name=Distillery(Iron Skin)
+item.DistWar.name=Distillery(Warrior)
+item.DistHea.name=Distillery(Health)
+item.DistHot.name=Distillery(Hot Sauce)
+item.DistNiV.name=Distillery(Night Vision)
+item.DistTor.name=Distillery(Torch)
+item.DistExp.name=Distillery(Explovise)
+item.DistKra.name=Distillery(Kracken)
+item.DistDra.name=Distillery(Dragon)
+item.DistCre.name=Distillery(Creeper)
+item.DistSke.name=Distillery(Skeleton)
+item.DistZom.name=Distillery(Zombie)
+item.DistH2O.name=Distillery(Dihydrogen Monoxide)
+item.DistLav.name=Distillery(Lava)
+
     //Orbs
 item.Utility Orb(Tier 1).name=Utility Orb(Tier 1)
 item.Utility Orb(Tier 2).name=Utility Orb(Tier 2)
@@ -110,8 +128,7 @@ item.Utility Glass(Tier 1).name=Utility Glass(Tier 1)
 item.Utility Glass(Tier 2).name=Utility Glass(Tier 2)
 item.Utility Glass(Tier 3).name=Utility Glass(Tier 3)
 item.Glass Funnel.name=Glass Funnel
-item.Glass Extraction Tube.name=Glass Extraction Tube
-item.GlassCondensingCoilCenter.name=Glass Condensing Coil(Center)
+item.GlassCondensingCoilCenter.name=Glass Capillary Tube
 item.GlassCondensingCoilLeft.name=Glass Condensing Coil(Left)
 item.GlassCondensingCoilRight.name=Glass Condensing Coil(Right)
 item.Glass Gelatin Mold.name=Glass Gelatin Mold
@@ -140,12 +157,12 @@ item.Gelatin Lily Vibrant.name=Vibrant Gelatin Lily
 
     //Grounds
 item.Ground Gelatin.name=Ground Gelatin
-item.Ground Marrow Dish.name=Ground Marrow Dish
-item.Ground Flour Dish.name=Ground Flour Dish
-item.Ground Coal Dish.name=Ground Coal Dish
-item.Ground Charcoal Dish.name=Ground Charcoal Dish
-item.Wood Pulp Dish.name=Wood Pulp Dish
-item.Ground Meat Dish.name=Ground Meat Dish
+item.Ground Marrow.name=Ground Marrow
+item.Ground Flour.name=Ground Flour
+item.Ground Coal.name=Ground Coal
+item.Ground Charcoal.name=Ground Charcoal
+item.Wood Pulp.name=Wood Pulp
+item.Ground Meat.name=Ground Meat
 item.Gelitilizer Jar.name=Gelitilizer Jar
 item.Ground Marrow Jar.name=Ground Marrow Jar
 item.Ground Flour Jar.name=Ground Flour Jar
@@ -157,10 +174,6 @@ item.Priming Powder Jar.name=Priming Powder Jar
 item.Ground Trilite Jar.name=Ground Trilite Jar
 item.Ground RDX Jar.name=Ground RDX Jar
 item.Ground Meat Jar.name=Ground Meat Jar
-
-    //Distilleries
-item.Distillery(Miner).name=Distillery(Miner)
-
 
 
 
@@ -205,6 +218,7 @@ item.Traveller Barrel.name=Traveller Barrel
 item.Iron Skin Barrel.name=Iron Skin Barrel
 item.Warrior Barrel.name=Warrior Barrel
 item.Health Barrel.name=Health Barrel
+item.Hot Sauce Barrel.name=Hypno's Hot Sauce Barrel
 item.Night Vision Barrel.name=Night Vision Barrel
 item.Torch Barrel.name=Torch Barrel
 item.Explosive Barrel.name=Explosive Barrel

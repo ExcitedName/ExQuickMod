@@ -2,7 +2,6 @@ package com.excitedname.exq.utilities;
 
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ingredients.distilleries.Dist;
-import com.excitedname.exq.ingredients.glassware.GlassExtractionTube;
 import com.excitedname.exq.ingredients.glassware.GlassFunnel;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT1;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT2;
@@ -157,18 +156,18 @@ public static void UtilRecipes(){
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat), new Object [] {
 		"IJI",
 		"GBG",
-		"IEI",
+		"III",
 		
-			'I', Items.iron_ingot, 'E', Ingredients.GlassExtractionTube, 'B', Items.bucket, 
+			'I', Items.iron_ingot, 'B', Ingredients.GlassJar, 
 			'J', Utilities.CeramicJuicer, 'G', Blocks.glass_pane
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat), new Object [] {
 		"IJI",
 		"GBG",
-		"IEI",
+		"III",
 		
-			'I', Items.iron_ingot, 'E', Ingredients.GlassExtractionTube, 'B', Items.bucket, 
+			'I', Items.iron_ingot, 'B', Ingredients.GlassJar, 
 			'J', Utilities.CeramicJuicer, 'G', "paneGlass"
 	}));
 	

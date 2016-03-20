@@ -161,19 +161,25 @@ public static void Juice() {
 		
 		GelatinJuiceHealing = new GelatinJuiceHealing();
 		GameRegistry.registerItem(GelatinJuiceHealing, "Gelatin Juice Healing");
-		
-		GelatinPearl = new GelatinPearl();
-		GameRegistry.registerItem(GelatinPearl, "Gelatin Pearl");
-		EntityRegistry.registerModEntity(EntityGelatinPearl.class, "EntityGelatinPearl", 0, Ref.MOD_ID, 80, 3, true);
-		
-		GelatinPearlEnhanced = new GelatinPearlEnhanced();
-		GameRegistry.registerItem(GelatinPearlEnhanced, "Gelatin Pearl Enhanced");
-		EntityRegistry.registerModEntity(EntityGelatinPearlEnhanced.class, "EntityGelatinPearl", 0, Ref.MOD_ID, 80, 3, true);
 	
 	}
 	
 	public static Item GelatinJuice;
 	public static Item GelatinJuiceHealing;
+	
+	
+public static void Pearls() {
+	
+	GelatinPearl = new GelatinPearl();
+	GameRegistry.registerItem(GelatinPearl, "Gelatin Pearl");
+	EntityRegistry.registerModEntity(EntityGelatinPearl.class, "EntityGelatinPearl", 0, Ref.MOD_ID, 80, 3, true);
+	
+	GelatinPearlEnhanced = new GelatinPearlEnhanced();
+	GameRegistry.registerItem(GelatinPearlEnhanced, "Gelatin Pearl Enhanced");
+	EntityRegistry.registerModEntity(EntityGelatinPearlEnhanced.class, "EntityGelatinPearl", 0, Ref.MOD_ID, 80, 3, true);
+	
+}
+
 	public static Item GelatinPearl;
 	public static Item GelatinPearlEnhanced;
 		

@@ -41,10 +41,11 @@ public void preInit(FMLPreInitializationEvent event){
 		Utilities.Util();
 		Utilities.GChamber();
 		Gelatin.Cube();
-		Gelatin.Dish();
-		Gelatin.Juice();
-		Ingredients.Distilleries();		
+		Gelatin.Dish();		
 		Ingredients.Solution();
+		Gelatin.Juice();
+		Gelatin.Pearls();
+		Ingredients.Distilleries();
 		Ingredients.UtilIng();
 		Ingredients.Orb();
 		Ingredients.Glassware();

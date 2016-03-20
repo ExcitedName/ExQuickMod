@@ -30,8 +30,8 @@ public class GelatinJuice extends Item {
 	 
 	public GelatinJuice() {
 				
-		this.setUnlocalizedName("Apple Juice");
-		this.setTextureName("Apple Juice");
+		this.setUnlocalizedName("Gelatin Juice");
+		this.setTextureName("Gelatin Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
 		//this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
 	}
