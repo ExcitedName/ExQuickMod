@@ -1,4 +1,4 @@
-package com.excitedname.exq.gelatin.hotsauce;
+package com.excitedname.exq.gelatin.Juice;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class AppleJuiceHealing extends Item {
+public class GelatinJuice extends Item {
 	
 	public int FirstPotionid;
 	public int FirstPotionDuration;
@@ -28,16 +28,12 @@ public class AppleJuiceHealing extends Item {
 	
 	private static final String __OBFID = "clearActivePotions";
 	 
-	public AppleJuiceHealing() {
+	public GelatinJuice() {
 				
-		this.setUnlocalizedName("Apple Juice Healing");
-		this.setTextureName("Apple Juice Healing");
+		this.setUnlocalizedName("Apple Juice");
+		this.setTextureName("Apple Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
-	}
-	
-	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-		return true;
+		//this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
 	}
 
 	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
@@ -53,7 +49,7 @@ public class AppleJuiceHealing extends Item {
         }
         
         if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-			par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 5, this.FirstPotionAmplifier));
+			par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 1, this.FirstPotionAmplifier));
 		}
 
         return par1ItemStack;
@@ -80,7 +76,7 @@ public class AppleJuiceHealing extends Item {
         return this.getContainerItem();
     }
     
-    public AppleJuiceHealing setFirstPotionEffect(int par1, int par2, int par3, float par4){
+    public GelatinJuice setFirstPotionEffect(int par1, int par2, int par3, float par4){
 		
 		this.FirstPotionid = par1;
 		this.FirstPotionDuration = par2;

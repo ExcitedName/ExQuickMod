@@ -16,22 +16,7 @@ public class TheVat extends Item {
 		this.setUnlocalizedName("The Vat");
 		this.setTextureName("The Vat");
 		this.setCreativeTab(Tabs.UtilTab);	
-		this.setMaxStackSize(1);
 	}
-	
-	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack) {
-		return false;
-	}
-	
-	public boolean hasContainerItem(){
-		return true;
-	}  
-	
-	public ItemStack getContainerItem(ItemStack itemStack){
-		itemStack.attemptDamageItem(0, itemRand);
-		
-       return itemStack;
-   	}
 	
 //Texture Icon
 	

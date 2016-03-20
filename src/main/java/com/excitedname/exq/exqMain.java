@@ -42,7 +42,7 @@ public void preInit(FMLPreInitializationEvent event){
 		Utilities.GChamber();
 		Gelatin.Cube();
 		Gelatin.Dish();
-		Gelatin.HotSauce();
+		Gelatin.Juice();
 		Ingredients.Distilleries();		
 		Ingredients.Solution();
 		Ingredients.UtilIng();

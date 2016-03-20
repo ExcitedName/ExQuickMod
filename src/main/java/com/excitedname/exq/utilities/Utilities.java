@@ -1,7 +1,7 @@
 package com.excitedname.exq.utilities;
 
 import com.excitedname.exq.ingredients.Ingredients;
-import com.excitedname.exq.ingredients.distilleries.MinerDistillery;
+import com.excitedname.exq.ingredients.distilleries.Dist;
 import com.excitedname.exq.ingredients.glassware.GlassExtractionTube;
 import com.excitedname.exq.ingredients.glassware.GlassFunnel;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT1;
@@ -21,6 +21,7 @@ import com.excitedname.exq.ingredients.orb.UtilityOrbT3;
 import com.excitedname.exq.utilities.gchamber.GChamberT1;
 import com.excitedname.exq.utilities.gchamber.GChamberT2;
 import com.excitedname.exq.utilities.gchamber.GChamberT3;
+import com.excitedname.exq.utilities.util.Barrel;
 import com.excitedname.exq.utilities.util.CeramicJuicer;
 import com.excitedname.exq.utilities.util.Distillery;
 import com.excitedname.exq.utilities.util.MortarandPestel;
@@ -55,6 +56,9 @@ public static void Util() {
 		TheVat = new TheVat();
 		GameRegistry.registerItem(TheVat, "The Vat");
 		
+		Barrel = new Barrel();
+		GameRegistry.registerItem(Barrel, "Barrel");
+		
 		Smeltry = new Smeltry();
 		GameRegistry.registerItem(Smeltry, "Smeltry");
 		
@@ -75,6 +79,7 @@ public static void Util() {
 	public static Item MortarandPestel;
 	public static Item StampMill;
 	public static Item TheVat;
+	public static Item Barrel;
 	public static Item Smeltry;
 	public static Item Solidifier;
 	public static Item Distillery;

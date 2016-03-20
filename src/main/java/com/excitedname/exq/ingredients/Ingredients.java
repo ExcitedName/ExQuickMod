@@ -1,9 +1,10 @@
 package com.excitedname.exq.ingredients;
 
 import com.excitedname.exq.gelatin.Gelatin;
-import com.excitedname.exq.ingredients.distilleries.MinerDistillery;
+import com.excitedname.exq.ingredients.distilleries.Dist;
 import com.excitedname.exq.ingredients.glassware.GlassBlank;
 import com.excitedname.exq.ingredients.glassware.GlassBottle;
+import com.excitedname.exq.ingredients.glassware.GlassCondensingCoil;
 import com.excitedname.exq.ingredients.glassware.GlassDish;
 import com.excitedname.exq.ingredients.glassware.GlassExtractionTube;
 import com.excitedname.exq.ingredients.glassware.GlassFunnel;
@@ -30,23 +31,15 @@ import com.excitedname.exq.ingredients.ground.GroundTriliteJar;
 import com.excitedname.exq.ingredients.ground.PrimingPowderJar;
 import com.excitedname.exq.ingredients.ground.WoodPulpDish;
 import com.excitedname.exq.ingredients.ground.WoodPulpJar;
-import com.excitedname.exq.ingredients.ing.AppleofHealth;
 import com.excitedname.exq.ingredients.ing.BunsenBurner;
-import com.excitedname.exq.ingredients.ing.CanOSpinach;
 import com.excitedname.exq.ingredients.ing.ClayJuicer;
 import com.excitedname.exq.ingredients.ing.CoolingElement;
 import com.excitedname.exq.ingredients.ing.CraftingMedallion;
-import com.excitedname.exq.ingredients.ing.ETool;
-import com.excitedname.exq.ingredients.ing.FeatherJar;
-import com.excitedname.exq.ingredients.ing.FishinaJar;
-import com.excitedname.exq.ingredients.ing.GelatinousCarrot;
 import com.excitedname.exq.ingredients.ing.GelatinousSoil;
 import com.excitedname.exq.ingredients.ing.HeatingElement;
 import com.excitedname.exq.ingredients.ing.IronStamp;
 import com.excitedname.exq.ingredients.ing.PackUlatingSpindle;
 import com.excitedname.exq.ingredients.ing.PotatoMedallion;
-import com.excitedname.exq.ingredients.ing.Shield;
-import com.excitedname.exq.ingredients.ing.SpringBoard;
 import com.excitedname.exq.ingredients.material.CrackedBone;
 import com.excitedname.exq.ingredients.material.CrystalFire;
 import com.excitedname.exq.ingredients.material.CrystalIce;
@@ -101,44 +94,12 @@ public class Ingredients {
 	
 public static void Distilleries() {
 		
-		MinerDistillery = new MinerDistillery();
-		GameRegistry.registerItem(MinerDistillery, "Distillery(Miner)");
-		
-		ETool = new ETool();
-		GameRegistry.registerItem(ETool, "E-Tool");
-		
-		FeatherJar = new FeatherJar();
-		GameRegistry.registerItem(FeatherJar, "Feather Jar");
-		
-		SpringBoard = new SpringBoard();
-		GameRegistry.registerItem(SpringBoard, "Spring Board");
-		
-		Shield = new Shield();
-		GameRegistry.registerItem(Shield, "Shield");
-		
-		CanOSpinach = new CanOSpinach();
-		GameRegistry.registerItem(CanOSpinach, "Can O' Spinach");
-		
-		AppleofHealth = new AppleofHealth();
-		GameRegistry.registerItem(AppleofHealth, "Apple of Health");
-		
-		GelatinousCarrot = new GelatinousCarrot();
-		GameRegistry.registerItem(GelatinousCarrot, "Gelatinous Carrot");
-		
-		FishinaJar = new FishinaJar();
-		GameRegistry.registerItem(FishinaJar, "Fish in a Jar");
+		Dist = new Dist();
+		GameRegistry.registerItem(Dist, "Dist");
 		
 	}
 	
-	public static Item MinerDistillery;
-	public static Item ETool;
-	public static Item FeatherJar;
-	public static Item SpringBoard;
-	public static Item Shield;
-	public static Item CanOSpinach;
-	public static Item AppleofHealth;
-	public static Item GelatinousCarrot;	
-	public static Item FishinaJar;
+	public static Item Dist;
 	
 	
 public static void Solution() {
@@ -158,6 +119,9 @@ public static void Solution() {
 		HealthSolution = new HealthSolution();
 		GameRegistry.registerItem(HealthSolution, "Health Solution");
 		
+		HotSauceSolution = new HotSauceSolution();
+		GameRegistry.registerItem(HotSauceSolution, "Hot Sauce Solution");
+		
 		NightVisionSolution = new NightVisionSolution();
 		GameRegistry.registerItem(NightVisionSolution, "Night Vision Solution");
 		
@@ -172,9 +136,6 @@ public static void Solution() {
 		
 		DragonSolution = new DragonSolution();
 		GameRegistry.registerItem(DragonSolution, "Dragon Solution");
-					
-		HotSauceSolution = new HotSauceSolution();
-		GameRegistry.registerItem(HotSauceSolution, "Hot Sauce Solution");
 				
 		CreeperSolution = new CreeperSolution();
 		GameRegistry.registerItem(CreeperSolution, "Creeper Solution");
@@ -191,12 +152,12 @@ public static void Solution() {
 	public static Item IronSkinSolution;
 	public static Item WarriorSolution;
 	public static Item HealthSolution;
+	public static Item HotSauceSolution;
 	public static Item NightVisionSolution;
 	public static Item TorchSolution;
 	public static Item CompBSolution;
 	public static Item KrackenSolution;
 	public static Item DragonSolution;
-	public static Item HotSauceSolution;
 	public static Item CreeperSolution;
 	public static Item SkeletonSolution;					
 	public static Item ZombieSolution;	
@@ -285,14 +246,17 @@ public static void Glassware() {
 		GlassExtractionTube = new GlassExtractionTube();
 		GameRegistry.registerItem(GlassExtractionTube, "Glass Extraction Tube");
 		
+		GlassCondensingCoil = new GlassCondensingCoil();
+		GameRegistry.registerItem(GlassCondensingCoil, "Glass Condensing Coil");
+		
 		GlassGelatinMold = new GlassGelatinMold();
 		GameRegistry.registerItem(GlassGelatinMold, "Glass Gelatin Mold");
 		
-		GlassBottle = new GlassBottle();
-		GameRegistry.registerItem(GlassBottle, "Glass Bottle");
-		
 		GlassDish = new GlassDish();
-		GameRegistry.registerItem(GlassDish, "Glass Dish");	
+		GameRegistry.registerItem(GlassDish, "Glass Dish");
+		
+		GlassBottle = new GlassBottle();
+		GameRegistry.registerItem(GlassBottle, "Glass Bottle");	
 		
 		GlassJar = new GlassJar(Blocks.air);
 		GameRegistry.registerItem(GlassJar, "Glass Jar");
@@ -305,9 +269,10 @@ public static void Glassware() {
 	public static Item UtilityGlassT3;
 	public static Item GlassFunnel;
 	public static Item GlassExtractionTube;
+	public static Item GlassCondensingCoil;
 	public static Item GlassGelatinMold;
-	public static Item GlassBottle;
-	public static Item GlassDish;	
+	public static Item GlassDish;
+	public static Item GlassBottle;	
 	public static Item GlassJar;
 
 
@@ -327,12 +292,6 @@ public static void Material() {
 		
 		GelatinCrystalVibrant = new GelatinCrystalVibrant();
 		GameRegistry.registerItem(GelatinCrystalVibrant, "Gelatin Crystal Vibrant");
-		
-		CrystalFire = new CrystalFire();
-		GameRegistry.registerItem(CrystalFire, "Crystal of Fire");
-		
-		CrystalIce = new CrystalIce();
-		GameRegistry.registerItem(CrystalIce, "Crystal of Ice");
 		
 		GelatinAlloyNugget = new GelatinAlloyNugget();
 		GameRegistry.registerItem(GelatinAlloyNugget, "Gelatin Alloy Nugget");
@@ -376,9 +335,7 @@ public static void Material() {
 	public static Item GelatinAlloyDark;
 	public static Item SteelIngot;
 	public static Item GelatinCrystal;
-	public static Item GelatinCrystalVibrant;
-	public static Item CrystalFire;
-	public static Item CrystalIce;	
+	public static Item GelatinCrystalVibrant;	
 	public static Item GelatinAlloyNugget;
 	public static Item IronNugget;	
 	public static Item DiamondShard;
@@ -568,8 +525,8 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YEY",
 		
-			'Y', new ItemStack(Items.dye, 12, 12), 'D', Ingredients.MinerDistillery, 'S', Ingredients.GelatinShard, 
-			'E', Ingredients.ETool
+			'Y', new ItemStack(Items.dye, 12, 12), 'D', Ingredients.Dist, 'S', Ingredients.GelatinShard, 
+			//'E', Ingredients.ETool
 	});
 	
 //Traveller Solution
@@ -578,8 +535,8 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YBY",
 		
-			'D', Ingredients.MinerDistillery, 'F', Ingredients.FeatherJar, 'Y', new ItemStack(Items.dye, 6, 6), 
-			'S', Ingredients.GelatinShard, 'B', Ingredients.SpringBoard
+			'D', Ingredients.Dist, 'Y', new ItemStack(Items.dye, 6, 6), 
+			'S', Ingredients.GelatinShard//, 'B', Ingredients.SpringBoard
 	});
 	
 //Iron Skin Solution
@@ -588,7 +545,7 @@ public static void SolutionRecipes() {
 		"GDG",
 		"YSY",
 		
-			'Y', new ItemStack(Items.dye, 5, 5), 'D', Ingredients.MinerDistillery, 'S', Ingredients.Shield, 
+			'Y', new ItemStack(Items.dye, 5, 5), 'D', Ingredients.Dist, //'S', Ingredients.Shield, 
 			'G', Ingredients.GelatinShard
 	});	
 	
@@ -598,8 +555,8 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YCY",
 		
-			'D', Ingredients.MinerDistillery, 'Y', new ItemStack(Items.dye, 14, 14),
-			'S', Ingredients.GelatinShard, 'C', Ingredients.CanOSpinach
+			'D', Ingredients.Dist, 'Y', new ItemStack(Items.dye, 14, 14),
+			'S', Ingredients.GelatinShard//, 'C', Ingredients.CanOSpinach
 	});
 	
 //Health Solution
@@ -608,7 +565,7 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YAY",
 		
-			'D', Ingredients.MinerDistillery, 'A', Ingredients.AppleofHealth, 
+			'D', Ingredients.Dist, //'A', Ingredients.AppleofHealth, 
 			'Y', new ItemStack(Items.dye, 1, 1), 'S', Ingredients.GelatinShard
 	});
 
@@ -618,8 +575,8 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YGY",
 		
-			'Y', new ItemStack(Items.dye, 2, 2), 'D', Ingredients.MinerDistillery, 'S', Ingredients.GelatinShard, 
-			'G', Ingredients.GelatinousCarrot
+			'Y', new ItemStack(Items.dye, 2, 2), 'D', Ingredients.Dist, 'S', Ingredients.GelatinShard, 
+			//'G', Ingredients.GelatinousCarrot
 	});
 	
 //Torch Solution
@@ -628,7 +585,7 @@ public static void SolutionRecipes() {
 		"TDT",
 		"YTY",
 		
-			'D', Ingredients.MinerDistillery, 'T', Gelatin.GelatinLamp, 'Y', new ItemStack(Items.dye, 11, 11)
+			'D', Ingredients.Dist, 'T', Gelatin.GelatinLamp, 'Y', new ItemStack(Items.dye, 11, 11)
 	});
 	
 //Explosive Solution
@@ -637,7 +594,7 @@ public static void SolutionRecipes() {
 		"RDR",
 		"YTY",
 		
-			'D', Ingredients.MinerDistillery, 'T', Ingredients.GroundTriliteJar, 
+			'D', Ingredients.Dist, 'T', Ingredients.GroundTriliteJar, 
 			'Y', new ItemStack(Items.dye), 'R', Ingredients.GroundRDXJar
 	});
 	
@@ -647,8 +604,8 @@ public static void SolutionRecipes() {
 		"WDE",
 		"YFY",
 		
-			'Y', new ItemStack(Items.dye, 4, 4), 'D', Ingredients.MinerDistillery, 'W', Ingredients.FishinaJar, 
-			'F', Ingredients.FeatherJar, 'E', Ingredients.ETool, 'G', Ingredients.GelatinousCarrot
+			'Y', new ItemStack(Items.dye, 4, 4), 'D', Ingredients.Dist//, 'W', Ingredients.FishinaJar, 
+			//'F', Ingredients.FeatherJar, 'E', Ingredients.ETool, 'G', Ingredients.GelatinousCarrot
 	});			
 		
 //Dragon Solution
@@ -667,7 +624,7 @@ public static void SolutionRecipes() {
 		"ADC",
 		"PSP",
 		
-			'D', Ingredients.MinerDistillery, 'P', "listAllpepper", 'C', Items.carrot, 
+			'D', Ingredients.Dist, 'P', "listAllpepper", 'C', Items.carrot, 
 			'A', Items.apple, 'S', Ingredients.GelatinShard
 	}));
 	
@@ -676,7 +633,7 @@ public static void SolutionRecipes() {
 		"ADC",
 		"RSR",
 		
-			'D', Ingredients.MinerDistillery, 'O', new ItemStack(Items.dye, 14, 14), 'R', new ItemStack(Items.dye, 1, 1), 
+			'D', Ingredients.Dist, 'O', new ItemStack(Items.dye, 14, 14), 'R', new ItemStack(Items.dye, 1, 1), 
 			'C', Items.carrot, 'A', Items.apple, 'S', Ingredients.GelatinShard
 	}));		
 		
@@ -686,7 +643,7 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YGY",
 		
-			'D', Ingredients.MinerDistillery, 'G', Items.gunpowder, 'Y', new ItemStack(Items.dye, 10, 10), 
+			'D', Ingredients.Dist, 'G', Items.gunpowder, 'Y', new ItemStack(Items.dye, 10, 10), 
 			'S', Ingredients.GelatinShard
 	});
 		
@@ -696,7 +653,7 @@ public static void SolutionRecipes() {
 		"SDS",
 		"YBY",
 		
-			'D', Ingredients.MinerDistillery, 'B', Items.bone, 'Y', new ItemStack(Items.dye, 15, 15), 
+			'D', Ingredients.Dist, 'B', Items.bone, 'Y', new ItemStack(Items.dye, 15, 15), 
 			'S', Ingredients.GelatinShard
 	});			
 		
@@ -706,7 +663,7 @@ public static void SolutionRecipes() {
 		"SDS",
 		"BFB",
 		
-			'D', Ingredients.MinerDistillery, 'F', Items.rotten_flesh, 'G', new ItemStack(Items.dye, 2, 2), 
+			'D', Ingredients.Dist, 'F', Items.rotten_flesh, 'G', new ItemStack(Items.dye, 2, 2), 
 			'B', new ItemStack(Items.dye, 4, 4), 'S', Ingredients.GelatinShard
 	});	
 
@@ -735,28 +692,46 @@ public static void IngRecipes() {
 //Heating Element
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.HeatingElement), new Object [] {
 		"RBR",
-		"BCB",
+		"BNB",
 		"RBR",
 		
-			'R', "dustRedstone", 'B', "ingotBronze", 'C', Ingredients.CrystalFire
+			'R', "dustRedstone", 'B', "ingotBronze", 'N', Items.gold_nugget
+	}));
+	
+//Heating ElementT2
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.HeatingElement, 1, 1), new Object [] {
+		"RBR",
+		"BHB",
+		"RBR",
+		
+			'R', "dustRedstone", 'B', "ingotEnergeticAlloy", 'H', new ItemStack(Ingredients.HeatingElement)
 	}));
 	
 //Cooling Element
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.CoolingElement), new Object []{
 		"RBR",
-		"BCB",
+		"BNB",
 		"RBR",
 		
-			'B', "ingotBronze", 'C', Ingredients.CrystalIce, 'R', Items.redstone
+			'B', "ingotBronze", 'N', Items.gold_nugget, 'R', new ItemStack(Items.dye, 4, 4)
 	}));
 	
 //Bunsen Burner
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.BunsenBurner), new Object [] {
-		" c ",
-		" N ",
-		"ICI",
+		" C ",
+		" I ",
+		"IHI",
 		
-			'I', Items.iron_ingot, 'C', Ingredients.GroundCharcoalJar, 'N', "nuggetIron", 'c', "nuggetCopper"
+			'I', Items.iron_ingot, 'H', Ingredients.HeatingElement, 'C', "ingotCopper"
+	}));
+	
+//Bunsen BurnerT2
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.BunsenBurner, 1, 1), new Object [] {
+		" C ",
+		" I ",
+		"IHI",
+		
+			'I', "ingotEnergeticAlloy", 'H', new ItemStack(Ingredients.HeatingElement, 1, 1), 'C', "ingotPulsatingIron"
 	}));
 	
 //Gelatinous Soil
@@ -793,154 +768,6 @@ public static void IngRecipes() {
 		"PCP",
 		
 			'G', Utilities.GChamberT3, 'P', Items.baked_potato, 'C', Ingredients.GelatinCrystalVibrant
-	});
-	
-//E-Tool
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.ETool), new Object []{
-		" NG",
-		" RN",
-		"R  ",
-		
-			'R', Ingredients.IronRod, 'G', Ingredients.GelatinShard, 'N', "nuggetIron"
-	}));
-	
-//Feather Jar
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FeatherJar), new Object []{
-		"FFF",
-		"FPF",
-		"FFF",
-		
-			'F', Items.feather, 'P', Utilities.PackUlater
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FeatherJar), new Object []{
-		"FFF",
-		"FGF",
-		"FFF",
-		
-			'G', Utilities.GChamberT3, 'F', Items.feather
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FeatherJar, 8), new Object []{
-		"P",
-		"J",
-		
-			'P', Utilities.PackUlater, 'J', Storage.FeatherBarrel
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FeatherJar, 8), new Object []{
-		"G",
-		"J",
-		
-			'G', Utilities.GChamberT3, 'J', Storage.FeatherBarrel
-	});
-	
-//Spring Board
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.SpringBoard), new Object []{
-		"SSS",
-		" P ",
-		"NIN",
-		
-			'S', Blocks.wooden_slab, 'P', Blocks.piston, 'N', "nuggetIron", 'I', Items.iron_ingot
-	}));
-	
-//Shield
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.Shield), new Object []{
-		"SNS",
-		"SIS",
-		" N ",
-		
-			'I', Items.iron_ingot, 'S', Ingredients.GelatinShard, 'N', "nuggetIron"
-	}));
-	
-//Can O' Spinach
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.CanOSpinach), new Object [] {
-		"NSN",
-		"NBN",
-		"NSN",
-		
-			'S', Ingredients.GelatinShard, 'N', "nuggetIron", 'B', Ingredients.AppleofHealth					
-	}));
-	
-//Apple of Health
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.AppleofHealth), new Object [] {
-		"SNS",
-		"NAN",
-		"SNS",
-		
-			'S', Ingredients.GelatinShard, 'N', Items.gold_nugget, 'A', Items.apple					
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.AppleofHealth, 8), new Object [] {
-		"P",
-		"B",
-		
-			'P', Utilities.PackUlater, 'B', Storage.AppleofHealthBarrel				
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.AppleofHealth, 8), new Object [] {
-		"G",
-		"B",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.AppleofHealthBarrel				
-	});
-	
-//Gelatinous Carrot
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinousCarrot), new Object []{
-		"SNS",
-		"NCN",
-		"SNS",
-		
-			'C', Items.carrot, 'S', Ingredients.GelatinShard, 'N', Items.gold_nugget
-	});	
-	
-//Fish in a Jar
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', Items.fish
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', new ItemStack(Items.fish, 1, 1)
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', new ItemStack(Items.fish, 2, 2)
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', new ItemStack(Items.fish, 3, 3)
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', Items.cooked_fished
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.FishinaJar, 2), new Object []{
-		"F",
-		"V",
-		"F",
-		
-			'V', Storage.H2OCoolVat, 'F', new ItemStack(Items.cooked_fished, 1, 1)
 	});
 
 }
@@ -1182,24 +1009,6 @@ public static void MaterialRecipes() {
 		"NNN",
 		
 			'N', Ingredients.GelatinShardVibrant
-	}));
-	
-//Crystal Fire
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.CrystalFire), new Object []{
-		"CCC",
-		"CSC",
-		"CCC",
-			
-			'S', "shardDiamond", 'C', "dustCharcoal"
-	}));
-	
-//Crystal Ice
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.CrystalIce), new Object []{
-		"III",
-		"ISI",
-		"III",
-			
-			'S', "shardDiamond", 'I', Ingredients.IceShard
 	}));
 	
 //Gelatin Alloy Nugget
@@ -2390,14 +2199,14 @@ public static void FluidRecipes() {
 	}));	
 	
 //Distillery Filled
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.MinerDistillery), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.Dist), new Object []{
 		"D",
 		"J",
 		
 			'D', Utilities.Distillery, 'J', Storage.H2OHotJar, 'C', Ingredients.CraftingMedallion
 	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.MinerDistillery), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.Dist), new Object []{
 		"GC",
 		"J ",
 		

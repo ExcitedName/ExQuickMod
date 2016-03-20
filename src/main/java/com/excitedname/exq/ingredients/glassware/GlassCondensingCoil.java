@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ing;
+package com.excitedname.exq.ingredients.glassware;
 
 import java.util.List;
 
@@ -14,15 +14,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 
-public class BunsenBurner extends Item {
-
-	private static final String[] Meta = new String[] {"T1", "T2"};
+public class GlassCondensingCoil extends Item {
+	
+	private static final String[] Meta = new String[] {"Center", "Left", "Right"};
 	@SideOnly(Side.CLIENT)
 	private IIcon[] IIcons;
 
-	public BunsenBurner() {
+	public GlassCondensingCoil() {
 	
-	this.setUnlocalizedName("Bunsen Burner");
+	this.setUnlocalizedName("GlassCondensingCoil");
 	this.setHasSubtypes(true);
 	this.setCreativeTab(Tabs.IngTab);
 	this.setMaxStackSize(1);
@@ -45,20 +45,20 @@ public class BunsenBurner extends Item {
 @SideOnly(Side.CLIENT)
 public IIcon getIconFromDamage(int par1Icons)
 	{
-	int j = MathHelper.clamp_int(par1Icons, 0, 1);
+	int j = MathHelper.clamp_int(par1Icons, 0, 2);
 	return this.IIcons[j];
 	}
 
 public String getUnlocalizedName(ItemStack par1Dist)
 	{
-	int i = MathHelper.clamp_int(par1Dist.getItemDamage(), 0, 1);
+	int i = MathHelper.clamp_int(par1Dist.getItemDamage(), 0, 2);
 	return super.getUnlocalizedName() + Meta[i];
 	}
 
 @SideOnly(Side.CLIENT)
 public void getSubItems(Item par1Vat, CreativeTabs par2Tabs, List par3List)
 	{
-	    for (int i = 0; i < 1; ++i)
+	    for (int i = 0; i < 3; ++i)
 	    {
 	    	par3List.add(new ItemStack(par1Vat, 1, i));
 	    }
@@ -71,7 +71,8 @@ public void registerIcons(IIconRegister par1Icons)
 	
 	for (int i = 0; i < IIcons.length; ++i)
 	{
-	this.IIcons[i] = par1Icons.registerIcon(Ref.MOD_ID + ":" + "Bunsen Burner" + Meta[i]);
+	this.IIcons[i] = par1Icons.registerIcon(Ref.MOD_ID + ":" + "GlassCondensingCoil" + Meta[i]);
 	}
 }
+
 }

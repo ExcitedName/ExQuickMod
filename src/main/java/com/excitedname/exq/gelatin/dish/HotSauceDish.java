@@ -1,4 +1,4 @@
-package com.excitedname.exq.gelatin.hotsauce;
+package com.excitedname.exq.gelatin.dish;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -15,7 +15,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class HotSauce extends Item {
+public class HotSauceDish extends Item {
 	
 	public int FirstPotionid;
 	public int FirstPotionDuration;
@@ -34,14 +34,14 @@ public class HotSauce extends Item {
 
 	//Declaration (Boolean)}
 
-		public HotSauce() {
+		public HotSauceDish() {
 			
-			this.setUnlocalizedName("Hot Sauce");
-			this.setTextureName("Hot Sauce");
+			this.setUnlocalizedName("Hot Sauce Dish");
+			this.setTextureName("Hot Sauce Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
-			this.setFirstPotionEffect(Potion.fireResistance.id, 20, 0, 1F);
+			this.setFirstPotionEffect(Potion.fireResistance.id, 20, 2, 1F);
 			this.setSecondPotionEffect(Potion.moveSpeed.id, 20, 2, 1F);
-			this.setThirdPotionEffect(Potion.harm.id, 1, 0, 0.75F);
+			this.setThirdPotionEffect(Potion.harm.id, 1, 0, 0.5F);
 			
 		}
 		
@@ -86,7 +86,7 @@ public class HotSauce extends Item {
 			
 		}
 	    
-	    public HotSauce setFirstPotionEffect(int par1, int par2, int par3, float par4){
+	    public HotSauceDish setFirstPotionEffect(int par1, int par2, int par3, float par4){
 			
 			this.FirstPotionid = par1;
 			this.FirstPotionDuration = par2;
@@ -95,7 +95,7 @@ public class HotSauce extends Item {
 			return this;			
 		}
 		
-		public HotSauce setSecondPotionEffect(int par1, int par2, int par3, float par4){
+		public HotSauceDish setSecondPotionEffect(int par1, int par2, int par3, float par4){
 			
 			this.SecondPotionid = par1;
 			this.SecondPotionDuration = par2;
@@ -104,7 +104,7 @@ public class HotSauce extends Item {
 			return this;			
 		}
 		
-		public HotSauce setThirdPotionEffect(int par1, int par2, int par3, float par4){
+		public HotSauceDish setThirdPotionEffect(int par1, int par2, int par3, float par4){
 			
 			this.ThirdPotionid = par1;
 			this.ThirdPotionDuration = par2;

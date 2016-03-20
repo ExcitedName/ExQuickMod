@@ -1,4 +1,4 @@
-package com.excitedname.exq.gelatin.hotsauce;
+package com.excitedname.exq.gelatin.Juice;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.entities.EntityGelatinPearl;

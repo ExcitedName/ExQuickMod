@@ -7,6 +7,7 @@ item.Ceramic Juicer.name=Ceramic Juicer
 item.Mortar and Pestel.name=Mortar & Pestel
 item.Stamp Mill.name=Stamp Mill
 item.The Vat.name=The Vat
+item.Barrel.name=Barrel
 item.Smeltry.name=Smeltry
 item.Solidifier.name=Solidifier
 item.Distillery.name=Distillery
@@ -28,6 +29,7 @@ item.Traveller Cube.name=Traveller Cube
 item.Iron Skin Cube.name=Iron Skin Cube  
 item.Warrior Cube.name=Warrior Cube
 item.Health Cube.name=Health Cube
+item.Hot Sauce Cube.name=Hypno's Hot Sauce Cube
 item.Night Vision Cube.name=Night Vision Cube
 item.Torch Cube.name=Torch Cube
 item.Explosive Cube.name=Explosive Cube
@@ -41,16 +43,16 @@ item.Traveller Dish.name=Traveller Dish
 item.Iron Skin Dish.name=Iron Skin Dish
 item.Warrior Dish.name=Warrior Dish
 item.Health Dish.name=Health Dish
+item.Hot Sauce Dish.name=Hypno's Hot Sauce Dish
 item.Night Vision Dish.name=Night Vision Dish
 item.Torch Dish.name=Torch Dish
 item.Explosive Dish.name=Explosive Dish
 item.Kracken Dish.name=Kracken Dish
 item.Dragon Dish.name=Beastee03's Dragon Dish
 
-    //HotSauce
-item.Hot Sauce.name=Hallier's Hot Sauce
-item.Apple Juice.name=Apple Juice
-item.Apple Juice Healing.name=Healing Apple Juice
+    //Juice
+item.Gelatin Juice.name=Gelatin Juice
+item.Gelatin Juice Healing.name=Healing Gelatin Juice
 
     //Pearls
 item.Gelatin Pearl.name=Gelatin Pearl
@@ -85,7 +87,7 @@ item.Torch Solution.name=Torch Solution
 item.CompB Solution.name=CompB Solution
 item.Kracken Solution.name=Kracken Solution
 item.Dragon Solution.name=Beastee03's Dragon Solution
-item.Hot Sauce Solution.name=Hallier's Hot Sauce Solution
+item.Hot Sauce Solution.name=Hypno's Hot Sauce
 item.Creeper Solution.name=Creeper Solution
 item.Skeleton Solution.name=Skeleton Solution
 item.Zombie Solution.name=Zombie Solution
@@ -93,21 +95,14 @@ item.Zombie Solution.name=Zombie Solution
     //Ing
 item.Clay Juicer.name=Clay Juicer
 item.Iron Stamp.name=Iron Stamp
-item.Heating Element.name=Heating Element
-item.Cooling Element.name=Cooling Element
-item.Bunsen Burner.name=Bunsen Burner
+item.Heating ElementT1.name=Heating Element(Tier 1)
+item.Cooling ElementT2.name=Cooling Element(Tier 2)
+item.Bunsen BurnerT1.name=Bunsen Burner(Tier 1)
+item.Bunsen BurnerT2.name=Bunsen Burner(Tier 2)
 item.Gelatinous Soil.name=Gelatinous Soil
 item.Pack-U-Lating Spindle.name=Pack-U-Lating Spindle
 item.Crafting Medallion.name=Crafting Medallion
 item.Potato Medallion.name=Potato Medallion
-item.E-Tool.name=E-Tool
-item.Feather Jar.name=Feather Jar
-item.Spring Board.name=Spring Board
-item.Shield.name=Shield
-item.Can O' Spinach.name=Can O' Indifference
-item.Apple of Health.name=Apple of Health
-item.Gelatinous Carrot.name=Gelatinous Carrot
-item.Fish in a Jar.name=Fish in a Jar
 
     //Glassware
 item.Glass Blank.name=Glass Blank
@@ -116,9 +111,12 @@ item.Utility Glass(Tier 2).name=Utility Glass(Tier 2)
 item.Utility Glass(Tier 3).name=Utility Glass(Tier 3)
 item.Glass Funnel.name=Glass Funnel
 item.Glass Extraction Tube.name=Glass Extraction Tube
+item.GlassCondensingCoilCenter.name=Glass Condensing Coil(Center)
+item.GlassCondensingCoilLeft.name=Glass Condensing Coil(Left)
+item.GlassCondensingCoilRight.name=Glass Condensing Coil(Right)
 item.Glass Gelatin Mold.name=Glass Gelatin Mold
-item.Glass Bottle.name=Glass Bottle
 item.Glass Dish.name=Glass Dish
+item.Glass Bottle.name=Glass Bottle
 item.Glass Jar.name=Glass Jar
 
     //Material
@@ -127,8 +125,6 @@ item.Gelatin Alloy.name=Gelatin Alloy
 item.Dark Gelatin Alloy.name=Dark Gelatin Alloy
 item.Gelatin Crystal.name=Gelatin Crystal
 item.Gelatin Crystal Vibrant.name=Vibrant Gelatin Crystal
-item.Crystal of Fire.name=Fire Crystal
-item.Crystal of Ice.name=Ice Crystal
 item.Gelatin Alloy Nugget.name=Gelatin Alloy Nugget
 item.Iron Nugget.name=Iron Nugget
 item.Diamond Shard.name=Diamond Shard
@@ -150,7 +146,6 @@ item.Ground Coal Dish.name=Ground Coal Dish
 item.Ground Charcoal Dish.name=Ground Charcoal Dish
 item.Wood Pulp Dish.name=Wood Pulp Dish
 item.Ground Meat Dish.name=Ground Meat Dish
-
 item.Gelitilizer Jar.name=Gelitilizer Jar
 item.Ground Marrow Jar.name=Ground Marrow Jar
 item.Ground Flour Jar.name=Ground Flour Jar
@@ -219,7 +214,6 @@ item.Creeper Barrel.name=Creeper Barrel
 item.Skeleton Barrel.name=Skeleton Barrel
 item.Zombie Barrel.name=Zombie Barrel
 item.Glass Barrel.name=Glass Barrel
-item.Apple of Health Barrel.name=Apple of Health Barrel
 item.Feather Barrel.name=Feather Barrel
 item.Bone Barrel.name=Bone Barrel
 item.Cracked Barrel.name=Cracked Barrel

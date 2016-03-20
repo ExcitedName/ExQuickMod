@@ -2,7 +2,6 @@ package com.excitedname.exq.storage;
 
 import com.excitedname.exq.gelatin.Gelatin;
 import com.excitedname.exq.ingredients.Ingredients;
-import com.excitedname.exq.storage.barrels.AppleofHealthBarrel;
 import com.excitedname.exq.storage.barrels.BoneBarrel;
 import com.excitedname.exq.storage.barrels.CharcoalBarrel;
 import com.excitedname.exq.storage.barrels.CoalBarrel;
@@ -230,10 +229,7 @@ public static void Barrel() {
 		GameRegistry.registerItem(ZombieBarrel, "Zombie Barrel");
 		
 		GlassBarrel = new GlassBarrel();
-		GameRegistry.registerItem(GlassBarrel, "Glass Barrel");
-		
-		AppleofHealthBarrel = new AppleofHealthBarrel();
-		GameRegistry.registerItem(AppleofHealthBarrel, "Apple of Health Barrel");	
+		GameRegistry.registerItem(GlassBarrel, "Glass Barrel");	
 		
 		FeatherBarrel = new FeatherBarrel();
 		GameRegistry.registerItem(FeatherBarrel, "Feather Barrel");
@@ -297,7 +293,6 @@ public static void Barrel() {
 	public static Item SkeletonBarrel;	
 	public static Item ZombieBarrel;
 	public static Item GlassBarrel;	
-	public static Item AppleofHealthBarrel;
 	public static Item FeatherBarrel;	
 	public static Item BoneBarrel;
 	public static Item CrackedBarrel;
@@ -1172,25 +1167,7 @@ public static void BarrelRecipes() {
 			"JJJ",
 			
 				'G', Utilities.GChamberT3, 'J', Storage.ZombieJar
-		});
-		
-	//Apple of Health
-		GameRegistry.addShapedRecipe(new ItemStack(Storage.AppleofHealthBarrel), new Object []{
-			"AAA",
-			"APA",
-			"AAA",
-			
-				'P', Utilities.PackUlater, 'A', Ingredients.AppleofHealth
-		});
-		
-		GameRegistry.addShapedRecipe(new ItemStack(Storage.AppleofHealthBarrel), new Object []{
-			"AAA",
-			"AGA",
-			"AAA",
-			
-				'G', Utilities.GChamberT3, 'A', Ingredients.AppleofHealth
-		});
-		
+		});		
 		
 	//Bone
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.BoneBarrel), new Object []{
@@ -1359,7 +1336,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.FeatherJar
+				'P', Utilities.PackUlater, 'J', Items.feather
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.FeatherBarrel), new Object []{
@@ -1367,7 +1344,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.FeatherJar
+				'G', Utilities.GChamberT3, 'J', Items.feather
 		});
 		
 	//H2O Cool

@@ -3,10 +3,15 @@ package com.excitedname.exq.gelatin;
 import com.excitedname.exq.entities.EntityExplosiveCube;
 import com.excitedname.exq.entities.EntityGelatinPearl;
 import com.excitedname.exq.entities.EntityGelatinPearlEnhanced;
+import com.excitedname.exq.gelatin.Juice.GelatinJuice;
+import com.excitedname.exq.gelatin.Juice.GelatinJuiceHealing;
+import com.excitedname.exq.gelatin.Juice.GelatinPearl;
+import com.excitedname.exq.gelatin.Juice.GelatinPearlEnhanced;
 import com.excitedname.exq.gelatin.cube.DragonCube;
 import com.excitedname.exq.gelatin.cube.ExplosiveCube;
 import com.excitedname.exq.gelatin.cube.GelatinCube;
 import com.excitedname.exq.gelatin.cube.HealthCube;
+import com.excitedname.exq.gelatin.cube.HotSauceCube;
 import com.excitedname.exq.gelatin.cube.IronSkinCube;
 import com.excitedname.exq.gelatin.cube.KrackenCube;
 import com.excitedname.exq.gelatin.cube.MinerCube;
@@ -17,6 +22,7 @@ import com.excitedname.exq.gelatin.cube.WarriorCube;
 import com.excitedname.exq.gelatin.dish.DragonDish;
 import com.excitedname.exq.gelatin.dish.ExplosiveDish;
 import com.excitedname.exq.gelatin.dish.HealthDish;
+import com.excitedname.exq.gelatin.dish.HotSauceDish;
 import com.excitedname.exq.gelatin.dish.IronSkinDish;
 import com.excitedname.exq.gelatin.dish.KrackenDish;
 import com.excitedname.exq.gelatin.dish.MinerDish;
@@ -24,31 +30,12 @@ import com.excitedname.exq.gelatin.dish.NightVisionDish;
 import com.excitedname.exq.gelatin.dish.TorchDish;
 import com.excitedname.exq.gelatin.dish.TravellerDish;
 import com.excitedname.exq.gelatin.dish.WarriorDish;
-import com.excitedname.exq.gelatin.hotsauce.AppleJuice;
-import com.excitedname.exq.gelatin.hotsauce.AppleJuiceHealing;
-import com.excitedname.exq.gelatin.hotsauce.GelatinPearl;
-import com.excitedname.exq.gelatin.hotsauce.GelatinPearlEnhanced;
-import com.excitedname.exq.gelatin.hotsauce.HotSauce;
 import com.excitedname.exq.gelatin.lamp.GelatinLamp;
 import com.excitedname.exq.gelatin.lamp.GelatinLampLuminant;
 import com.excitedname.exq.gelatin.lamp.GelatinLampSpectral;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 import com.excitedname.exq.storage.Storage;
-import com.excitedname.exq.storage.jar.CreeperJar;
-import com.excitedname.exq.storage.jar.DragonJar;
-import com.excitedname.exq.storage.jar.ExplosiveJar;
-import com.excitedname.exq.storage.jar.GelatinJar;
-import com.excitedname.exq.storage.jar.HealthJar;
-import com.excitedname.exq.storage.jar.IronSkinJar;
-import com.excitedname.exq.storage.jar.KrackenJar;
-import com.excitedname.exq.storage.jar.MinerJar;
-import com.excitedname.exq.storage.jar.NightVisionJar;
-import com.excitedname.exq.storage.jar.SkeletonJar;
-import com.excitedname.exq.storage.jar.TorchJar;
-import com.excitedname.exq.storage.jar.TravellerJar;
-import com.excitedname.exq.storage.jar.WarriorJar;
-import com.excitedname.exq.storage.jar.ZombieJar;
 import com.excitedname.exq.utilities.Utilities;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
@@ -84,6 +71,9 @@ public static void Cube() {
 		HealthCube = new HealthCube();
 		GameRegistry.registerItem(HealthCube, "Health Cube");
 		
+		HotSauceCube = new HotSauceCube();
+		GameRegistry.registerItem(HotSauceCube, "HotSauceCube");
+		
 		NightVisionCube = new NightVisionCube();
 		GameRegistry.registerItem(NightVisionCube, "Night Vision Cube");
 		
@@ -107,6 +97,7 @@ public static void Cube() {
 	public static Item IronSkinCube;
 	public static Item WarriorCube;
 	public static Item HealthCube;
+	public static Item HotSauceCube;
 	public static Item NightVisionCube;
 	public static Item TorchCube;
 	public static Item ExplosiveCube;
@@ -131,6 +122,9 @@ public static void Dish() {
 		HealthDish = new HealthDish();
 		GameRegistry.registerItem(HealthDish, "Health Dish");
 		
+		HotSauceDish = new HotSauceDish();
+		GameRegistry.registerItem(HotSauceDish, "Hot Sauce Dish");
+		
 		NightVisionDish = new NightVisionDish();
 		GameRegistry.registerItem(NightVisionDish, "Night Vision Dish");
 		
@@ -152,6 +146,7 @@ public static void Dish() {
 	public static Item IronSkinDish;
 	public static Item WarriorDish;
 	public static Item HealthDish;
+	public static Item HotSauceDish;
 	public static Item NightVisionDish;
 	public static Item TorchDish;
 	public static Item ExplosiveDish;
@@ -159,16 +154,13 @@ public static void Dish() {
 	public static Item DragonDish;
 		
 	
-public static void HotSauce() {
-	
-		HotSauce = new HotSauce();
-		GameRegistry.registerItem(HotSauce, "Hot Sauce");
+public static void Juice() {
 		
-		AppleJuice = new AppleJuice();
-		GameRegistry.registerItem(AppleJuice, "Apple Juice");
+		GelatinJuice = new GelatinJuice();
+		GameRegistry.registerItem(GelatinJuice, "Gelatin Juice");
 		
-		AppleJuiceHealing = new AppleJuiceHealing();
-		GameRegistry.registerItem(AppleJuiceHealing, "Apple Juice Healing");
+		GelatinJuiceHealing = new GelatinJuiceHealing();
+		GameRegistry.registerItem(GelatinJuiceHealing, "Gelatin Juice Healing");
 		
 		GelatinPearl = new GelatinPearl();
 		GameRegistry.registerItem(GelatinPearl, "Gelatin Pearl");
@@ -180,9 +172,8 @@ public static void HotSauce() {
 	
 	}
 	
-	public static Item HotSauce;
-	public static Item AppleJuice;
-	public static Item AppleJuiceHealing;
+	public static Item GelatinJuice;
+	public static Item GelatinJuiceHealing;
 	public static Item GelatinPearl;
 	public static Item GelatinPearlEnhanced;
 		
@@ -796,7 +787,7 @@ public static void DragonRecipes()	{
 public static void HotSauceRecipes() {
 	
 	//HotSauce
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauce, 8), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"HSB",
 		" CG",
 		
@@ -804,7 +795,7 @@ public static void HotSauceRecipes() {
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauce, 8), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"HGB",
 		" CS",
 		
@@ -812,7 +803,7 @@ public static void HotSauceRecipes() {
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauce, 8), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"HGB",
 		" CS",
 		
@@ -822,7 +813,7 @@ public static void HotSauceRecipes() {
 	
 
 //Apple Juice
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.AppleJuice), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
 		"ACA",
 		"AJA",
 		"ACA",
@@ -830,7 +821,7 @@ public static void HotSauceRecipes() {
 			'J', Utilities.CeramicJuicer, 'A', Items.apple, 'C', Gelatin.GelatinCube
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.AppleJuice), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
 		"ACA",
 		"AGA",
 		"ACA",
@@ -838,7 +829,7 @@ public static void HotSauceRecipes() {
 			'G', Utilities.GChamberT2, 'A', Items.apple, 'C', Gelatin.GelatinCube
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.AppleJuice, 2), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuice, 2), new Object []{
 		"ACA",
 		"AGA",
 		"ACA",
@@ -848,12 +839,12 @@ public static void HotSauceRecipes() {
 		
 		
 //Healing Apple Juice		
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.AppleJuiceHealing, 6), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuiceHealing, 6), new Object []{
 		"JHJ",
 		"JGJ",
 		"JHJ",
 		
-			'G', Utilities.GChamberT3, 'J', Gelatin.AppleJuice, 'H', Gelatin.HealthDish
+			'G', Utilities.GChamberT3, 'J', Gelatin.GelatinJuice, 'H', Gelatin.HealthDish
 	});
 	
 //Gelatin Pearl

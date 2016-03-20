@@ -34,12 +34,6 @@ public class exqOreDictionary {
 		
 		OreDictionary.registerOre("ingotSteel", new ItemStack(Ingredients.SteelIngot));
 		
-		OreDictionary.registerOre("bucketEmpty", new ItemStack(Ingredients.GlassJar));
-		
-		OreDictionary.registerOre("bucketWater", new ItemStack(Storage.H2OCoolJar));
-		
-		OreDictionary.registerOre("bucketLava", new ItemStack(Storage.LavaJar));
-		
 	}
 }
 

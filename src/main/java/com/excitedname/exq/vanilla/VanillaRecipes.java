@@ -566,14 +566,14 @@ public static void VanillaMaterial() {
 			"P",
 			"J",
 							
-				'P', Utilities.PackUlater, 'J', Ingredients.FeatherJar
+				'P', Utilities.PackUlater, 'J', Storage.FeatherBarrel
 		});	
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Items.feather, 8), new Object []{
 			"G",
 			"J",
 							
-				'G', Utilities.GChamberT3, 'J', Ingredients.FeatherJar
+				'G', Utilities.GChamberT3, 'J', Storage.FeatherBarrel
 		});
 		
 		
