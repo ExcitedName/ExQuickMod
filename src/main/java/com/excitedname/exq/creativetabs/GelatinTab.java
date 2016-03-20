@@ -1,6 +1,7 @@
 package com.excitedname.exq.creativetabs;
 
 import com.excitedname.exq.gelatin.Gelatin;
+import com.excitedname.exq.storage.Storage;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -14,7 +15,7 @@ public class GelatinTab extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return Gelatin.GelatinCube;
+		return Gelatin.GelatinJuiceHealing;
 	}
 	
 	@Override

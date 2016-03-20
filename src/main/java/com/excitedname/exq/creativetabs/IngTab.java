@@ -14,7 +14,7 @@ public class IngTab extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return Ingredients.DiamondShard;
+		return Ingredients.GelatinCrystalVibrant;
 	}
 	
 	@Override

@@ -14,7 +14,7 @@ public class StorageTab extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return Storage.GelatinBarrel;
+		return Storage.AcidVat;
 	}
 	
 	@Override

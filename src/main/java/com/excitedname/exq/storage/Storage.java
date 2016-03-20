@@ -20,6 +20,7 @@ import com.excitedname.exq.storage.barrels.GroundRDXBarrel;
 import com.excitedname.exq.storage.barrels.GroundSugarBarrel;
 import com.excitedname.exq.storage.barrels.GroundTriliteBarrel;
 import com.excitedname.exq.storage.barrels.HealthBarrel;
+import com.excitedname.exq.storage.barrels.HotSauceBarrel;
 import com.excitedname.exq.storage.barrels.IronSkinBarrel;
 import com.excitedname.exq.storage.barrels.KrackenBarrel;
 import com.excitedname.exq.storage.barrels.LilyBarrel;
@@ -49,6 +50,7 @@ import com.excitedname.exq.storage.jar.DragonJar;
 import com.excitedname.exq.storage.jar.ExplosiveJar;
 import com.excitedname.exq.storage.jar.GelatinJar;
 import com.excitedname.exq.storage.jar.HealthJar;
+import com.excitedname.exq.storage.jar.HotSauceJar;
 import com.excitedname.exq.storage.jar.IronSkinJar;
 import com.excitedname.exq.storage.jar.KrackenJar;
 import com.excitedname.exq.storage.jar.MinerJar;
@@ -107,6 +109,9 @@ public static void Jar() {
 		HealthJar = new HealthJar();
 		GameRegistry.registerItem(HealthJar, "Health Jar");
 		
+		HotSauceJar = new HotSauceJar();
+		GameRegistry.registerItem(HotSauceJar, "Hot Sauce Jar");
+		
 		NightVisionJar = new NightVisionJar();
 		GameRegistry.registerItem(NightVisionJar, "Night Vision Jar");
 		
@@ -144,7 +149,8 @@ public static void Jar() {
 	public static Item TravellerJar;
 	public static Item IronSkinJar;
 	public static Item WarriorJar;
-	public static Item HealthJar;	
+	public static Item HealthJar;
+	public static Item HotSauceJar;
 	public static Item NightVisionJar;
 	public static Item TorchJar;
 	public static Item ExplosiveJar;
@@ -203,6 +209,9 @@ public static void Barrel() {
 		
 		HealthBarrel = new HealthBarrel();
 		GameRegistry.registerItem(HealthBarrel, "Health Barrel");
+		
+		HotSauceBarrel = new HotSauceBarrel();
+		GameRegistry.registerItem(HotSauceBarrel, "Hot Sauce Barrel");
 		
 		NightVisionBarrel = new NightVisionBarrel();
 		GameRegistry.registerItem(NightVisionBarrel, "Night Vision Barrel");
@@ -284,6 +293,7 @@ public static void Barrel() {
 	public static Item IronSkinBarrel;
 	public static Item WarriorBarrel;
 	public static Item HealthBarrel;
+	public static Item HotSauceBarrel;
 	public static Item NightVisionBarrel;
 	public static Item TorchBarrel;	
 	public static Item ExplosiveBarrel;

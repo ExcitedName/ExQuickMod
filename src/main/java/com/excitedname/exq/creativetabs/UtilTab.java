@@ -14,7 +14,7 @@ public class UtilTab extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return Utilities.GChamberT1;
+		return Utilities.GChamberT3;
 	}
 	
 	@Override
