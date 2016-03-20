@@ -1,0 +1,16 @@
+[
+{
+  "modid": "exq",
+  "name": "Gelatin Chamber",
+  "description": "A mod about Gelatin. Gelatin in the form of food and potion combinations. As well as some extended recipes for Vanilla",
+  "version": "1.6b",
+  "mcversion": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExcitedName"],
+  "credits": "ExcitedName and Beastee03",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
