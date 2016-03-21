@@ -437,7 +437,7 @@ public static void MinerJarRecipes() {
 		"DJD",
 		"DDD",
 		
-			'J', Ingredients.GlassJar, 'D', Gelatin.MinerDish
+			'J', Ingredients.GlassJar, 'D', Gelatin.MinerDish.setContainerItem(Ingredients.GlassDish)
 	});
 	
 	GameRegistry.addShapelessRecipe(new ItemStack(Storage.MinerJar, 8),
@@ -469,7 +469,7 @@ public static void TravellerJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.TravellerDish
+			'G', Utilities.GChamberT3, 'D', Gelatin.TravellerDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.TravellerJar, 8), new Object []{
@@ -514,7 +514,7 @@ public static void IronSkinJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.IronSkinDish
+			'G', Utilities.GChamberT3, 'D', Gelatin.IronSkinDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.IronSkinJar, 8), new Object []{
@@ -559,7 +559,7 @@ public static void WarriorJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.WarriorDish
+			'G', Utilities.GChamberT3, 'D', Gelatin.WarriorDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.WarriorJar, 8), new Object []{
@@ -604,7 +604,7 @@ public static void HealthJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.HealthCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.HealthDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.HealthJar, 8), new Object []{
@@ -649,7 +649,7 @@ public static void NVisionJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.NightVisionCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.NightVisionDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.NightVisionJar, 8), new Object []{
@@ -694,7 +694,7 @@ public static void TorchJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.TorchCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.TorchDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.TorchJar, 8), new Object []{
@@ -739,7 +739,7 @@ public static void ExplosiveJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.ExplosiveCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.ExplosiveDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.ExplosiveJar, 8), new Object []{
@@ -784,7 +784,7 @@ public static void KrackenJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.KrackenCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.KrackenDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.KrackenJar, 8), new Object []{
@@ -829,7 +829,7 @@ public static void DragonJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.DragonCube
+			'G', Utilities.GChamberT3, 'D', Gelatin.DragonDish.setContainerItem(Ingredients.GlassDish)
 	});
 
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.DragonJar, 8), new Object []{
