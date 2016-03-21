@@ -2,6 +2,7 @@ package com.excitedname.exq.gelatin.dish;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.gelatin.cube.MinerCube;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -28,6 +29,7 @@ public class MinerDish extends Item {
 			this.setUnlocalizedName("Miner Dish");
 			this.setTextureName("Miner Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.digSpeed.id, 20, 2, 1F);
 		}
 		

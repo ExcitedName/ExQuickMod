@@ -49,6 +49,7 @@ public class DragonDish extends Item {
 			this.setUnlocalizedName("Dragon Dish");
 			this.setTextureName("Dragon Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.moveSpeed.id, 20, 2, 1F);
 			this.setSecondPotionEffect(Potion.jump.id, 20, 2, 1F);
 			this.setThirdPotionEffect(Potion.resistance.id, 20, 3, 1F);

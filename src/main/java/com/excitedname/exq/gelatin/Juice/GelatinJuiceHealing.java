@@ -33,6 +33,7 @@ public class GelatinJuiceHealing extends Item {
 		this.setUnlocalizedName("Gelatin Juice Healing");
 		this.setTextureName("Gelatin Juice Healing");
 		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 		this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
 	}
 	
@@ -73,11 +74,6 @@ public class GelatinJuiceHealing extends Item {
     {
     	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         return par1ItemStack;
-    }
-    
-    public Item getContainerItem()
-    {
-        return this.getContainerItem();
     }
     
     public GelatinJuiceHealing setFirstPotionEffect(int par1, int par2, int par3, float par4){

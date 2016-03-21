@@ -1,6 +1,7 @@
 package com.excitedname.exq.ingredients.solution;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -14,7 +15,8 @@ public class MinerSolution extends Item {
 		
 		this.setUnlocalizedName("Miner Solution");
 		this.setTextureName("Miner Solution");
-		this.setCreativeTab(Tabs.GelatinTab);		
+		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 //Texture Icon

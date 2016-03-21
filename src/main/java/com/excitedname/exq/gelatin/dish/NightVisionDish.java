@@ -29,6 +29,7 @@ public class NightVisionDish extends Item {
 			this.setUnlocalizedName("Night Vision Dish");
 			this.setTextureName("Night Vision Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.nightVision.id, 20, 3, 1F);
 		}
 		

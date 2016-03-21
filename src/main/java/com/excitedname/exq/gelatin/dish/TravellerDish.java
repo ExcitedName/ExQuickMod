@@ -2,6 +2,7 @@ package com.excitedname.exq.gelatin.dish;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.gelatin.cube.TravellerCube;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -33,6 +34,7 @@ public class TravellerDish extends Item {
 			this.setUnlocalizedName("Traveller Dish");
 			this.setTextureName("Traveller Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.moveSpeed.id, 20, 1, 1F);
 			this.setSecondPotionEffect(Potion.jump.id, 20, 1, 1F);
 		}

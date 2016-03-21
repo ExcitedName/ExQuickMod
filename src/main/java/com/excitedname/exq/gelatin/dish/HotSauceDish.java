@@ -1,6 +1,7 @@
 package com.excitedname.exq.gelatin.dish;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -39,6 +40,7 @@ public class HotSauceDish extends Item {
 			this.setUnlocalizedName("Hot Sauce Dish");
 			this.setTextureName("Hot Sauce Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.fireResistance.id, 20, 2, 1F);
 			this.setSecondPotionEffect(Potion.moveSpeed.id, 20, 2, 1F);
 			this.setThirdPotionEffect(Potion.harm.id, 1, 0, 0.5F);

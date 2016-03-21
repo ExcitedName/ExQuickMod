@@ -1,6 +1,7 @@
 package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -15,7 +16,8 @@ public class DragonJar extends Item {
 		
 		this.setUnlocalizedName("Dragon Jar");
 		this.setTextureName("Dragon Jar");
-		this.setCreativeTab(Tabs.StorageTab);		
+		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){

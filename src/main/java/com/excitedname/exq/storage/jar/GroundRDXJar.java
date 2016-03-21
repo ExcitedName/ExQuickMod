@@ -1,6 +1,7 @@
 package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -15,6 +16,7 @@ public class GroundRDXJar extends Item {
 		this.setUnlocalizedName("Ground RDX Jar");
 		this.setTextureName("Ground RDX Jar");
 		this.setCreativeTab(Tabs.StorageTab);		
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 //Texture Icon

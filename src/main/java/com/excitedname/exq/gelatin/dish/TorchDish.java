@@ -23,6 +23,7 @@ public class TorchDish extends Item {
 			this.setUnlocalizedName("Torch Dish");
 			this.setTextureName("Torch Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 		}
 		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){

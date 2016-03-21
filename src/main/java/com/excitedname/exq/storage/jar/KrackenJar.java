@@ -1,6 +1,7 @@
 package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -14,7 +15,8 @@ public class KrackenJar extends Item {
 		
 		this.setUnlocalizedName("Kracken Jar");
 		this.setTextureName("Kracken Jar");
-		this.setCreativeTab(Tabs.StorageTab);		
+		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 //Texture Icon

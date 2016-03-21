@@ -29,6 +29,7 @@ public class HealthDish extends Item {
 			this.setUnlocalizedName("Health Dish");
 			this.setTextureName("Health Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
 		}
 		

@@ -2,6 +2,7 @@ package com.excitedname.exq.storage.fluid;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
+import com.excitedname.exq.utilities.Utilities;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +15,8 @@ public class GelatinSolutionVat extends Item {
 		
 		this.setUnlocalizedName("Gelatin Solution Vat");
 		this.setTextureName("Gelatin Solution Vat");
-		this.setCreativeTab(Tabs.StorageTab);		
+		this.setCreativeTab(Tabs.StorageTab);	
+		this.setContainerItem(Utilities.TheVat);
 	}
 	
 //Texture Icon

@@ -40,6 +40,7 @@ public class KrackenDish extends Item {
 			this.setUnlocalizedName("Kracken Dish");
 			this.setTextureName("Kracken Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.waterBreathing.id, 20, 3, 1F);
 			this.setSecondPotionEffect(Potion.nightVision.id, 20, 3, 1F);
 			this.setThirdPotionEffect(Potion.digSpeed.id, 20, 3, 1F);

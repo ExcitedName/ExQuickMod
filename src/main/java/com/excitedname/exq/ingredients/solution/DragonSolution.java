@@ -24,6 +24,7 @@ public class DragonSolution extends Item {
 		this.setUnlocalizedName("Dragon Solution");
 		this.setTextureName("Dragon Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){

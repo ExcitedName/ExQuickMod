@@ -1,6 +1,7 @@
 package com.excitedname.exq.storage.fluid;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -14,7 +15,8 @@ public class GelatinSolutionJar extends Item {
 		
 		this.setUnlocalizedName("Gelatin Solution Jar");
 		this.setTextureName("Gelatin Solution Jar");
-		this.setCreativeTab(Tabs.StorageTab);		
+		this.setCreativeTab(Tabs.StorageTab);	
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 //Texture Icon

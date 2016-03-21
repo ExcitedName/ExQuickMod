@@ -31,6 +31,7 @@ public class LavaJar extends Item {
 		this.setUnlocalizedName("Lava Jar");
 		this.setTextureName("Lava Jar");
 		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingLava;
 	}
 	

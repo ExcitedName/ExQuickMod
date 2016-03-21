@@ -24,6 +24,7 @@ public class KrackenSolution extends Item {
 		this.setUnlocalizedName("Kracken Solution");
 		this.setTextureName("Kracken Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 	}
         
 	

@@ -24,6 +24,7 @@ public class TorchSolution extends Item {
 		this.setUnlocalizedName("Torch Solution");
 		this.setTextureName("Torch Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 	

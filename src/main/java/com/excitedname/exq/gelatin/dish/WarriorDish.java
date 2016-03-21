@@ -35,6 +35,7 @@ public class WarriorDish extends Item {
 			this.setUnlocalizedName("Warrior Dish");
 			this.setTextureName("Warrior Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.damageBoost.id, 20, 1, 1F);
 		}
 		

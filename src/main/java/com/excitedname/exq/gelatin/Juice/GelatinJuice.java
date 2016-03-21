@@ -20,20 +20,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class GelatinJuice extends Item {
-	
-	public int FirstPotionid;
-	public int FirstPotionDuration;
-	public int FirstPotionAmplifier;
-	public float FirstPotionEffectProbability;
-	
-	private static final String __OBFID = "clearActivePotions";
-	 
+		 
 	public GelatinJuice() {
 				
 		this.setUnlocalizedName("Gelatin Juice");
 		this.setTextureName("Gelatin Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
-		//this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
+		this.setContainerItem(Ingredients.GlassBottle);
+		
 	}
 
 	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
@@ -47,10 +41,6 @@ public class GelatinJuice extends Item {
         {
         	par3EntityPlayer.clearActivePotions();
         }
-        
-        if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-			par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 1, this.FirstPotionAmplifier));
-		}
 
         return par1ItemStack;
     }
@@ -70,21 +60,7 @@ public class GelatinJuice extends Item {
     	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         return par1ItemStack;
     }
-    
-    public Item getContainerItem()
-    {
-        return this.getContainerItem();
-    }
-    
-    public GelatinJuice setFirstPotionEffect(int par1, int par2, int par3, float par4){
-		
-		this.FirstPotionid = par1;
-		this.FirstPotionDuration = par2;
-		this.FirstPotionAmplifier = par3;
-		this.FirstPotionEffectProbability = par4;
-		return this;			
-	}
-        
+          
 	
 //Texture Icon
 	

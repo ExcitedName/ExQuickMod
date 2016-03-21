@@ -1,7 +1,9 @@
 package com.excitedname.exq.storage.fluid;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
+import com.excitedname.exq.utilities.Utilities;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -14,7 +16,8 @@ public class PurifiedCollagenSolutionVat extends Item {
 		
 		this.setUnlocalizedName("Purified Collagen Solution Vat");
 		this.setTextureName("Purified Collagen Solution Vat");
-		this.setCreativeTab(Tabs.StorageTab);		
+		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Utilities.TheVat);
 	}
 	
 //Texture Icon

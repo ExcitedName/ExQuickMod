@@ -30,6 +30,7 @@ public class IronSkinDish extends Item {
 			this.setUnlocalizedName("Iron Skin Dish");
 			this.setTextureName("Iron Skin Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
+			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.resistance.id, 20, 1, 1F);
 		}
 		

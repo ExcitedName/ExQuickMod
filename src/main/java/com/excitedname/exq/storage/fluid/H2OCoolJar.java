@@ -30,6 +30,7 @@ public class H2OCoolJar extends Item {
 		this.setUnlocalizedName("Dihydrogen Monoxide Jar(Cool)");
 		this.setTextureName("Dihydrogen Monoxide Jar(Cool)");
 		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingWater;
 	}
 	

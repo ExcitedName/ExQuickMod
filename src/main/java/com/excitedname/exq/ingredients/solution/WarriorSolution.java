@@ -24,6 +24,7 @@ public class WarriorSolution extends Item {
 		this.setUnlocalizedName("Warrior Solution");
 		this.setTextureName("Warrior Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
+		this.setContainerItem(Ingredients.GlassBottle);
 	}
         
 	
