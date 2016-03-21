@@ -603,7 +603,7 @@ public static void VanillaMaterial() {
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.glass), new Object [] {
 		" G ",
-		" P" ,
+		" P ",
 		" G ",
 						
 			'P', Utilities.PackUlater, 'G', Blocks.glass_pane
