@@ -1,9 +1,7 @@
 package com.excitedname.exq.gelatin.Juice;
 
-import java.util.List;
-
 import com.excitedname.exq.creativetabs.Tabs;
-import com.excitedname.exq.gelatin.cube.HealthCube;
+import com.excitedname.exq.gelatin.Gelatin;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
@@ -15,18 +13,17 @@ import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Potion;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class GelatinJuice extends Item {
-		 
+	
+	public int stackSize = 1;
+	
 	public GelatinJuice() {
 				
 		this.setUnlocalizedName("Gelatin Juice");
 		this.setTextureName("Gelatin Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 		
 	}
 
@@ -42,7 +39,7 @@ public class GelatinJuice extends Item {
         	par3EntityPlayer.clearActivePotions();
         }
 
-        return par1ItemStack;
+        return new ItemStack(Ingredients.GlassBottle);
     }
 
     public int getMaxItemUseDuration(ItemStack par1ItemStack)
@@ -59,8 +56,7 @@ public class GelatinJuice extends Item {
     {
     	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         return par1ItemStack;
-    }
-          
+    }        
 	
 //Texture Icon
 	

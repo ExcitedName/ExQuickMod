@@ -14,6 +14,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
@@ -35,7 +36,7 @@ public class H2OCoolJar extends Item {
 	}
 	
 	public ItemStack onItemRightClick(ItemStack p_77659_1_, World p_77659_2_, EntityPlayer p_77659_3_)
-	{
+	{		
 	    boolean flag = this.isFull == Blocks.air;
 	    MovingObjectPosition movingobjectposition = this.getMovingObjectPositionFromPlayer(p_77659_2_, p_77659_3_, flag);
 
@@ -152,6 +153,8 @@ public class H2OCoolJar extends Item {
 	            }
 	        }
 
+	        p_77659_3_.setItemInUse(p_77659_1_, this.getMaxItemUseDuration(p_77659_1_));
+	        
 	        return p_77659_1_;
 	    }
 	}
