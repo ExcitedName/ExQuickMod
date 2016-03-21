@@ -17,12 +17,11 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class MinerDish extends Item {
-
+ 	
 	public int FirstPotionid;
 	public int FirstPotionDuration;
 	public int FirstPotionAmplifier;
-	public float FirstPotionEffectProbability;
-	
+	public float FirstPotionEffectProbability;	
 
 		public MinerDish() {
 		
@@ -31,8 +30,9 @@ public class MinerDish extends Item {
 			this.setCreativeTab(Tabs.GelatinTab);
 			this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.digSpeed.id, 20, 2, 1F);
+			
 		}
-		
+				
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
 			super.onEaten(par1ItemStack,  par2World,  par3EntityPlayer);
 			
@@ -60,9 +60,18 @@ public class MinerDish extends Item {
 
 	    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
 	    {
+	    	if (!par3EntityPlayer.capabilities.isCreativeMode)
+	        {
+	            --par1ItemStack.stackSize;
+	        }
+			
+			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+			}
+			
 	    	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
 	        return par1ItemStack;
-			
+	        
 		}
 		
 		public MinerDish setFirstPotionEffect(int par1, int par2, int par3, float par4){
@@ -73,7 +82,6 @@ public class MinerDish extends Item {
 			this.FirstPotionEffectProbability = par4;
 			return this;			
 		}
-	
 
 	//Texture Icon	
 

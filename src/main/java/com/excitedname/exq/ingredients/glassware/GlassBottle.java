@@ -16,14 +16,7 @@ public class GlassBottle extends Item {
 		this.setUnlocalizedName("Glass Bottle");
 		this.setTextureName("Glass Bottle");
 		this.setCreativeTab(Tabs.IngTab);	
-	}
-	
-	@SideOnly(Side.CLIENT)
-    public int getRenderBlockPass()
-    {
-        return 1;
-    }
-	
+	}	
 		
 //Texture Icon
 	

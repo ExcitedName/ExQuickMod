@@ -11,8 +11,6 @@ import net.minecraft.item.Item;
 
 public class MinerJar extends Item {
 
-	//Declaration 
-
 		public MinerJar() {
 			
 			this.setUnlocalizedName("Miner Jar");

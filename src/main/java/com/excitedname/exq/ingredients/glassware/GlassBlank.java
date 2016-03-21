@@ -1,6 +1,7 @@
 package com.excitedname.exq.ingredients.glassware;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -18,6 +19,7 @@ public class GlassBlank extends Item {
 		this.setUnlocalizedName("Glass Blank");
 		this.setTextureName("Glass Blank");
 		this.setCreativeTab(Tabs.IngTab);
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 	@Override

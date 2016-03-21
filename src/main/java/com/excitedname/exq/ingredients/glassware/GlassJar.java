@@ -227,5 +227,5 @@ public boolean tryPlaceContainedLiquid(World p_77875_1_, int p_77875_2_, int p_7
 public void registerIcons(IIconRegister iconReg){
 	itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
 		.substring(this.getUnlocalizedName().indexOf(".")+1));
-}
+	}
 }

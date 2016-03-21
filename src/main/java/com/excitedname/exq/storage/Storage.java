@@ -426,35 +426,22 @@ public static void MinerJarRecipes() {
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar), new Object []{
 		"CCC",
-		"CGC",
+		"CJC",
 		"CCC",
 		
-			'G', Utilities.GChamberT3, 'C', Gelatin.MinerCube
+			'J', Ingredients.GlassJar, 'C', Gelatin.MinerCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar), new Object []{
 		"DDD",
-		"DGD",
+		"DJD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.MinerDish
+			'J', Ingredients.GlassJar, 'D', Gelatin.MinerDish
 	});
-
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.MinerBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.MinerBarrel
-	});
+	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.MinerJar, 8),
+			Storage.MinerBarrel);
 	
 }
 

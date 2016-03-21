@@ -931,37 +931,37 @@ public static void HotSauceRecipes() {
 	//Cube
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"   ",
-		"HSB",
+		"HSM",
 		" CG",
 		
-			'S', Utilities.Solidifier, 'B', Ingredients.GlassBottle, 'G', Storage.GelatinSolutionJar, 
+			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"   ",
-		"HGB",
+		"HGM",
 		" CS",
 		
-			'G', Utilities.GChamberT2, 'B', Ingredients.GlassBottle, 'S', Storage.GelatinSolutionJar, 
+			'G', Utilities.GChamberT2, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
 		"   ",
-		"HGB",
+		"HGM",
 		" CS",
 		
-			'G', Utilities.GChamberT3, 'B', Ingredients.GlassBottle, 'S', Storage.GelatinSolutionJar, 
+			'G', Utilities.GChamberT3, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 16), new Object []{
 		"   ",
-		"HGB",
+		"HGM",
 		"HCS",
 		
-			'G', Utilities.GChamberT3, 'B', Ingredients.GlassBottle, 'S', Storage.GelatinSolutionJar, 
+			'G', Utilities.GChamberT3, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
