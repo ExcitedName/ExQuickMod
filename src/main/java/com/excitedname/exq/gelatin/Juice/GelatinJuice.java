@@ -5,6 +5,7 @@ import com.excitedname.exq.gelatin.Gelatin;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 
+import cpw.mods.fml.common.eventhandler.Event.Result;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,19 +17,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 public class GelatinJuice extends Item {
-	
-	public int stackSize = 1;
-	
+		
 	public GelatinJuice() {
 				
 		this.setUnlocalizedName("Gelatin Juice");
 		this.setTextureName("Gelatin Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
 		
-	}
-
+	}	
+	
 	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-    {
+    {		
+		
         if (!par3EntityPlayer.capabilities.isCreativeMode)
         {
             --par1ItemStack.stackSize;
@@ -38,8 +38,8 @@ public class GelatinJuice extends Item {
         {
         	par3EntityPlayer.clearActivePotions();
         }
-
-        return new ItemStack(Ingredients.GlassBottle);
+        
+        return par1ItemStack;
     }
 
     public int getMaxItemUseDuration(ItemStack par1ItemStack)
@@ -56,7 +56,7 @@ public class GelatinJuice extends Item {
     {
     	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
         return par1ItemStack;
-    }        
+    } 
 	
 //Texture Icon
 	
