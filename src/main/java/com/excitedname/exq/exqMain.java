@@ -44,10 +44,10 @@ public void preInit(FMLPreInitializationEvent event){
 		Gelatin.Dish();		
 		Ingredients.Solution();
 		Gelatin.Juice();
-		Gelatin.Pearls();
 		Ingredients.Distilleries();
-		Ingredients.UtilIng();
+		Gelatin.Pearls();
 		Ingredients.Orb();
+		Ingredients.UtilIng();
 		Ingredients.Glassware();
 		Ingredients.Material();
 		Ingredients.Medallion();

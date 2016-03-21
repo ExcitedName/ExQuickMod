@@ -141,22 +141,25 @@ public static void UtilRecipes(){
 	GameRegistry.addSmelting(Ingredients.ClayJuicer, new ItemStack(Utilities.CeramicJuicer), 0.0F);
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.CeramicJuicer), new Object [] {
-		"SC",
-		"s ",
+		"   ",
+		" SC",
+		" s ",
 		
 			'C', Ingredients.ClayJuicer, 'S', Utilities.Smeltry, 's', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.CeramicJuicer), new Object [] {
-		"GC",
-		"S ",
+		"   ",
+		" GC",
+		" S ",
 		
 			'G', Utilities.GChamberT2, 'C', Ingredients.ClayJuicer, 'S', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.CeramicJuicer), new Object [] {
-		"GC",
-		"S ",
+		"   ",
+		" GC",
+		" S ",
 		
 			'G', Utilities.GChamberT3, 'C', Ingredients.ClayJuicer, 'S', "dustCharcoal"
 	}));
@@ -181,22 +184,29 @@ public static void UtilRecipes(){
 	}));
 	
 //The Vat
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat), new Object [] {
-		"IJI",
-		"GBG",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 8), new Object [] {
+		"I I",
+		"G G",
 		"III",
 		
-			'I', Items.iron_ingot, 'B', Ingredients.GlassJar, 
-			'J', Utilities.CeramicJuicer, 'G', Blocks.glass_pane
+			'I', Items.iron_ingot, 'G', Blocks.glass_pane
 	}));
 	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat), new Object [] {
-		"IJI",
-		"GBG",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
+		"I I",
+		"G G",
 		"III",
 		
-			'I', Items.iron_ingot, 'B', Ingredients.GlassJar, 
-			'J', Utilities.CeramicJuicer, 'G', "paneGlass"
+			'I', Items.iron_ingot, 'G', "paneGlass"
+	}));
+	
+//The Vat
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Barrel, 8), new Object [] {
+		"P P",
+		"R R",
+		"PPP",
+		
+			'P', Blocks.planks, 'R', Ingredients.IronRod
 	}));
 	
 //Smeltry
@@ -281,24 +291,27 @@ public static void GChamberRecipes() {
 public static void LampRecipes() {
 	//Gelatin Lamp
 		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLamp), new Object []{
-			"T",
-			"G",
+			"   ",
+			" T ",
+			" G ",
 			
 				'G', Gelatin.GelatinCube, 'T', Blocks.torch
 		});	
 		
 	//Gelatin Lamp Luminant
 		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLampLuminant), new Object []{
-			"D",
-			"G",
+			"   ",
+			" D ",
+			" G ",
 			
 				'G', Gelatin.GelatinCube, 'D', Items.glowstone_dust
 		});
 		
 	//Spectral Gelatin Lamp
 		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLampSpectral), new Object []{
-			"D",
-			"G",
+			"   ",
+			" D ",
+			" G ",
 			
 				'G', Gelatin.GelatinCube, 'D', Blocks.glowstone
 		});
