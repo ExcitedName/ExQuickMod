@@ -14,7 +14,6 @@ public class UtilityGlassT1 extends Item {
 		
 		this.setUnlocalizedName("Utility Glass(Tier 1)");
 		this.setTextureName("Utility Glass(Tier 1)");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
 //Texture Icon

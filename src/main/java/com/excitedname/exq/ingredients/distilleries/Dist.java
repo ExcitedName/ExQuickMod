@@ -1,7 +1,9 @@
 package com.excitedname.exq.ingredients.distilleries;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
+import com.excitedname.exq.utilities.Utilities;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -22,6 +24,7 @@ public class Dist extends Item {
 		
 		this.setUnlocalizedName("Dist");
 		this.setHasSubtypes(true);
+		this.setContainerItem(Utilities.Distillery);
 	}
 	
 @SideOnly(Side.CLIENT)

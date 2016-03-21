@@ -37,7 +37,7 @@ public class exqMain {
 public void preInit(FMLPreInitializationEvent event){
 		
 	//Inititializtion
-		Gelatin.Lamp();
+		Utilities.Lamp();
 		Utilities.Util();
 		Utilities.GChamber();
 		Gelatin.Cube();
@@ -53,8 +53,8 @@ public void preInit(FMLPreInitializationEvent event){
 		Ingredients.Medallion();
 		Ingredients.Ground();		
 		Storage.Jar();
+		Storage.Barrel();
 		Storage.Vat();
-		Storage.Barrel();	
 				
 		
 	//Logger
@@ -75,7 +75,7 @@ public void Init(FMLInitializationEvent event){
 		
 	
 	//Recipes
-		Gelatin.LampRecipes();
+		Utilities.LampRecipes();
 		Utilities.UtilRecipes();
 		Utilities.GChamberRecipes();
 		Gelatin.GelatinRecipes();
@@ -90,6 +90,7 @@ public void Init(FMLInitializationEvent event){
 		Gelatin.KrackenRecipes();
 		Gelatin.DragonRecipes();
 		Gelatin.HotSauceRecipes();
+		Ingredients.DistRecipes();
 		Ingredients.OrbRecipes();
 		Ingredients.SolutionRecipes();
 		Ingredients.IngRecipes();

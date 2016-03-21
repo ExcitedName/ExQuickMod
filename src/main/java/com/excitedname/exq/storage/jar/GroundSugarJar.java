@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ground;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -8,13 +8,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class PrimingPowderDish extends Item {
+public class GroundSugarJar extends Item {
 
-	public PrimingPowderDish(){
+	public GroundSugarJar(){
 		
-		this.setUnlocalizedName("Priming Powder Dish");
-		this.setTextureName("Priming Powder Dish");
-		this.setCreativeTab(Tabs.IngTab);		
+		this.setUnlocalizedName("Ground Sugar Jar");
+		this.setTextureName("Ground Sugar Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

@@ -1,4 +1,4 @@
-package com.excitedname.exq.gelatin.lamp;
+package com.excitedname.exq.utilities.lamp;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -17,7 +17,7 @@ public class GelatinLamp extends Block {
 
 		this.setBlockName("Gelatin Lamp");
 		this.setBlockTextureName("Gelatin Lamp");
-		this.setCreativeTab(Tabs.GelatinTab);
+		this.setCreativeTab(Tabs.UtilTab);
 		this.setHardness(0.01F);
 		this.setResistance(2000.0F);
 		this.setStepSound(soundTypeMetal);

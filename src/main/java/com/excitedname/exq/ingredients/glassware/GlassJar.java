@@ -23,7 +23,6 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 public class GlassJar extends Item {
 	
 	private Block isFull;
-    private static final String __OBFID = "CL_00000000";
 	
 	public GlassJar(Block Full){
 		

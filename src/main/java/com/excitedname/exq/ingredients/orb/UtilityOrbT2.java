@@ -18,7 +18,6 @@ public class UtilityOrbT2 extends Item {
 		
 		this.setUnlocalizedName("Utility Orb(Tier 2)");
 		this.setTextureName("Utility Orb(Tier 2)");
-		this.setCreativeTab(Tabs.IngTab);
     }
 	
 //Texture Icon

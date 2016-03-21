@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ground;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -8,13 +8,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class GroundRDXJar extends Item {
+public class GroundMeatJar extends Item {
 
-	public GroundRDXJar(){
+	public GroundMeatJar(){
 		
-		this.setUnlocalizedName("Ground RDX Jar");
-		this.setTextureName("Ground RDX Jar");
-		this.setCreativeTab(Tabs.IngTab);		
+		this.setUnlocalizedName("Ground Meat Jar");
+		this.setTextureName("Ground Meat Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

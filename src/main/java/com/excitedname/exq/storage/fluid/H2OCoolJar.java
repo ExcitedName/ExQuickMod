@@ -24,14 +24,12 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 public class H2OCoolJar extends Item {
 
 	private Block isFull;
-    private static final String __OBFID = "CL_00000000";
 	
 	public H2OCoolJar(Block flowingWater){
 		
 		this.setUnlocalizedName("Dihydrogen Monoxide Jar(Cool)");
 		this.setTextureName("Dihydrogen Monoxide Jar(Cool)");
 		this.setCreativeTab(Tabs.StorageTab);
-		this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingWater;
 	}
 	

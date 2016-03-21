@@ -1,9 +1,4 @@
-package com.excitedname.exq.gelatin.lamp;
-
-import static net.minecraftforge.common.util.ForgeDirection.EAST;
-import static net.minecraftforge.common.util.ForgeDirection.NORTH;
-import static net.minecraftforge.common.util.ForgeDirection.SOUTH;
-import static net.minecraftforge.common.util.ForgeDirection.WEST;
+package com.excitedname.exq.utilities.lamp;
 
 import java.util.Random;
 
@@ -19,17 +14,15 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.ForgeDirection;
 
-public class GelatinLampLuminant extends Block {
+public class GelatinLampSpectral extends Block {
 
-
-	public GelatinLampLuminant(Material material) {
+	public GelatinLampSpectral(Material material) {
 		super(material.iron);
 
-		this.setBlockName("Gelatin Lamp(Luminant)");
-		this.setBlockTextureName("Gelatin Lamp(Luminant)");
-		this.setCreativeTab(Tabs.GelatinTab);
+		this.setBlockName("Gelatin Lamp(Spectral)");
+		this.setBlockTextureName("Gelatin Lamp(Spectral)");
+		this.setCreativeTab(Tabs.UtilTab);
 		this.setHardness(0.01F);
 		this.setResistance(2000.0F);
 		this.setStepSound(soundTypeMetal);
@@ -41,6 +34,43 @@ public class GelatinLampLuminant extends Block {
 	public boolean isOpaqueCube() {
 		return false;
 	};
+	    
+	 @SideOnly(Side.CLIENT)
+	 public void randomDisplayTick(World p_149734_1_, int p_149734_2_, int p_149734_3_, int p_149734_4_, Random p_149734_5_)
+	    {
+	        int l = p_149734_1_.getBlockMetadata(p_149734_2_, p_149734_3_, p_149734_4_);
+	        double d0 = (double)((float)p_149734_2_ + 0.5F);
+	        double d1 = (double)((float)p_149734_3_ + 0.7F);
+	        double d2 = (double)((float)p_149734_4_ + 0.5F);
+	        double d3 = 0.2199999988079071D;
+	        double d4 = 0.27000001072883606D;
+
+	        if (l == 1)
+	        {
+	            p_149734_1_.spawnParticle("portal", d0 - d4, d1 + d3, d2, 0.0D, 0.0D, 0.0D);
+	            p_149734_1_.spawnParticle("flame", d2 - d4, d2 + d4, d2, 0.0D, 0.0D, 0.0D);
+	        }
+	        else if (l == 2)
+	        {
+	            p_149734_1_.spawnParticle("portal", d0 + d4, d1 + d3, d2, 0.0D, 0.0D, 0.0D);
+	            p_149734_1_.spawnParticle("flame", d2 - d4, d2 + d4, d2, 0.0D, 0.0D, 0.0D);
+	        }
+	        else if (l == 3)
+	        {
+	            p_149734_1_.spawnParticle("portal", d0, d1 + d3, d2 - d4, 0.0D, 0.0D, 0.0D);
+	            p_149734_1_.spawnParticle("flame", d0, d2 + d4, d3 - d4, 0.0D, 0.0D, 0.0D);
+	        }
+	        else if (l == 4)
+	        {
+	            p_149734_1_.spawnParticle("portal", d0, d1 + d3, d2 + d4, 0.0D, 0.0D, 0.0D);
+	            p_149734_1_.spawnParticle("flame", d0, d2 + d4, d3 - d4, 0.0D, 0.0D, 0.0D);
+	        }
+	        else
+	        {
+	            p_149734_1_.spawnParticle("portal", d0, d1, d2, 0.0D, 0.0D, 0.0D);
+	            p_149734_1_.spawnParticle("flame", d1, d2, d3, 0.0D, 0.0D, 0.0D);
+	        }
+	    }
 	 
 	//USEFUL changes the shape of the block micro block status.
 		

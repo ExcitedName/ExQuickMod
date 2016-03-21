@@ -431,7 +431,7 @@ public static void VanillaMaterial() {
 			"RGR",
 			"CCC",
 				
-				'G', Utilities.GChamberT2, 'C', Ingredients.GroundCharcoalJar, 'R', Ingredients.IronRod
+				'G', Utilities.GChamberT2, 'C', Storage.GroundCharcoalJar, 'R', Ingredients.IronRod
 		}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.blaze_rod, 2), new Object [] {
@@ -439,7 +439,7 @@ public static void VanillaMaterial() {
 			"RGR",
 			"C C",
 				
-				'G', Utilities.GChamberT3, 'C', Ingredients.GroundCharcoalJar, 'R', Ingredients.IronRod
+				'G', Utilities.GChamberT3, 'C', Storage.GroundCharcoalJar, 'R', Ingredients.IronRod
 		}));
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Items.blaze_rod, 3), new Object [] {
@@ -926,14 +926,14 @@ public static void VanillaMaterial() {
 			"P",
 			"J",
 				
-				'G', Utilities.PackUlater, 'J', Ingredients.GroundSugarJar
+				'G', Utilities.PackUlater, 'J', Storage.GroundSugarJar
 		}));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 8), new Object [] {
 			"G",
 			"J",
 				
-				'G', Utilities.GChamberT3, 'J', Ingredients.GroundSugarJar
+				'G', Utilities.GChamberT3, 'J', Storage.GroundSugarJar
 		}));
 		
 	}

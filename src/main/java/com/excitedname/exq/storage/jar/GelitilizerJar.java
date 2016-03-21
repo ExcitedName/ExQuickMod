@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ground;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -8,13 +8,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class PrimingPowderJar extends Item {
+public class GelitilizerJar extends Item {
 
-	public PrimingPowderJar(){
+	public GelitilizerJar(){
 		
-		this.setUnlocalizedName("Priming Powder Jar");
-		this.setTextureName("Priming Powder Jar");
-		this.setCreativeTab(Tabs.IngTab);		
+		this.setUnlocalizedName("Gelitilizer Jar");
+		this.setTextureName("Gelitilizer Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.material;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -7,19 +7,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
-public class CrystalIce extends Item {
+public class GroundCoalJar extends Item {
 
-public CrystalIce(){
+	public GroundCoalJar(){
 		
-		this.setUnlocalizedName("Crystal of Ice");
-		this.setTextureName("Crystal of Ice");
-		this.setCreativeTab(Tabs.IngTab);
-	}
-
-	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-		return true;
+		this.setUnlocalizedName("Ground Coal Jar");
+		this.setTextureName("Ground Coal Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

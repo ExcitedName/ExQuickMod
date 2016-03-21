@@ -15,7 +15,6 @@ public class UtilityGlassT3 extends Item {
 		
 		this.setUnlocalizedName("Utility Glass(Tier 3)");
 		this.setTextureName("Utility Glass(Tier 3)");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
 	public boolean hasEffect(ItemStack par1CrystalFire, int pass){

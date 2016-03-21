@@ -15,7 +15,6 @@ public GelatinAlloyDark(){
 		
 		this.setUnlocalizedName("Dark Gelatin Alloy");
 		this.setTextureName("Dark Gelatin Alloy");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 
 	public boolean hasEffect(ItemStack par1GelatinAlloyDark, int pass){

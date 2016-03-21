@@ -15,7 +15,6 @@ public class GelatinLilyVibrant extends Item {
 		
 		this.setUnlocalizedName("Gelatin Lily Vibrant");
 		this.setTextureName("Gelatin Lily Vibrant");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){

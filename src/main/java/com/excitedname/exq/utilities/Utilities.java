@@ -1,5 +1,6 @@
 package com.excitedname.exq.utilities;
 
+import com.excitedname.exq.gelatin.Gelatin;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ingredients.distilleries.Dist;
 import com.excitedname.exq.ingredients.glassware.GlassFunnel;
@@ -20,6 +21,9 @@ import com.excitedname.exq.ingredients.orb.UtilityOrbT3;
 import com.excitedname.exq.utilities.gchamber.GChamberT1;
 import com.excitedname.exq.utilities.gchamber.GChamberT2;
 import com.excitedname.exq.utilities.gchamber.GChamberT3;
+import com.excitedname.exq.utilities.lamp.GelatinLamp;
+import com.excitedname.exq.utilities.lamp.GelatinLampLuminant;
+import com.excitedname.exq.utilities.lamp.GelatinLampSpectral;
 import com.excitedname.exq.utilities.util.Barrel;
 import com.excitedname.exq.utilities.util.CeramicJuicer;
 import com.excitedname.exq.utilities.util.Distillery;
@@ -32,6 +36,8 @@ import com.excitedname.exq.utilities.util.Terrarium;
 import com.excitedname.exq.utilities.util.TheVat;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -64,7 +70,7 @@ public static void Util() {
 		Solidifier = new Solidifier();
 		GameRegistry.registerItem(Solidifier, "Solidifier");
 		
-		Distillery = new Distillery();
+		Distillery = new Distillery(Blocks.air);
 		GameRegistry.registerItem(Distillery, "Distillery");
 		
 		Terrarium = new Terrarium();
@@ -101,6 +107,28 @@ public static void GChamber() {
 	public static Item GChamberT1;
 	public static Item GChamberT2;
 	public static Item GChamberT3;
+	
+	
+public static void Lamp() {		
+		
+		GelatinLamp = new GelatinLamp(Material.iron);
+		GameRegistry.registerBlock(GelatinLamp, "Gelatin Lamp");
+
+		GelatinLampLuminant = new GelatinLampLuminant(Material.iron);
+		GameRegistry.registerBlock(GelatinLampLuminant, "Gelatin Lamp(Luminant)");
+		
+		GelatinLampSpectral = new GelatinLampSpectral(Material.iron);
+		GameRegistry.registerBlock(GelatinLampSpectral, "Gelatin Lamp(Spectral)");
+		
+		//ThrowableGelatinLampLuminant = new ThrowableGelatinLampLuminant();
+		//GameRegistry.registerItem(ThrowableGelatinLampLuminant, "ThrowableGelatinLamp.ID");
+		//EntityRegistry.registerModEntity(EntityThrowableGelatinLampLuminant.class, "Throwable Gelatin Lamp Luminant", 2, exqReference.MOD_ID, 80, 10, true);
+	}
+
+	public static Block GelatinLamp;
+	public static Block GelatinLampLuminant;
+	public static Block GelatinLampSpectral;
+	//public static Item ThrowableGelatinLampLuminant;
 		
 		
 
@@ -248,7 +276,34 @@ public static void GChamberRecipes() {
 				'O', Ingredients.GelatinOrbT3, 'I', Ingredients.GelatinAlloyDark, 'V', Ingredients.GelatinCrystalVibrant
 		});						
 	}
+
+
+public static void LampRecipes() {
+	//Gelatin Lamp
+		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLamp), new Object []{
+			"T",
+			"G",
+			
+				'G', Gelatin.GelatinCube, 'T', Blocks.torch
+		});	
 		
+	//Gelatin Lamp Luminant
+		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLampLuminant), new Object []{
+			"D",
+			"G",
+			
+				'G', Gelatin.GelatinCube, 'D', Items.glowstone_dust
+		});
+		
+	//Spectral Gelatin Lamp
+		GameRegistry.addShapedRecipe(new ItemStack(Utilities.GelatinLampSpectral), new Object []{
+			"D",
+			"G",
+			
+				'G', Gelatin.GelatinCube, 'D', Blocks.glowstone
+		});
+	}
+	
 }
 
 

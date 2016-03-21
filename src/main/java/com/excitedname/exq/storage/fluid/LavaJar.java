@@ -25,14 +25,12 @@ public class LavaJar extends Item {
 
 	private Item containerItem;
 	private Block isFull;
-    private static final String __OBFID = "CL_00000000";
 	
 	public LavaJar(Block flowingLava){
 		
 		this.setUnlocalizedName("Lava Jar");
 		this.setTextureName("Lava Jar");
 		this.setCreativeTab(Tabs.StorageTab);
-		this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingLava;
 	}
 	

@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.material;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -7,19 +7,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
-public class CrystalFire extends Item {
+public class GroundRDXJar extends Item {
 
-public CrystalFire(){
+	public GroundRDXJar(){
 		
-		this.setUnlocalizedName("Crystal of Fire");
-		this.setTextureName("Crystal of Fire");
-		this.setCreativeTab(Tabs.IngTab);
-	}
-
-	public boolean hasEffect(ItemStack par1CrystalFire, int pass){
-		return true;
+		this.setUnlocalizedName("Ground RDX Jar");
+		this.setTextureName("Ground RDX Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

@@ -1,4 +1,4 @@
-package com.excitedname.exq.gelatin.lamp;
+package com.excitedname.exq.utilities.lamp;
 //package com.excitedname.exq.gchamber.blocks;
 
 //import net.minecraft.item.Item;

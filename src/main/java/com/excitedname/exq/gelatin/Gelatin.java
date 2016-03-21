@@ -30,13 +30,13 @@ import com.excitedname.exq.gelatin.dish.NightVisionDish;
 import com.excitedname.exq.gelatin.dish.TorchDish;
 import com.excitedname.exq.gelatin.dish.TravellerDish;
 import com.excitedname.exq.gelatin.dish.WarriorDish;
-import com.excitedname.exq.gelatin.lamp.GelatinLamp;
-import com.excitedname.exq.gelatin.lamp.GelatinLampLuminant;
-import com.excitedname.exq.gelatin.lamp.GelatinLampSpectral;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
 import com.excitedname.exq.storage.Storage;
 import com.excitedname.exq.utilities.Utilities;
+import com.excitedname.exq.utilities.lamp.GelatinLamp;
+import com.excitedname.exq.utilities.lamp.GelatinLampLuminant;
+import com.excitedname.exq.utilities.lamp.GelatinLampSpectral;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -182,29 +182,6 @@ public static void Pearls() {
 
 	public static Item GelatinPearl;
 	public static Item GelatinPearlEnhanced;
-		
-	
-public static void Lamp() {		
-		
-		GelatinLamp = new GelatinLamp(Material.iron);
-		GameRegistry.registerBlock(GelatinLamp, "Gelatin Lamp");
-
-		GelatinLampLuminant = new GelatinLampLuminant(Material.iron);
-		GameRegistry.registerBlock(GelatinLampLuminant, "Gelatin Lamp(Luminant)");
-		
-		GelatinLampSpectral = new GelatinLampSpectral(Material.iron);
-		GameRegistry.registerBlock(GelatinLampSpectral, "Gelatin Lamp(Spectral)");
-		
-		//ThrowableGelatinLampLuminant = new ThrowableGelatinLampLuminant();
-		//GameRegistry.registerItem(ThrowableGelatinLampLuminant, "ThrowableGelatinLamp.ID");
-		//EntityRegistry.registerModEntity(EntityThrowableGelatinLampLuminant.class, "Throwable Gelatin Lamp Luminant", 2, exqReference.MOD_ID, 80, 10, true);
-	}
-
-	public static Block GelatinLamp;
-	public static Block GelatinLampLuminant;
-	public static Block GelatinLampSpectral;
-	//public static Item ThrowableGelatinLampLuminant;
-
 
 
 
@@ -872,34 +849,10 @@ public static void HotSauceRecipes() {
 	});
 }
 
-
-public static void LampRecipes() {
-	//Gelatin Lamp
-		GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinLamp), new Object []{
-			"T",
-			"G",
-			
-				'G', Gelatin.GelatinCube, 'T', Blocks.torch
-		});	
-		
-	//Gelatin Lamp Luminant
-		GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinLampLuminant), new Object []{
-			"D",
-			"G",
-			
-				'G', Gelatin.GelatinCube, 'D', Items.glowstone_dust
-		});
-		
-	//Spectral Gelatin Lamp
-		GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinLampSpectral), new Object []{
-			"D",
-			"G",
-			
-				'G', Gelatin.GelatinCube, 'D', Blocks.glowstone
-		});
-	}
-	
 }
+
+
+
 
 
 

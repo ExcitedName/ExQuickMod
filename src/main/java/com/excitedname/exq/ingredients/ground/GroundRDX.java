@@ -8,12 +8,12 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class WoodPulpJar extends Item {
-	
-public WoodPulpJar(){
+public class GroundRDX extends Item {
+
+	public GroundRDX(){
 		
-		this.setUnlocalizedName("Wood Pulp Jar");
-		this.setTextureName("Wood Pulp Jar");
+		this.setUnlocalizedName("Ground RDX");
+		this.setTextureName("Ground RDX");
 		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
@@ -26,5 +26,4 @@ public WoodPulpJar(){
 		itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
 			.substring(this.getUnlocalizedName().indexOf(".")+1));
 	}
-
 }

@@ -15,7 +15,6 @@ public class GelatinShardVibrant extends Item {
 		
 		this.setUnlocalizedName("Gelatin Shard Vibrant");
 		this.setTextureName("Gelatin Shard Vibrant");
-		this.setCreativeTab(Tabs.IngTab);
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){

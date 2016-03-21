@@ -15,7 +15,6 @@ public class GelatinOrbT3 extends Item {
 		
 		this.setUnlocalizedName("Gelatin Orb(Tier 3)");
 		this.setTextureName("Gelatin Orb(Tier 3)");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinPearl, int pass){

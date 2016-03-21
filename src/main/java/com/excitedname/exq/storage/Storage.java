@@ -49,16 +49,27 @@ import com.excitedname.exq.storage.jar.CreeperJar;
 import com.excitedname.exq.storage.jar.DragonJar;
 import com.excitedname.exq.storage.jar.ExplosiveJar;
 import com.excitedname.exq.storage.jar.GelatinJar;
+import com.excitedname.exq.storage.jar.GelitilizerJar;
+import com.excitedname.exq.storage.jar.GroundCharcoalJar;
+import com.excitedname.exq.storage.jar.GroundCoalJar;
+import com.excitedname.exq.storage.jar.GroundFlourJar;
+import com.excitedname.exq.storage.jar.GroundMarrowJar;
+import com.excitedname.exq.storage.jar.GroundMeatJar;
+import com.excitedname.exq.storage.jar.GroundRDXJar;
+import com.excitedname.exq.storage.jar.GroundSugarJar;
+import com.excitedname.exq.storage.jar.GroundTriliteJar;
 import com.excitedname.exq.storage.jar.HealthJar;
 import com.excitedname.exq.storage.jar.HotSauceJar;
 import com.excitedname.exq.storage.jar.IronSkinJar;
 import com.excitedname.exq.storage.jar.KrackenJar;
 import com.excitedname.exq.storage.jar.MinerJar;
 import com.excitedname.exq.storage.jar.NightVisionJar;
+import com.excitedname.exq.storage.jar.PrimingPowderJar;
 import com.excitedname.exq.storage.jar.SkeletonJar;
 import com.excitedname.exq.storage.jar.TorchJar;
 import com.excitedname.exq.storage.jar.TravellerJar;
 import com.excitedname.exq.storage.jar.WarriorJar;
+import com.excitedname.exq.storage.jar.WoodPulpJar;
 import com.excitedname.exq.storage.jar.ZombieJar;
 import com.excitedname.exq.utilities.Utilities;
 
@@ -73,24 +84,6 @@ public class Storage {
 
 public static void Jar() {
 		
-		H2OCoolJar = new H2OCoolJar(Blocks.flowing_water);
-		GameRegistry.registerItem(H2OCoolJar, "Dihydrogen Monoxide Jar(Cool)");
-		
-		H2OHotJar = new H2OHotJar();
-		GameRegistry.registerItem(H2OHotJar, "Dihydrogen Monoxide Jar(Hot)");
-		
-		AcidJar = new AcidJar();
-		GameRegistry.registerItem(AcidJar, "Acid Jar");
-		
-		PurifiedCollagenSolutionJar = new PurifiedCollagenSolutionJar();
-		GameRegistry.registerItem(PurifiedCollagenSolutionJar, "Purified Collagen Solution Jar");
-		
-		GelatinSolutionJar = new GelatinSolutionJar();
-		GameRegistry.registerItem(GelatinSolutionJar, "Gelatin Solution Jar");
-		
-		LavaJar = new LavaJar(Blocks.flowing_lava);
-		GameRegistry.registerItem(LavaJar, "Lava Jar");
-	
 		GelatinJar = new GelatinJar();
 		GameRegistry.registerItem(GelatinJar, "Gelatin Jar");
 		
@@ -135,15 +128,60 @@ public static void Jar() {
 		
 		ZombieJar = new ZombieJar();
 		GameRegistry.registerItem(ZombieJar, "Zombie Jar");
+	
+		GelitilizerJar = new GelitilizerJar();
+		GameRegistry.registerItem(GelitilizerJar, "Gelitilizer(Jar)");		
+		
+		GroundMarrowJar = new GroundMarrowJar();
+		GameRegistry.registerItem(GroundMarrowJar, "Ground Marrow Jar");
+		
+		GroundFlourJar = new GroundFlourJar();
+		GameRegistry.registerItem(GroundFlourJar, "Ground Flour Jar");
+		
+		GroundSugarJar = new GroundSugarJar();
+		GameRegistry.registerItem(GroundSugarJar, "Ground Sugar Jar");
+		
+		GroundCoalJar = new GroundCoalJar();
+		GameRegistry.registerItem(GroundCoalJar, "Ground Coal Jar");
+				
+		GroundCharcoalJar = new GroundCharcoalJar();
+		GameRegistry.registerItem(GroundCharcoalJar, "Ground Charcoal Jar");
+		
+		WoodPulpJar = new WoodPulpJar();
+		GameRegistry.registerItem(WoodPulpJar, "Wood Pulp Jar");
+		
+		PrimingPowderJar = new PrimingPowderJar();
+		GameRegistry.registerItem(PrimingPowderJar, "Priming Powder Jar");
+		
+		GroundTriliteJar = new GroundTriliteJar();
+		GameRegistry.registerItem(GroundTriliteJar, "Ground Trilite Jar");
+		
+		GroundRDXJar = new GroundRDXJar();
+		GameRegistry.registerItem(GroundRDXJar, "Ground RDX Jar");
+		
+		GroundMeatJar = new GroundMeatJar();
+		GameRegistry.registerItem(GroundMeatJar, "Ground Meat Jar");
+	
+		H2OCoolJar = new H2OCoolJar(Blocks.flowing_water);
+		GameRegistry.registerItem(H2OCoolJar, "Dihydrogen Monoxide Jar(Cool)");
+		
+		H2OHotJar = new H2OHotJar();
+		GameRegistry.registerItem(H2OHotJar, "Dihydrogen Monoxide Jar(Hot)");
+		
+		AcidJar = new AcidJar();
+		GameRegistry.registerItem(AcidJar, "Acid Jar");
+		
+		PurifiedCollagenSolutionJar = new PurifiedCollagenSolutionJar();
+		GameRegistry.registerItem(PurifiedCollagenSolutionJar, "Purified Collagen Solution Jar");
+		
+		GelatinSolutionJar = new GelatinSolutionJar();
+		GameRegistry.registerItem(GelatinSolutionJar, "Gelatin Solution Jar");
+		
+		LavaJar = new LavaJar(Blocks.flowing_lava);
+		GameRegistry.registerItem(LavaJar, "Lava Jar");
 		
 	}
 	
-	public static Item H2OCoolJar;
-	public static Item H2OHotJar;
-	public static Item AcidJar;
-	public static Item PurifiedCollagenSolutionJar;
-	public static Item GelatinSolutionJar;
-	public static Item LavaJar;
 	public static Item GelatinJar;
 	public static Item MinerJar;
 	public static Item TravellerJar;
@@ -159,35 +197,23 @@ public static void Jar() {
 	public static Item CreeperJar;
 	public static Item SkeletonJar;
 	public static Item ZombieJar;
-	
-	
-public static void Vat() {
-	
-	H2OCoolVat = new H2OCoolVat();
-	GameRegistry.registerItem(H2OCoolVat, "Vat(Cool H2O)");
-	
-	H2OHotVat = new H2OHotVat();
-	GameRegistry.registerItem(H2OHotVat, "Vat(Hot H2O)");
-	
-	AcidVat = new AcidVat();
-	GameRegistry.registerItem(AcidVat, "Acid Vat");
-	
-	PurifiedCollagenSolutionVat = new PurifiedCollagenSolutionVat();
-	GameRegistry.registerItem(PurifiedCollagenSolutionVat, "Purified Collagen Solution Vat");
-	
-	GelatinSolutionVat = new GelatinSolutionVat();
-	GameRegistry.registerItem(GelatinSolutionVat, "Gelatin Solution Vat");
-	
-	LavaVat = new LavaVat();
-	GameRegistry.registerItem(LavaVat, "Lava Vat");
-}
-	
-	public static Item H2OCoolVat;
-	public static Item H2OHotVat;
-	public static Item AcidVat;
-	public static Item PurifiedCollagenSolutionVat;
-	public static Item GelatinSolutionVat;
-	public static Item LavaVat;
+	public static Item GelitilizerJar;
+	public static Item GroundMarrowJar;
+	public static Item GroundFlourJar;
+	public static Item GroundSugarJar;
+	public static Item GroundCoalJar;
+	public static Item GroundCharcoalJar;
+	public static Item WoodPulpJar;
+	public static Item PrimingPowderJar;	
+	public static Item GroundTriliteJar;	
+	public static Item GroundRDXJar;		
+	public static Item GroundMeatJar;
+	public static Item H2OCoolJar;
+	public static Item H2OHotJar;
+	public static Item AcidJar;
+	public static Item PurifiedCollagenSolutionJar;
+	public static Item GelatinSolutionJar;
+	public static Item LavaJar;
 
 	
 public static void Barrel() {
@@ -237,24 +263,6 @@ public static void Barrel() {
 		ZombieBarrel = new ZombieBarrel();
 		GameRegistry.registerItem(ZombieBarrel, "Zombie Barrel");
 		
-		GlassBarrel = new GlassBarrel();
-		GameRegistry.registerItem(GlassBarrel, "Glass Barrel");	
-		
-		FeatherBarrel = new FeatherBarrel();
-		GameRegistry.registerItem(FeatherBarrel, "Feather Barrel");
-		
-		BoneBarrel = new BoneBarrel();
-		GameRegistry.registerItem(BoneBarrel, "Bone Barrel");
-		
-		CrackedBarrel = new CrackedBarrel();
-		GameRegistry.registerItem(CrackedBarrel, "Cracked Barrel");
-		
-		LilyBarrel = new LilyBarrel();
-		GameRegistry.registerItem(LilyBarrel, "Lily Barrel");
-		
-		LilyVibrantBarrel = new LilyVibrantBarrel();
-		GameRegistry.registerItem(LilyVibrantBarrel, "Lily Vibrant Barrel");
-				
 		GelitizerBarrel = new GelitizerBarrel();
 		GameRegistry.registerItem(GelitizerBarrel, "Gelitizer Barrel");				
 			
@@ -284,6 +292,24 @@ public static void Barrel() {
 		
 		GroundMeatBarrel = new GroundMeatBarrel();
 		GameRegistry.registerItem(GroundMeatBarrel, "Ground Meat Barrel");
+		
+		GlassBarrel = new GlassBarrel();
+		GameRegistry.registerItem(GlassBarrel, "Glass Barrel");	
+		
+		FeatherBarrel = new FeatherBarrel();
+		GameRegistry.registerItem(FeatherBarrel, "Feather Barrel");
+		
+		BoneBarrel = new BoneBarrel();
+		GameRegistry.registerItem(BoneBarrel, "Bone Barrel");
+		
+		CrackedBarrel = new CrackedBarrel();
+		GameRegistry.registerItem(CrackedBarrel, "Cracked Barrel");
+		
+		LilyBarrel = new LilyBarrel();
+		GameRegistry.registerItem(LilyBarrel, "Lily Barrel");
+		
+		LilyVibrantBarrel = new LilyVibrantBarrel();
+		GameRegistry.registerItem(LilyVibrantBarrel, "Lily Vibrant Barrel");
 	
 	}
 	
@@ -302,12 +328,6 @@ public static void Barrel() {
 	public static Item CreeperBarrel;
 	public static Item SkeletonBarrel;	
 	public static Item ZombieBarrel;
-	public static Item GlassBarrel;	
-	public static Item FeatherBarrel;	
-	public static Item BoneBarrel;
-	public static Item CrackedBarrel;
-	public static Item LilyBarrel;	
-	public static Item LilyVibrantBarrel;
 	public static Item GelitizerBarrel;
 	public static Item GroundMarrowBarrel;
 	public static Item GroundFlourBarrel;
@@ -317,9 +337,43 @@ public static void Barrel() {
 	public static Item PrimingPowderBarrel;		//
 	public static Item GroundTriliteBarrel;		//
 	public static Item GroundRDXBarrel;			//
-	public static Item GroundMeatBarrel;		//
+	public static Item GroundMeatBarrel;
+	public static Item GlassBarrel;	
+	public static Item FeatherBarrel;	
+	public static Item BoneBarrel;
+	public static Item CrackedBarrel;
+	public static Item LilyBarrel;	
+	public static Item LilyVibrantBarrel;
 	
 	
+public static void Vat() {
+	
+	H2OCoolVat = new H2OCoolVat();
+	GameRegistry.registerItem(H2OCoolVat, "Vat(Cool H2O)");
+	
+	H2OHotVat = new H2OHotVat();
+	GameRegistry.registerItem(H2OHotVat, "Vat(Hot H2O)");
+	
+	AcidVat = new AcidVat();
+	GameRegistry.registerItem(AcidVat, "Acid Vat");
+	
+	PurifiedCollagenSolutionVat = new PurifiedCollagenSolutionVat();
+	GameRegistry.registerItem(PurifiedCollagenSolutionVat, "Purified Collagen Solution Vat");
+	
+	GelatinSolutionVat = new GelatinSolutionVat();
+	GameRegistry.registerItem(GelatinSolutionVat, "Gelatin Solution Vat");
+	
+	LavaVat = new LavaVat();
+	GameRegistry.registerItem(LavaVat, "Lava Vat");
+}
+	
+	public static Item H2OCoolVat;
+	public static Item H2OHotVat;
+	public static Item AcidVat;
+	public static Item PurifiedCollagenSolutionVat;
+	public static Item GelatinSolutionVat;
+	public static Item LavaVat;
+		
 	
 	
 //Recipes
@@ -1203,7 +1257,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.GroundCharcoalJar
+				'P', Utilities.PackUlater, 'J', Storage.GroundCharcoalJar
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.CharcoalBarrel), new Object []{
@@ -1211,7 +1265,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.GroundCharcoalJar
+				'G', Utilities.GChamberT3, 'J', Storage.GroundCharcoalJar
 		});
 		
 		
@@ -1257,7 +1311,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.GelitilizerJar
+				'P', Utilities.PackUlater, 'J', Storage.GelitilizerJar
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.GelitizerBarrel), new Object []{
@@ -1265,7 +1319,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.GelitilizerJar
+				'G', Utilities.GChamberT3, 'J', Storage.GelitilizerJar
 		});
 		
 		
@@ -1293,7 +1347,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.GroundFlourJar
+				'P', Utilities.PackUlater, 'J', Storage.GroundFlourJar
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundFlourBarrel), new Object []{
@@ -1301,7 +1355,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.GroundFlourJar
+				'G', Utilities.GChamberT3, 'J', Storage.GroundFlourJar
 		});
 		
 		
@@ -1311,7 +1365,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.GroundMarrowJar
+				'P', Utilities.PackUlater, 'J', Storage.GroundMarrowJar
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundMarrowBarrel), new Object []{
@@ -1319,7 +1373,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.GroundMarrowJar
+				'G', Utilities.GChamberT3, 'J', Storage.GroundMarrowJar
 		});
 		
 		
@@ -1329,7 +1383,7 @@ public static void BarrelRecipes() {
 			"JPJ",
 			"JJJ",
 			
-				'P', Utilities.PackUlater, 'J', Ingredients.GroundSugarJar
+				'P', Utilities.PackUlater, 'J', Storage.GroundSugarJar
 		});
 		
 		GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundSugarBarrel), new Object []{
@@ -1337,7 +1391,7 @@ public static void BarrelRecipes() {
 			"JGJ",
 			"JJJ",
 			
-				'G', Utilities.GChamberT3, 'J', Ingredients.GroundSugarJar
+				'G', Utilities.GChamberT3, 'J', Storage.GroundSugarJar
 		});
 		
 	//Feather

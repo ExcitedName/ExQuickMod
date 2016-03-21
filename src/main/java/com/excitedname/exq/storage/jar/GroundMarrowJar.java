@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ground;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -14,7 +14,7 @@ public class GroundMarrowJar extends Item {
 		
 		this.setUnlocalizedName("Ground Marrow Jar");
 		this.setTextureName("Ground Marrow Jar");
-		this.setCreativeTab(Tabs.IngTab);		
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

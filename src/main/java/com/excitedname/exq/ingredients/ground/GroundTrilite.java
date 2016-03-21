@@ -8,12 +8,12 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class GroundSugarJar extends Item {
+public class GroundTrilite extends Item {
 
-	public GroundSugarJar(){
+	public GroundTrilite(){
 		
-		this.setUnlocalizedName("Ground Sugar Jar");
-		this.setTextureName("Ground Sugar Jar");
+		this.setUnlocalizedName("Ground Trilite");
+		this.setTextureName("Ground Trilite");
 		this.setCreativeTab(Tabs.IngTab);		
 	}
 	

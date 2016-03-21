@@ -8,12 +8,12 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class GroundFlourJar extends Item {
+public class PrimingPowder extends Item {
 
-	public GroundFlourJar(){
+	public PrimingPowder(){
 		
-		this.setUnlocalizedName("Ground Flour Jar");
-		this.setTextureName("Ground Flour Jar");
+		this.setUnlocalizedName("Priming Powder");
+		this.setTextureName("Priming Powder");
 		this.setCreativeTab(Tabs.IngTab);		
 	}
 	

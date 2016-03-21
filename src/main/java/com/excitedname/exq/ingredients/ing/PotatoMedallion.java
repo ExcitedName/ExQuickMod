@@ -15,7 +15,6 @@ public class PotatoMedallion extends Item {
 		
 		this.setUnlocalizedName("Potato Medallion");
 		this.setTextureName("Potato Medallion");
-		this.setCreativeTab(Tabs.IngTab);
 		this.setMaxStackSize(1);
 	}
 	

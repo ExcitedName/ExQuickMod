@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.ground;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
@@ -8,13 +8,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class GroundTriliteDish extends Item {
+public class GroundTriliteJar extends Item {
 
-	public GroundTriliteDish(){
+	public GroundTriliteJar(){
 		
-		this.setUnlocalizedName("Ground Trilite Dish");
-		this.setTextureName("Ground Trilite Dish");
-		this.setCreativeTab(Tabs.IngTab);		
+		this.setUnlocalizedName("Ground Trilite Jar");
+		this.setTextureName("Ground Trilite Jar");
+		this.setCreativeTab(Tabs.StorageTab);		
 	}
 	
 //Texture Icon

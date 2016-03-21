@@ -14,7 +14,6 @@ public class GelatinOrbT2 extends Item {
 		
 		this.setUnlocalizedName("Gelatin Orb(Tier 2)");
 		this.setTextureName("Gelatin Orb(Tier 2)");
-		this.setCreativeTab(Tabs.IngTab);		
 	}
 	
 //Texture Icon
