@@ -28,11 +28,10 @@ public class MinerDish extends Item {
 			this.setUnlocalizedName("Miner Dish");
 			this.setTextureName("Miner Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
-			//this.setContainerItem(Ingredients.GlassDish);
 			this.setFirstPotionEffect(Potion.digSpeed.id, 20, 2, 1F);
 			
 		}
-				
+		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
 			super.onEaten(par1ItemStack,  par2World,  par3EntityPlayer);
 			
@@ -44,7 +43,7 @@ public class MinerDish extends Item {
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
 				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
 			}
-						
+			
 			return par1ItemStack;
 	    }
 		
@@ -63,15 +62,12 @@ public class MinerDish extends Item {
 	    	if (!par3EntityPlayer.capabilities.isCreativeMode)
 	        {
 	            --par1ItemStack.stackSize;
-	        }
-			
-			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
-			}
 			
 	    	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
 	        return par1ItemStack;
-	        
+	        }
+	    	
+			return par1ItemStack;
 		}
 		
 		public MinerDish setFirstPotionEffect(int par1, int par2, int par3, float par4){
