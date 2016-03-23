@@ -55,6 +55,8 @@ public void preInit(FMLPreInitializationEvent event){
 		Storage.Jar();
 		Storage.Barrel();
 		Storage.Vat();
+		
+		
 				
 		
 	//Logger
@@ -104,6 +106,7 @@ public void Init(FMLInitializationEvent event){
 		Storage.IronSkinJarRecipes();
 		Storage.WarriorJarRecipes();
 		Storage.HealthJarRecipes();
+		Storage.HotSauceJarRecipes();
 		Storage.NVisionJarRecipes();
 		Storage.TorchJarRecipes();
 		Storage.ExplosiveJarRecipes();

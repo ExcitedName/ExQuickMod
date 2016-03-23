@@ -200,7 +200,7 @@ public static void UtilRecipes(){
 			'I', Items.iron_ingot, 'G', "paneGlass"
 	}));
 	
-//The Vat
+//Barrel
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Barrel, 8), new Object [] {
 		"P P",
 		"R R",

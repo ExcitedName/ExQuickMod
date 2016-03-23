@@ -384,46 +384,17 @@ public static void GelatinJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.GelatinCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.GelatinCube
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.GelatinJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.GelatinCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.GelatinJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.GelatinBarrel
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.GelatinJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.GelatinBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.GelatinJar, 8),
+			Storage.GelatinBarrel);
 	
 }
 	
 
 public static void MinerJarRecipes() {
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar), new Object []{
-		"CCC",
-		"CPC",
-		"CCC",
-		
-			'P', Utilities.PackUlater, 'C', Gelatin.MinerCube
-	});
-	
+			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.MinerJar), new Object []{
 		"CCC",
 		"CJC",
@@ -469,24 +440,11 @@ public static void TravellerJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.TravellerDish.setContainerItem(Ingredients.GlassDish)
-	});
-
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TravellerJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.TravellerBarrel
+			'G', Ingredients.GlassJar, 'D', Gelatin.TravellerDish.setContainerItem(Ingredients.GlassDish)
 	});
 		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TravellerJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.TravellerBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.TravellerJar, 8),
+			Storage.TravellerBarrel);
 	
 }
 	
@@ -514,24 +472,11 @@ public static void IronSkinJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.IronSkinDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.IronSkinDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.IronSkinJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.IronSkinBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.IronSkinJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.IronSkinBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.IronSkinJar, 8),
+			Storage.IronSkinBarrel);
 	
 }
 
@@ -559,24 +504,11 @@ public static void WarriorJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.WarriorDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.WarriorDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.WarriorJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.WarriorBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.WarriorJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.WarriorBarrel
-	});	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.WarriorJar, 8),
+			Storage.WarriorBarrel);
 	
 }
 
@@ -604,24 +536,43 @@ public static void HealthJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.HealthDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.HealthDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.HealthJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.HealthJar, 8),
+			Storage.HealthBarrel);
+	
+}
+
+
+public static void HotSauceJarRecipes() {
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceJar), new Object []{
+		"CCC",
+		"CPC",
+		"CCC",
 		
-			'P', Utilities.PackUlater, 'B', Storage.HealthBarrel
+			'P', Ingredients.GlassJar, 'C', Gelatin.HotSauceCube
 	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceJar), new Object []{
+		"CCC",
+		"CGC",
+		"CCC",
 		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.HealthJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.HealthBarrel
+			'G', Ingredients.GlassJar, 'C', Gelatin.HotSauceCube
 	});
+			
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceJar), new Object []{
+		"DDD",
+		"DGD",
+		"DDD",
+		
+			'G', Ingredients.GlassJar, 'D', Gelatin.HotSauceDish.setContainerItem(Ingredients.GlassDish)
+	});
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.HotSauceJar, 8),
+			Storage.HotSauceBarrel);
 	
 }
 
@@ -649,24 +600,11 @@ public static void NVisionJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.NightVisionDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.NightVisionDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.NightVisionJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.NightVisionBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.NightVisionJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.NightVisionBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.NightVisionJar, 8),
+			Storage.NightVisionBarrel);
 	
 }
 
@@ -694,24 +632,11 @@ public static void TorchJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.TorchDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.TorchDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TorchJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.TorchBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TorchJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.TorchBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.TorchJar, 8),
+			Storage.TorchBarrel);
 	
 }
 
@@ -739,24 +664,11 @@ public static void ExplosiveJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.ExplosiveDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.ExplosiveDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.ExplosiveJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.ExplosiveBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.ExplosiveJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.ExplosiveBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.ExplosiveJar, 8),
+			Storage.ExplosiveBarrel);
 	
 }
 
@@ -784,24 +696,11 @@ public static void KrackenJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.KrackenDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.KrackenDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.KrackenJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.KrackenBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.KrackenJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.KrackenBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.KrackenJar, 8),
+			Storage.KrackenBarrel);
 	
 }
 
@@ -829,24 +728,11 @@ public static void DragonJarRecipes() {
 		"DGD",
 		"DDD",
 		
-			'G', Utilities.GChamberT3, 'D', Gelatin.DragonDish.setContainerItem(Ingredients.GlassDish)
+			'G', Ingredients.GlassJar, 'D', Gelatin.DragonDish.setContainerItem(Ingredients.GlassDish)
 	});
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.DragonJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.DragonBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.DragonJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.DragonBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.DragonJar, 8),
+			Storage.DragonBarrel);
 	
 }
 
@@ -880,21 +766,8 @@ public static void CreeperJarRecipes() {
 			'H', Ingredients.CreeperSolution, 'C', "dustCharcoal"
 	}));
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.CreeperJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.CreeperBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.CreeperJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.CreeperBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.CreeperJar, 8),
+			Storage.CreeperBarrel);
 	
 }
 
@@ -928,21 +801,8 @@ public static void SkeletonJarRecipes() {
 			'H', Ingredients.SkeletonSolution, 'C', "dustCharcoal"
 	}));
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.SkeletonJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.SkeletonBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.SkeletonJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.SkeletonBarrel
-	});	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.SkeletonJar, 8),
+			Storage.SkeletonBarrel);
 	
 }
 
@@ -976,21 +836,8 @@ public static void ZombieJarRecipes() {
 			'H', Ingredients.ZombieSolution, 'C', "dustCharcoal"
 	}));
 
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.ZombieJar, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.ZombieBarrel
-	});
-		
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.ZombieJar, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.ZombieBarrel
-	});	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.ZombieJar, 8),
+			Storage.ZombieBarrel);
 	
 }
 
