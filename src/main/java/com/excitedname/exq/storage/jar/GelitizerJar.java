@@ -1,4 +1,4 @@
-package com.excitedname.exq.ingredients.solution;
+package com.excitedname.exq.storage.jar;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ingredients.Ingredients;
@@ -9,13 +9,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class MinerSolution extends Item {
+public class GelitizerJar extends Item {
 
-	public MinerSolution(){
+	public GelitizerJar(){
 		
-		this.setUnlocalizedName("Miner Solution");
-		this.setTextureName("Miner Solution");
-		this.setCreativeTab(Tabs.GelatinTab);
+		this.setUnlocalizedName("Gelitizer Jar");
+		this.setTextureName("Gelitizer Jar");
+		this.setCreativeTab(Tabs.StorageTab);	
+		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
 //Texture Icon

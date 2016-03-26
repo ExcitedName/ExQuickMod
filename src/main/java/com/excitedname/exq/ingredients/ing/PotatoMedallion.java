@@ -18,6 +18,10 @@ public class PotatoMedallion extends Item {
 		this.setMaxStackSize(1);
 	}
 	
+	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
+		return true;
+	}
+	
 	public boolean doesContainerItemLeaveCraftingGrid(ItemStack itemstack) {
 		return false;
 	}

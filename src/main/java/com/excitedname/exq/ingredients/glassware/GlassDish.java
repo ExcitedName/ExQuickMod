@@ -22,6 +22,7 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 
 public class GlassDish extends Item {
 	
+	
 	public GlassDish(){
 		
 		this.setUnlocalizedName("Glass Dish");

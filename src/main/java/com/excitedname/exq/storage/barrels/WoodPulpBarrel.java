@@ -1,22 +1,22 @@
-package com.excitedname.exq.storage.jar;
+package com.excitedname.exq.storage.barrels;
 
 import com.excitedname.exq.creativetabs.Tabs;
-import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
+import com.excitedname.exq.utilities.Utilities;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 
-public class GelitilizerJar extends Item {
+public class WoodPulpBarrel extends Item {
 
-	public GelitilizerJar(){
+public WoodPulpBarrel(){
 		
-		this.setUnlocalizedName("Gelitilizer Jar");
-		this.setTextureName("Gelitilizer Jar");
-		this.setCreativeTab(Tabs.StorageTab);	
-		this.setContainerItem(Ingredients.GlassJar);
+		this.setUnlocalizedName("Wood Pulp Barrel");
+		this.setTextureName("Wood Pulp Barrel");
+		this.setCreativeTab(Tabs.StorageTab);
+		this.setContainerItem(Utilities.Barrel);
 	}
 	
 //Texture Icon
@@ -28,4 +28,5 @@ public class GelitilizerJar extends Item {
 		itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
 			.substring(this.getUnlocalizedName().indexOf(".")+1));
 	}
+	
 }

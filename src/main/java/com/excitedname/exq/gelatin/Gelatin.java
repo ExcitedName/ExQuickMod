@@ -31,6 +31,7 @@ import com.excitedname.exq.gelatin.dish.TorchDish;
 import com.excitedname.exq.gelatin.dish.TravellerDish;
 import com.excitedname.exq.gelatin.dish.WarriorDish;
 import com.excitedname.exq.ingredients.Ingredients;
+import com.excitedname.exq.ingredients.glassware.GlassDish;
 import com.excitedname.exq.ref.Ref;
 import com.excitedname.exq.storage.Storage;
 import com.excitedname.exq.utilities.Utilities;
@@ -49,10 +50,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class Gelatin {		
-	
-	
-
-	
+			
 	
 public static void Cube() {
 	
@@ -246,8 +244,6 @@ public static void GelatinRecipes() {
 	
 public static void MinerRecipes() {
 	
-	ItemStack dishStack = new ItemStack(Ingredients.GlassDish, 8);
-	
 	//Cube
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerCube, 8), new Object []{
 		"   ",
@@ -255,7 +251,7 @@ public static void MinerRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
+			'H', Ingredients.MinerSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerCube, 8), new Object []{
@@ -285,20 +281,29 @@ public static void MinerRecipes() {
 			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
 	}));
 	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerDish, 8), 
-		"   ",
-		"HGM",
-		"HCS",
-		
-			'G', Utilities.GChamberT3, 'M', dishStack, 'S', Storage.GelatinSolutionJar, 
-			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
-	));
-	
 
 	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.MinerCube, 8),
 			Storage.MinerJar);
 
-	//Dish		
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerDish), new Object []{
+		"   ",
+		"HGM",
+		" CS",
+		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
+		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.MinerDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -319,7 +324,7 @@ public static void TravellerRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.TravellerSolution, 'C', "dustCharcoal"
+			'H', Ingredients.TravellerSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TravellerCube, 8), new Object []{
@@ -352,9 +357,26 @@ public static void TravellerRecipes() {
 
 	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.TravellerCube, 8),
 			Storage.TravellerJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TravellerDish), new Object []{
+		"   ",
+		"HGM",
+		" CS",
 		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.TravellerSolution, 'C', "dustCharcoal"
+	}));
 	
-	//Dish		
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TravellerDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
+		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.TravellerSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.TravellerDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -363,7 +385,7 @@ public static void TravellerRecipes() {
 			'J', Storage.TravellerJar, 'D', Ingredients.GlassDish
 	});
 		
-	}
+}
 
 
 public static void IronSkinRecipes() {
@@ -375,7 +397,7 @@ public static void IronSkinRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.IronSkinSolution, 'C', "dustCharcoal"
+			'H', Ingredients.IronSkinSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.IronSkinCube, 8), new Object []{
@@ -404,24 +426,30 @@ public static void IronSkinRecipes() {
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.IronSkinSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.IronSkinCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.IronSkinJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.IronSkinCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.IronSkinCube, 8),
+			Storage.IronSkinJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.IronSkinDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.IronSkinJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.IronSkinSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.IronSkinDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.IronSkinSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.IronSkinDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -442,7 +470,7 @@ public static void WarriorRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.WarriorSolution, 'C', "dustCharcoal"
+			'H', Ingredients.WarriorSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.WarriorCube, 8), new Object []{
@@ -471,24 +499,30 @@ public static void WarriorRecipes() {
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.WarriorSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.WarriorCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.WarriorJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.WarriorCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.WarriorCube, 8),
+			Storage.WarriorJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.WarriorDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.WarriorJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.WarriorSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.WarriorDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.WarriorSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.WarriorDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -509,7 +543,7 @@ public static void HealthRecipes () {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.HealthSolution, 'C', "dustCharcoal"
+			'H', Ingredients.HealthSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HealthCube, 8), new Object []{
@@ -538,24 +572,30 @@ public static void HealthRecipes () {
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HealthSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HealthCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.HealthJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HealthCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.HealthCube, 8),
+			Storage.HealthJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HealthDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.HealthJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.HealthSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HealthDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.HealthSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HealthDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -576,7 +616,7 @@ public static void NightVisionRecipes()	{
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.NightVisionSolution, 'C', "dustCharcoal"
+			'H', Ingredients.NightVisionSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.NightVisionCube, 8), new Object []{
@@ -605,31 +645,37 @@ public static void NightVisionRecipes()	{
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.NightVisionSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.NightVisionCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.NightVisionJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.NightVisionCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.NightVisionCube, 8),
+			Storage.NightVisionJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.NightVisionDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.NightVisionJar
-	});
-			
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.NightVisionSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.NightVisionDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
+		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.NightVisionSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.NightVisionDish, 8), new Object []{
 		"DDD",
 		"DJD",
 		"DDD",
 		
 			'J', Storage.NightVisionJar, 'D', Ingredients.GlassDish
-	});	
+	});
 	
 	GameRegistry.addSmelting(Storage.NightVisionJar, new ItemStack(Items.quartz),  0.5F);
 	
@@ -645,7 +691,7 @@ public static void TorchRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.TorchSolution, 'C', "dustCharcoal"
+			'H', Ingredients.TorchSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TorchCube, 8), new Object []{
@@ -674,31 +720,37 @@ public static void TorchRecipes() {
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.TorchSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.TorchCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.TorchJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.TorchCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.TorchCube, 8),
+			Storage.TorchJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TorchDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.TorchJar
-	});
-			
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.TorchSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TorchDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
+		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.TorchSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.TorchDish, 8), new Object []{
 		"DDD",
 		"DJD",
 		"DDD",
 		
 			'J', Storage.TorchJar, 'D', Ingredients.GlassDish
-	});	
+	});
 	
 }
 
@@ -712,7 +764,7 @@ public static void ExplosiveRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.CompBSolution, 'C', "dustCharcoal"
+			'H', Ingredients.CompBSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.ExplosiveCube, 8), new Object []{
@@ -741,24 +793,30 @@ public static void ExplosiveRecipes() {
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.CompBSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.ExplosiveCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.ExplosiveJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.ExplosiveCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.ExplosiveCube, 8),
+			Storage.ExplosiveJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.ExplosiveDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.ExplosiveJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.CompBSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.ExplosiveDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.CompBSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.ExplosiveDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -779,7 +837,7 @@ public static void KrackenRecipes()	{
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.KrackenSolution, 'C', "dustCharcoal"
+			'H', Ingredients.KrackenSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.KrackenCube, 8), new Object []{
@@ -808,31 +866,37 @@ public static void KrackenRecipes()	{
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.KrackenSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.KrackenCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.KrackenJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.KrackenCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.KrackenCube, 8),
+			Storage.KrackenJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.KrackenDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.KrackenJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.KrackenSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.KrackenDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.KrackenSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.KrackenDish, 8), new Object []{
 		"DDD",
 		"DJD",
 		"DDD",
 		
 			'J', Storage.KrackenJar, 'D', Ingredients.GlassDish
-	});	
+	});
 		
 }
 
@@ -846,7 +910,7 @@ public static void DragonRecipes()	{
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
-			'H', Ingredients.DragonSolution, 'C', "dustCharcoal"
+			'H', Ingredients.DragonSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.DragonCube, 8), new Object []{
@@ -875,24 +939,30 @@ public static void DragonRecipes()	{
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.DragonSolution, 'C', "dustCharcoal"
 	}));
-
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.DragonCube, 8), new Object []{
-		"   ",
-		" P ",
-		" J ",
-		
-			'P', Utilities.PackUlater, 'J', Storage.DragonJar
-	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.DragonCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.DragonCube, 8),
+			Storage.DragonJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.DragonDish), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.DragonJar
-	});
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.DragonSolution, 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.DragonDish, 2), new Object []{
+		"   ",
+		"HGM",
+		"HCS",
 		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.DragonSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.DragonDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -915,6 +985,15 @@ public static void HotSauceRecipes() {
 		" CG",
 		
 			'S', Utilities.Solidifier, 'M', Ingredients.GlassGelatinMold, 'G', Storage.GelatinSolutionJar, 
+			'H', Ingredients.HotSauceSolution.setContainerItem(Ingredients.GlassBottle), 'C', "dustCharcoal"
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
+		"   ",
+		"HGM",
+		" CS",
+		
+			'G', Utilities.GChamberT2, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -923,16 +1002,7 @@ public static void HotSauceRecipes() {
 		"HGM",
 		" CS",
 		
-			'G', Utilities.GChamberT2, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
-			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
-	}));
-	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
-		"   ",
-		"HGM",
-		" CS",
-		
-			'G', Utilities.GChamberT3, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -941,27 +1011,33 @@ public static void HotSauceRecipes() {
 		"HGM",
 		"HCS",
 		
-			'G', Utilities.GChamberT3, 'B', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Storage.GelatinSolutionJar, 
 			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
 	}));
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
+
+	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.HotSauceCube, 8),
+			Storage.HotSauceJar);
+
+	//Dish	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceDish), new Object []{
 		"   ",
-		" P ",
-		" J ",
+		"HGM",
+		" CS",
 		
-			'P', Utilities.PackUlater, 'J', Storage.HotSauceJar
-	});	
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
+	}));
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceDish, 2), new Object []{
 		"   ",
-		" G ",
-		" J ",
+		"HGM",
+		"HCS",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.HotSauceJar
-	});
-		
-	//Dish		
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal"
+	}));
+	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HotSauceDish, 8), new Object []{
 		"DDD",
 		"DJD",
@@ -996,8 +1072,8 @@ public static void JuiceRecipes() {
 			'J', Utilities.GChamberT2, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
 	});
 	
-	GameRegistry.addRecipe(new ItemStack(Gelatin.GelatinJuice, 2), new Object []{
-		"GBG",
+	GameRegistry.addRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
+		"GFG",
 		"FJF",
 		"GBG",
 		

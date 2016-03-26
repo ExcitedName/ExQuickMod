@@ -19,6 +19,9 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 @Mod(name = Ref.MOD_NAME, modid = Ref.MOD_ID, version = Ref.MOD_VER)
 
@@ -99,7 +102,6 @@ public void Init(FMLInitializationEvent event){
 		Ingredients.GlasswareRecipes();
 		Ingredients.MaterialRecipes();
 		Ingredients.GroundRecipes();
-		Ingredients.FluidRecipes();
 		Storage.GelatinJarRecipes();
 		Storage.MinerJarRecipes();
 		Storage.TravellerJarRecipes();
@@ -116,12 +118,14 @@ public void Init(FMLInitializationEvent event){
 		Storage.SkeletonJarRecipes();		
 		Storage.ZombieJarRecipes();
 		Storage.BarrelRecipes();
+		Storage.VatRecipes();
 		VanillaRecipes.VanillaBlocks();
 		VanillaRecipes.VanillaHeads();
 		VanillaRecipes.VanillaMaterial();
 		VanillaRecipes.VanillaSaplings();
 		VanillaRecipes.VanillaUtil();
-				
+		
+		
 		
 	//Logger
 		Log.info("ExQuickMod Init");
