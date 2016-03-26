@@ -56,10 +56,8 @@ public void preInit(FMLPreInitializationEvent event){
 		Ingredients.Medallion();
 		Ingredients.Ground();		
 		Storage.Jar();
-		Storage.Barrel();
 		Storage.Vat();
-		
-		
+		Storage.Barrel();		
 				
 		
 	//Logger
@@ -95,6 +93,8 @@ public void Init(FMLInitializationEvent event){
 		Gelatin.KrackenRecipes();
 		Gelatin.DragonRecipes();
 		Gelatin.HotSauceRecipes();
+		Gelatin.JuiceRecipes();
+		Gelatin.PearlRecipes();
 		Ingredients.DistRecipes();
 		Ingredients.OrbRecipes();
 		Ingredients.SolutionRecipes();

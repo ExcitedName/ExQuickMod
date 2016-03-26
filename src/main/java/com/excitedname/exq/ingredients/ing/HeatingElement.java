@@ -43,7 +43,7 @@ public String getUnlocalizedName(ItemStack par1Dist)
 @SideOnly(Side.CLIENT)
 public void getSubItems(Item par1Vat, CreativeTabs par2Tabs, List par3List)
 	{
-	    for (int i = 0; i < 1; ++i)
+	    for (int i = 0; i < 2; ++i)
 	    {
 	    	par3List.add(new ItemStack(par1Vat, 1, i));
 	    }

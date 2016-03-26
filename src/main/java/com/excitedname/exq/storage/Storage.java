@@ -429,15 +429,7 @@ public static void TravellerJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.TravellerCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TravellerJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.TravellerCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.TravellerCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.TravellerJar), new Object []{
@@ -461,17 +453,9 @@ public static void IronSkinJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.IronSkinCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.IronSkinCube
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.IronSkinJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.IronSkinCube
-	});
-			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.IronSkinJar), new Object []{
 		"DDD",
 		"DGD",
@@ -493,15 +477,7 @@ public static void WarriorJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.WarriorCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.WarriorJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.WarriorCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.WarriorCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.WarriorJar), new Object []{
@@ -525,15 +501,7 @@ public static void HealthJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.HealthCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.HealthJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.HealthCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.HealthCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.HealthJar), new Object []{
@@ -559,14 +527,6 @@ public static void HotSauceJarRecipes() {
 		
 			'P', Ingredients.GlassJar, 'C', Gelatin.HotSauceCube
 	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Ingredients.GlassJar, 'C', Gelatin.HotSauceCube
-	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceJar), new Object []{
 		"DDD",
@@ -589,15 +549,7 @@ public static void NVisionJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.NightVisionCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.NightVisionJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.NightVisionCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.NightVisionCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.NightVisionJar), new Object []{
@@ -621,15 +573,7 @@ public static void TorchJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.TorchCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.TorchJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.TorchCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.TorchCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.TorchJar), new Object []{
@@ -653,15 +597,7 @@ public static void ExplosiveJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.ExplosiveCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.ExplosiveJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.ExplosiveCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.ExplosiveCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.ExplosiveJar), new Object []{
@@ -685,15 +621,7 @@ public static void KrackenJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.KrackenCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.KrackenJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.KrackenCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.KrackenCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.KrackenJar), new Object []{
@@ -717,15 +645,7 @@ public static void DragonJarRecipes() {
 		"CPC",
 		"CCC",
 		
-			'P', Utilities.PackUlater, 'C', Gelatin.DragonCube
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.DragonJar), new Object []{
-		"CCC",
-		"CGC",
-		"CCC",
-		
-			'G', Utilities.GChamberT3, 'C', Gelatin.DragonCube
+			'P', Ingredients.GlassJar, 'C', Gelatin.DragonCube
 	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.DragonJar), new Object []{
@@ -893,6 +813,15 @@ public static void BarrelRecipes() {
 		"JJJ",
 		
 			'B', Utilities.Barrel, 'J', Storage.HealthJar
+	});
+	
+	//Hot Sauce
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.HotSauceBarrel), new Object []{
+		"JJJ",
+		"JBJ",
+		"JJJ",
+		
+			'B', Utilities.Barrel, 'J', Storage.HotSauceJar
 	});
 		
 	//Iron Skin
@@ -1084,6 +1013,18 @@ public static void BarrelRecipes() {
 			'P', Utilities.Barrel, 'J', Items.feather
 	});
 	
+	//Priming Powder Jar
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.PrimingPowderJar), new Object []{
+		"JJJ",
+		"JPJ",
+		"JJJ",
+		
+			'P', Ingredients.GlassJar, 'J', Ingredients.PrimingPowder
+	});
+	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.PrimingPowderJar, 8),
+			Storage.PrimingPowderBarrel);
+	
 	//Priming Powder Barrel
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.PrimingPowderBarrel), new Object []{
 		"JJJ",
@@ -1093,6 +1034,18 @@ public static void BarrelRecipes() {
 			'P', Utilities.Barrel, 'J', Storage.PrimingPowderJar
 	});
 	
+	//Ground Tilite Jar
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundTriliteJar), new Object []{
+		"JJJ",
+		"JPJ",
+		"JJJ",
+		
+			'P', Ingredients.GlassJar, 'J', Ingredients.GroundTrilite
+	});
+	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.GroundTriliteJar, 8),
+			Storage.GroundTriliteBarrel);
+	
 	//Ground Tilite Barrel
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundTriliteBarrel), new Object []{
 		"JJJ",
@@ -1101,6 +1054,18 @@ public static void BarrelRecipes() {
 		
 			'P', Utilities.Barrel, 'J', Storage.GroundTriliteJar
 	});
+	
+	//Ground RDX Jar
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundRDXJar), new Object []{
+		"JJJ",
+		"JPJ",
+		"JJJ",
+		
+			'P', Ingredients.GlassJar, 'J', Ingredients.GroundRDX
+	});
+	
+	GameRegistry.addShapelessRecipe(new ItemStack(Storage.GroundRDXJar, 8),
+			Storage.GroundRDXBarrel);
 	
 	//Ground RDX Barrel
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundRDXBarrel), new Object []{
@@ -1195,6 +1160,14 @@ public static void VatRecipes() {
 			'G', Utilities.GChamberT3, 'W', Storage.H2OCoolJar, 'C', "dustCharcoal", 'J', Ingredients.GlassJar
 	}));
 	
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.H2OHotVat), new Object []{
+		"JJJ",
+		"JPJ",
+		"JJJ",
+		
+			'P', Utilities.TheVat, 'J', Storage.H2OHotJar
+	});	
+	
 //H2O Vat Hot
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.H2OHotVat), new Object []{
 		"JJJ",
@@ -1218,7 +1191,7 @@ public static void VatRecipes() {
 		"YJY",
 		"YGY",
 		
-			'V', Storage.H2OHotJar, 'Y', "listAllcitrus", 'G', Ingredients.GlassJar
+			'J', Storage.H2OHotJar, 'Y', "listAllcitrus", 'G', Ingredients.GlassJar
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Storage.AcidJar), new Object [] {
@@ -1293,6 +1266,14 @@ public static void VatRecipes() {
 			'J', Storage.H2OHotJar, 'Y', "cropKiwi", 'G', Ingredients.GlassJar
 	}));
 	
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.AcidJar, 8), new Object []{
+		"JJJ",
+		"JVJ",
+		"JJJ",
+		
+			'V', Storage.AcidVat, 'J', Ingredients.GlassJar
+	});
+	
 //Vat of Acid
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.AcidVat), new Object [] {
 		"JJJ",
@@ -1335,7 +1316,7 @@ public static void VatRecipes() {
 		"SGS",
 		"JLJ",
 		
-			'G', Utilities.GChamberT3, 'C', Storage.LavaJar, 'S', Blocks.stone, 
+			'G', Utilities.GChamberT3, 'L', Storage.LavaJar, 'S', Blocks.stone, 
 			'J', Ingredients.GlassJar 
 	});
 	
@@ -1388,6 +1369,15 @@ public static void VatRecipes() {
 		
 			'A', Storage.AcidJar, 'L', Items.leather, 'J', Ingredients.GlassJar
 	}));
+	
+//Purified Collagen Solution Vat
+	GameRegistry.addShapedRecipe(new ItemStack(Storage.PurifiedCollagenSolutionVat), new Object []{
+		"JJJ",
+		"JPJ",
+		"JJJ",
+		
+			'P', Utilities.TheVat, 'J', Storage.PurifiedCollagenSolutionJar
+	});	
 	
 }
 

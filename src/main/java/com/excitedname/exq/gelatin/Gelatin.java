@@ -1056,38 +1056,33 @@ public static void JuiceRecipes() {
 //Might need to adjust them to ShapedOreRecipe
 	
 	//Gelatin Juice
-	GameRegistry.addRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
 		"GFG",
 		"FJF",
 		"GBG",
 		
-			'J', Utilities.CeramicJuicer, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
-	});
+			'J', Utilities.CeramicJuicer, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 
+			'B', Ingredients.GlassBottle
+	}));
 	
-	GameRegistry.addRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
 		"GFG",
 		"FJF",
 		"GBG",
 		
-			'J', Utilities.GChamberT2, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
-	});
-	
-	GameRegistry.addRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{
-		"GFG",
-		"FJF",
-		"GBG",
-		
-			'J', Utilities.GChamberT3, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
-	});
+			'J', Utilities.GChamberT3, 'F', "listAllfruit", 'G', Gelatin.GelatinCube, 
+			'B', Ingredients.GlassBottle
+	}));
 			
 			
 	//Healing Gelatin Juice		
-	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuiceHealing, 6), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinJuiceHealing, 3), new Object []{
 		"JHJ",
-		"JGJ",
-		"JHJ",
+		"BGB",
+		"JBJ",
 		
-			'G', Utilities.GChamberT3, 'J', Gelatin.GelatinJuice, 'H', Gelatin.HealthDish
+			'G', Utilities.GChamberT3, 'J', Gelatin.GelatinJuice.setContainerItem(Ingredients.GlassBottle), 'H', Gelatin.HealthDish, 
+			'B', Ingredients.GlassBottle
 	});
 	
 }

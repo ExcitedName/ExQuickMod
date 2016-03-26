@@ -238,11 +238,21 @@ public static void UtilRecipes(){
 	
 //Terrarium
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Terrarium), new Object []{
-		"GGG",
+		"GBG",
 		"GSG",
 		"CPC",
 		
-			'G', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks
+			'G', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'B', Blocks.glass_pane
+	}));
+	
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Terrarium), new Object []{
+		"GBG",
+		"GSG",
+		"CPC",
+		
+			'G', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'B', Blocks.stained_glass_pane
 	}));
 	
 //Pack-U-Later

@@ -938,21 +938,8 @@ public static void VanillaMaterial() {
 			'G', Utilities.GChamberT3, 'C', "cropKiwi"
 	}));		
 	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 8), new Object [] {
-		"   ",
-		" P ",
-		" J ",
-			
-			'G', Utilities.PackUlater, 'J', Storage.GroundSugarJar
-	}));
-	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 8), new Object [] {
-		"   ",
-		" G ",
-		" J ",
-			
-			'G', Utilities.GChamberT3, 'J', Storage.GroundSugarJar
-	}));
+	GameRegistry.addShapelessRecipe(new ItemStack(Items.sugar, 8),
+			Storage.GroundSugarJar);
 		
 	}
 	
