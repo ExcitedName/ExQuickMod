@@ -184,7 +184,7 @@ public static void UtilRecipes(){
 	}));
 	
 //The Vat
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 8), new Object [] {
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
 		"I I",
 		"G G",
 		"III",
@@ -242,8 +242,8 @@ public static void UtilRecipes(){
 		"GSG",
 		"CPC",
 		
-			'G', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
-			'B', Blocks.glass_pane
+			'B', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'G', Blocks.glass_pane
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Terrarium), new Object []{
@@ -251,8 +251,8 @@ public static void UtilRecipes(){
 		"GSG",
 		"CPC",
 		
-			'G', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
-			'B', Blocks.stained_glass_pane
+			'B', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'G', Blocks.stained_glass_pane
 	}));
 	
 //Pack-U-Later

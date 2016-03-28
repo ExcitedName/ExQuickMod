@@ -649,14 +649,6 @@ public static void SolutionRecipes() {
 			'S', Utilities.GChamberT3, 's', Storage.GroundSugarJar, 'J', Ingredients.GlassJar, 
 			'C', "dustCharcoal", 'c', Storage.PurifiedCollagenSolutionJar
 	}));
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Storage.GelatinSolutionVat), new Object []{
-		"JJJ",
-		"JVJ",
-		"JJJ",
-		
-			'J', Storage.GelatinSolutionJar, 'V', Utilities.TheVat
-	});
 			
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.GelatinSolutionJar, 8), new Object []{
 		"JJJ",
@@ -1275,8 +1267,8 @@ public static void GlasswareRecipes() {
 			'G', Ingredients.GlassBlank
 	});
 	
-//Glass Condensing Coil Left
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GlassCondensingCoil, 1, 1), new Object []{
+//Glass Condensing Coil Right
+	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GlassCondensingCoil, 1, 2), new Object []{
 		"G  ",
 		"GGG",
 		"  G",
@@ -1284,14 +1276,8 @@ public static void GlasswareRecipes() {
 			'G', Ingredients.GlassBlank
 	});
 	
-//Glass Condensing Coil Right
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GlassCondensingCoil, 2, 2), new Object []{
-		"  G",
-		"GGG",
-		"G  ",
-		
-			'G', Ingredients.GlassBlank
-	});
+//Glass Condensing Coil Left
+	GameRegistry.addSmelting(new ItemStack(Ingredients.GlassCondensingCoil, 1, 2), new ItemStack(Ingredients.GlassCondensingCoil, 1, 1),  0.5F);
 		
 //Glass Bottle
 	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GlassBottle), new Object [] {
@@ -1618,21 +1604,8 @@ public static void MaterialRecipes() {
 			'G', Storage.GelitizerJar, 'C', Utilities.GChamberT3, 'S', Ingredients.GelatinShard
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinLily, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.LilyBarrel
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinLily, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.LilyBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Ingredients.GelatinLily, 8),
+			Storage.LilyBarrel);
 	
 //Gelatin Lily Vibrant
 	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinLilyVibrant, 2), new Object []{
@@ -1651,21 +1624,8 @@ public static void MaterialRecipes() {
 			'G', Storage.GelitizerJar, 'C', Utilities.GChamberT3, 'S', Ingredients.GelatinShardVibrant
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinLilyVibrant, 8), new Object []{
-		"   ",
-		" P ",
-		" B ",
-		
-			'P', Utilities.PackUlater, 'B', Storage.LilyVibrantBarrel
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GelatinLilyVibrant, 8), new Object []{
-		"   ",
-		" G ",
-		" B ",
-		
-			'G', Utilities.GChamberT3, 'B', Storage.LilyVibrantBarrel
-	});
+	GameRegistry.addShapelessRecipe(new ItemStack(Ingredients.GelatinLilyVibrant, 8),
+			Storage.LilyVibrantBarrel);
 	
 }
 
@@ -2039,9 +1999,6 @@ public static void GroundRecipes() {
 			'G', Utilities.GChamberT3, 'C', new ItemStack(Items.coal, 1, 1)
 	}));
 	
-	GameRegistry.addShapelessRecipe(new ItemStack(Ingredients.GroundCharcoal, 8),
-			Storage.CharcoalBarrel);
-	
 //Ground Charoal Jar	
 	GameRegistry.addShapedRecipe(new ItemStack(Storage.GroundCharcoalJar), new Object []{
 		"DDD",
@@ -2061,7 +2018,7 @@ public static void GroundRecipes() {
 	
 //Wood Pulp
 	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.WoodPulp), new Object []{
-		" S ",
+		" W ",
 		"WSW",
 		" W ",
 		
@@ -2226,7 +2183,7 @@ public static void GroundRecipes() {
 			'P', Ingredients.PrimingPowder, 'C', Items.clay_ball, 'G', Utilities.GChamberT1
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GroundRDX, 2), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GroundRDX, 3), new Object []{
 		"PCP",
 		"CGC",
 		"PCP",
@@ -2234,7 +2191,7 @@ public static void GroundRecipes() {
 			'P', Ingredients.PrimingPowder, 'C', Items.clay_ball, 'G', Utilities.GChamberT2
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GroundRDX, 3), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.GroundRDX, 4), new Object []{
 		"PCP",
 		"CGC",
 		"PCP",

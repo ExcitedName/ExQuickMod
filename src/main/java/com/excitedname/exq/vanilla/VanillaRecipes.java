@@ -99,7 +99,7 @@ public static void VanillaBlocks() {
 			'G', Utilities.GChamberT1, 'C', Blocks.cobblestone
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 2), new Object [] {
 		"CCC",
 		"CGC",
 		"CCC",
@@ -107,7 +107,7 @@ public static void VanillaBlocks() {
 			'G', Utilities.GChamberT2, 'C', Blocks.cobblestone
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 3), new Object [] {
 		"CCC",
 		"CGC",
 		"CCC",
@@ -483,7 +483,7 @@ public static void VanillaMaterial() {
 //Clay Ball
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.clay_ball, 3), new Object [] {
 		"SFS",
-		"FVF",
+		"FJF",
 		"SFS",
 			
 			'S', Blocks.sand, 'J', Storage.H2OHotJar, 'F', "foodFlour"
@@ -940,8 +940,25 @@ public static void VanillaMaterial() {
 	
 	GameRegistry.addShapelessRecipe(new ItemStack(Items.sugar, 8),
 			Storage.GroundSugarJar);
-		
-	}
+
+//Wheat
+	GameRegistry.addShapedRecipe(new ItemStack(Items.wheat), new Object []{
+		"   ",
+		" P ",
+		" G ",
+						
+			'P', Utilities.PackUlater, 'G', Ingredients.GroundFlour
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.wheat), new Object []{
+		"   ",
+		" P ",
+		" G ",
+						
+			'P', Utilities.GChamberT3, 'G', Ingredients.GroundFlour
+	});
+	
+}
 	
 
 public static void VanillaSaplings() {	
