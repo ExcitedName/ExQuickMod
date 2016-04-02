@@ -22,13 +22,12 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 
 public class DistLav extends Item {
 
-private Block isFull;
+	private Block isFull;
 	
 	public DistLav(Block flowingLava){
 		
 		this.setUnlocalizedName("DistLav");
 		this.setTextureName("DistLav");
-		//this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingLava;
 	}
 	

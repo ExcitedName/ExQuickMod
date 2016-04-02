@@ -75,7 +75,7 @@ public int getMaxItemUseDuration(ItemStack par1ItemStack)
 
 public EnumAction getItemUseAction(ItemStack par1ItemStack)
 {
-    return EnumAction.drink;
+    return EnumAction.eat;
 }
 
 public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)

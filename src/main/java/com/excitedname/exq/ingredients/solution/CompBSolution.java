@@ -24,7 +24,6 @@ public class CompBSolution extends Item {
 		this.setUnlocalizedName("CompB Solution");
 		this.setTextureName("CompB Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 	

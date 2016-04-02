@@ -24,7 +24,6 @@ public class NightVisionSolution extends Item {
 		this.setUnlocalizedName("Night Vision Solution");
 		this.setTextureName("Night Vision Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
         
 	

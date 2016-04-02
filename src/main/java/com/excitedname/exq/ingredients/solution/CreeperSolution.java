@@ -24,7 +24,6 @@ public class CreeperSolution extends Item {
 		this.setUnlocalizedName("Creeper Solution");
 		this.setTextureName("Creeper Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
        
 	

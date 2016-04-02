@@ -16,7 +16,6 @@ public class TravellerSolution extends Item {
 		this.setUnlocalizedName("Traveller Solution");
 		this.setTextureName("Traveller Solution");
 		this.setCreativeTab(Tabs.GelatinTab);		
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 //Texture Icon

@@ -190,7 +190,7 @@ public static void Pearls() {
 
 public static void GelatinRecipes() {
 	
-	//Cube
+//Cube
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.GelatinCube, 8), new Object []{
 		"   ",
 		" SM",
@@ -244,7 +244,7 @@ public static void GelatinRecipes() {
 	
 public static void MinerRecipes() {
 	
-	//Cube
+//Cube
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerCube, 8), new Object []{
 		"   ",
 		"HSM",
@@ -285,17 +285,8 @@ public static void MinerRecipes() {
 	GameRegistry.addShapelessRecipe(new ItemStack(Gelatin.MinerCube, 8),
 			Storage.MinerJar);
 
-	//Dish	
+//Dish	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerDish), new Object []{
-		"   ",
-		"HGM",
-		" CS",
-		
-			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
-			'H', Ingredients.MinerSolution, 'C', "dustCharcoal"
-	}));
-	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.MinerDish, 2), new Object []{
 		"   ",
 		"HGM",
 		"HCS",
@@ -360,15 +351,6 @@ public static void TravellerRecipes() {
 
 	//Dish	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TravellerDish), new Object []{
-		"   ",
-		"HGM",
-		" CS",
-		
-			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Storage.GelatinSolutionJar, 
-			'H', Ingredients.TravellerSolution, 'C', "dustCharcoal"
-	}));
-	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.TravellerDish, 2), new Object []{
 		"   ",
 		"HGM",
 		"HCS",
@@ -1052,8 +1034,6 @@ public static void HotSauceRecipes() {
 
 
 public static void JuiceRecipes() {
-
-//Might need to adjust them to ShapedOreRecipe
 	
 	//Gelatin Juice
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.GelatinJuice), new Object []{

@@ -24,7 +24,6 @@ public class SkeletonSolution extends Item {
 		this.setUnlocalizedName("Skeleton Solution");
 		this.setTextureName("Skeleton Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 	

@@ -16,7 +16,6 @@ public class HealthSolution extends Item {
 		this.setUnlocalizedName("Health Solution");
 		this.setTextureName("Health Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 //Texture Icon

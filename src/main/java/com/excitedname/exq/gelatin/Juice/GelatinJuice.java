@@ -26,7 +26,6 @@ public class GelatinJuice extends Item {
 		this.setUnlocalizedName("Gelatin Juice");
 		this.setTextureName("Gelatin Juice");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 		
 	}
 

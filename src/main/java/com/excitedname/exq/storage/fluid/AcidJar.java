@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 
 public class AcidJar extends Item {
 
-public AcidJar(){
+	public AcidJar(){
 		
 		this.setUnlocalizedName("Acid Jar");
 		this.setTextureName("Acid Jar");

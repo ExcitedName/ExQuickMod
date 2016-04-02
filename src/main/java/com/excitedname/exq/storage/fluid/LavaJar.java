@@ -23,7 +23,6 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 
 public class LavaJar extends Item {
 
-	private Item containerItem;
 	private Block isFull;
 	
 	public LavaJar(Block flowingLava){

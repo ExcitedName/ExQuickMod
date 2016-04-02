@@ -24,7 +24,6 @@ public class ZombieSolution extends Item {
 		this.setUnlocalizedName("Zombie Solution");
 		this.setTextureName("Zombie Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
 	
 	

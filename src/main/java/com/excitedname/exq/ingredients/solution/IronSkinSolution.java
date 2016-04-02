@@ -24,7 +24,6 @@ public class IronSkinSolution extends Item {
 		this.setUnlocalizedName("Iron Skin Solution");
 		this.setTextureName("Iron Skin Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
         
 	

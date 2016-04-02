@@ -70,6 +70,14 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
+			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Ingredients.CraftingMedallion
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.grass), new Object []{
+		" S ",
+		" T ",
+		" D ",
+		
 			'S', Items.wheat_seeds, 'D', Blocks.dirt, 'T', Utilities.Terrarium
 	});
 		
@@ -117,29 +125,29 @@ public static void VanillaBlocks() {
 		
 		
 //Ice Block
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.ice, 1), new Object []{
-		"JJJ",
-		" S ",
-		"JJJ",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), new Object []{
+		"   ",
+		" SJ",
+		" CJ",
 		
-			'S', Utilities.Solidifier, 'J', Storage.H2OCoolJar				
-	});
+			'S', Utilities.Solidifier, 'J', Storage.H2OCoolJar, 'C', "dustCharcoal"		
+	}));
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.ice, 2), new Object []{
-		"JJJ",
-		" G ",
-		"JJJ",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice), new Object []{
+		"   ",
+		" GJ",
+		" CJ",
 		
-			'G', Utilities.GChamberT2, 'J', Storage.H2OCoolJar
-	});
+			'G', Utilities.GChamberT2, 'J', Storage.H2OCoolJar, 'C', "dustCharcoal"	
+	}));
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.ice, 3), new Object []{
-		"JJJ",
-		" G ",
-		"JJJ",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.ice, 2), new Object []{
+		"   ",
+		" GJ",
+		" CJ",
 		
-			'G', Utilities.GChamberT3, 'J', Storage.H2OCoolJar
-	});
+			'G', Utilities.GChamberT3, 'J', Storage.H2OCoolJar, 'C', "dustCharcoal"	
+	}));
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.ice), new Object []{
 		"SSS",
@@ -288,10 +296,18 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Utilities.Terrarium
+			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Ingredients.CraftingMedallion
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 2, 2), new Object []{
+		" S ",
+		" T ",
+		" D ",
+		
+			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Utilities.Terrarium
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 3, 2), new Object []{
 		" S ",
 		" G ",
 		" D ",

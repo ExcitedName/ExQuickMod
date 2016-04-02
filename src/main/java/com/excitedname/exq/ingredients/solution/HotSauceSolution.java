@@ -24,7 +24,6 @@ public class HotSauceSolution extends Item {
 		this.setUnlocalizedName("Hot Sauce Solution");
 		this.setTextureName("Hot Sauce Solution");
 		this.setCreativeTab(Tabs.GelatinTab);
-		this.setContainerItem(Ingredients.GlassBottle);
 	}
         
 	

@@ -29,7 +29,6 @@ public class DistH2O extends Item {
 		
 		this.setUnlocalizedName("DistH2O");
 		this.setTextureName("DistH2O");
-		//this.setContainerItem(Ingredients.GlassJar);
 		this.isFull = flowingWater;
 	}
 	
