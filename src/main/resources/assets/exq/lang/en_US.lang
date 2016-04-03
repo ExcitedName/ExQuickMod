@@ -94,8 +94,9 @@ item.Gelatin Orb(Tier 1).name=Gelatin Orb(Tier 1)
 item.Gelatin Orb(Tier 2).name=Gelatin Orb(Tier 2)
 item.Gelatin Orb(Tier 3).name=Gelatin Orb(Tier 3)
 
-    //Solutions 
-item.Miner Solution.name=Miner Solution
+    //Solutions
+item.Miner SolutionGel.name=Gelatin Solution 
+item.Miner SolutionMin.name=Miner Solution
 item.Traveller Solution.name=Traveller Solution
 item.Iron Skin Solution.name=Iron Skin Solution
 item.Warrior Solution.name=Warrior Solution
@@ -132,7 +133,7 @@ item.Glass Funnel.name=Glass Funnel
 item.GlassCondensingCoilCenter.name=Glass Capillary Tube
 item.GlassCondensingCoilLeft.name=Glass Condensing Coil(Left)
 item.GlassCondensingCoilRight.name=Glass Condensing Coil(Right)
-item.Glass Gelatin Mold.name=Glass Gelatin Mold
+item.Glass Gelatin Mold.name=Glass Mold
 item.Glass Dish.name=Glass Dish
 item.Glass Bottle.name=Glass Bottle
 item.Glass Jar.name=Glass Jar
@@ -167,88 +168,105 @@ item.Priming Powder.name=Priming Powder
 item.Ground Trilite.name=Ground Trilite
 item.Ground RDX.name=Ground RDX
 item.Ground Meat.name=Ground Meat
-item.Gelitizer Jar.name=Gelitizer Jar
-item.Ground Marrow Jar.name=Ground Marrow Jar
-item.Ground Flour Jar.name=Ground Flour Jar
-item.Ground Sugar Jar.name=Ground Sugar Jar
-item.Ground Coal Jar.name=Ground Coal Jar
-item.Ground Charcoal Jar.name=Ground Charcoal Jar
-item.Wood Pulp Jar.name=Wood Pulp Jar
-item.Priming Powder Jar.name=Priming Powder Jar
-item.Ground Trilite Jar.name=Ground Trilite Jar
-item.Ground RDX Jar.name=Ground RDX Jar
-item.Ground Meat Jar.name=Ground Meat Jar
+item.Gelitizer Jar.name=Gelitizer
+item.Ground Marrow Jar.name=Ground Marrow
+item.Ground Flour Jar.name=Ground Flour
+item.Ground Sugar Jar.name=Ground Sugar
+item.Ground Coal Jar.name=Ground Coal
+item.Ground Charcoal Jar.name=Ground Charcoal
+item.Wood Pulp Jar.name=Wood Pulp
+item.Priming Powder Jar.name=Priming Powder
+item.Ground Trilite Jar.name=Ground Trilite
+item.Ground RDX Jar.name=Ground RDX
+item.Ground Meat JarMea.name=Ground Meat
+item.Ground Meat JarGla.name=Glass Blank
 
 
 
 //Storage
 
     //Fluid
-item.Dihydrogen Monoxide Jar(Cool).name=Dihydrogen Monoxide Jar(Cool)
-item.Dihydrogen Monoxide Jar(Hot).name=Dihydrogen Monoxide Jar(Hot)
-item.Acid Jar.name=Acid Jar
-item.Purified Collagen Solution Jar.name=Purified Collagen Solution Jar
-item.Gelatin Solution Jar.name=Gelatin Solution Jar
-item.Lava Jar.name=Lava Jar
-item.Dihydrogen Monoxide Vat(Cool).name=Dihydrogen Monoxide Vat(Cool)
-item.Dihydrogen Monoxide Vat(Hot).name=Dihydrogen Monoxide Vat(Hot)
-item.Acid Vat.name=Acid Vat
-item.Purified Collagen Solution Vat.name=Purified Collagen Solution Vat
-item.Gelatin Solution Vat.name=Gelatin Solution Vat
-item.Lava Vat.name=Lava Vat
+item.Dihydrogen Monoxide Jar(Cool).name=Dihydrogen Monoxide(Cool)
+item.Dihydrogen Monoxide Jar(Hot).name=Dihydrogen Monoxide(Hot)
+item.Acid Jar.name=Acid
+item.Purified Collagen Solution Jar.name=Purified Collagen Solution
+item.Lava Jar.name=Lava
+item.Dihydrogen Monoxide Vat(Cool).name=Dihydrogen Monoxide(Cool)
+item.Dihydrogen Monoxide Vat(Hot).name=Dihydrogen Monoxide(Hot)
+item.Acid Vat.name=Acid
+item.Purified Collagen Solution Vat.name=Purified Collagen Solution
+item.Gelatin Solution VatGel.name=Gelatin Solution
+item.Gelatin Solution VatMin.name=Miner Solution
+item.Gelatin Solution VatTra.name=Traveller Solution
+item.Gelatin Solution VatIro.name=Iron Skin Solution
+item.Gelatin Solution VatWar.name=Warrior Solution
+item.Gelatin Solution VatHea.name=Health Solution
+item.Gelatin Solution VatHot.name=Hypno's Hot Sauce Solution
+item.Gelatin Solution VatNiV.name=Night Vision Solution
+item.Gelatin Solution VatTor.name=Torch Solution
+item.Gelatin Solution VatExp.name=CompB Solution
+item.Gelatin Solution VatKra.name=Kracken Solution
+item.Gelatin Solution VatDra.name=Dragon Solution
+item.Gelatin Solution VatCre.name=Creeper Solution
+item.Gelatin Solution VatSke.name=Skeleton Solution
+item.Gelatin Solution VatZom.name=Zombie Solution
+item.Gelatin Solution VatGelJui.name=Gelatin Juice
+item.Gelatin Solution VatGelJuiHea.name=Healing Gelatin Juice
+item.Lava Vat.name=Lava
+
 
 
 
     //Jars
-item.Gelatin Jar.name=Gelatin Jar
-item.Miner Jar.name=Miner Jar
-item.Traveller Jar.name=Traveller Jar
-item.Iron Skin Jar.name=Iron Skin Jar
-item.Warrior Jar.name=Warrior Jar
-item.Health Jar.name=Health Jar
-item.Hot Sauce Jar.name=Hypno's Hot Sauce Jar
-item.Night Vision Jar.name=Night Vision Jar
-item.Torch Jar.name=Torch Jar
-item.Explosive Jar.name=Explosive Jar
-item.Kracken Jar.name=Kracken Jar
-item.Dragon Jar.name=Beastee03's Dragon Jar
-item.Creeper Jar.name=Creeper Jar
-item.Skeleton Jar.name=Skeleton Jar
-item.Zombie Jar.name=Zombie Jar
+item.Gelatin Jar.name=Gelatin
+item.Miner Jar.name=Miner
+item.Traveller Jar.name=Traveller
+item.Iron Skin Jar.name=Iron Skin
+item.Warrior Jar.name=Warrior
+item.Health Jar.name=Health
+item.Hot Sauce Jar.name=Hypno's Hot Sauce
+item.Night Vision Jar.name=Night Vision
+item.Torch Jar.name=Torch
+item.Explosive Jar.name=Explosive
+item.Kracken Jar.name=Kracken
+item.Dragon Jar.name=Beastee03's Dragon
+item.Creeper Jar.name=Creeper
+item.Skeleton Jar.name=Skeleton
+item.Zombie Jar.name=Zombie
 
     //Barrels 
-item.Gelatin Barrel.name=Gelatin Barrel
-item.Miner Barrel.name=Miner Barrel
-item.Traveller Barrel.name=Traveller Barrel
-item.Iron Skin Barrel.name=Iron Skin Barrel
-item.Warrior Barrel.name=Warrior Barrel
-item.Health Barrel.name=Health Barrel
-item.Hot Sauce Barrel.name=Hypno's Hot Sauce Barrel
-item.Night Vision Barrel.name=Night Vision Barrel
-item.Torch Barrel.name=Torch Barrel
-item.Explosive Barrel.name=Explosive Barrel
-item.Kracken Barrel.name=Kracken Barrel
-item.Dragon Barrel.name=Beastee03's Dragon Barrel
-item.Creeper Barrel.name=Creeper Barrel
-item.Skeleton Barrel.name=Skeleton Barrel
-item.Zombie Barrel.name=Zombie Barrel
-item.Glass Barrel.name=Glass Barrel
-item.Feather Barrel.name=Feather Barrel
-item.Bone Barrel.name=Bone Barrel
-item.Cracked Barrel.name=Cracked Barrel
-item.Lily Barrel.name=Lily Barrel
-item.Lily Vibrant Barrel.name=Vibrant Lily Barrel
-item.Gelitizer Barrel.name=Gelitizer Barrel
-item.Ground Marrow Barrel.name=Ground Marrow Barrel
-item.Ground Flour Barrel.name=Ground Flour Barrel
-item.Ground Sugar Barrel.name=Ground Sugar Barrel
-item.Coal Barrel.name=Ground Coal Barrel
-item.Charcoal Barrel.name=Ground Charcoal Barrel
-item.Wood Pulp Barrel.name=Wood Pulp Barrel
-item.Priming Powder Barrel.name=Priming Powder Barrel
-item.Ground Trilite Barrel.name=Ground Trilite Barrel
-item.Ground RDX Barrel.name=Ground RDX Barrel
-item.Ground Meat Barrel.name=Ground Meat Barrel
+item.Gelatin Barrel.name=Gelatin
+item.Miner Barrel.name=Miner
+item.Traveller Barrel.name=Traveller
+item.Iron Skin Barrel.name=Iron Skin
+item.Warrior Barrel.name=Warrior
+item.Health Barrel.name=Health
+item.Hot Sauce Barrel.name=Hypno's Hot Sauce
+item.Night Vision Barrel.name=Night Vision
+item.Torch Barrel.name=Torch
+item.Explosive Barrel.name=Explosive
+item.Kracken Barrel.name=Kracken
+item.Dragon Barrel.name=Beastee03's Dragon
+item.Creeper Barrel.name=Creeper
+item.Skeleton Barrel.name=Skeleton
+item.Zombie Barrel.name=Zombie
+item.Glass Barrel.name=Glass
+item.Feather Barrel.name=Feather
+item.Bone Barrel.name=Bone
+item.Cracked Barrel.name=Cracked
+item.Lily Barrel.name=Lily
+item.Lily Vibrant Barrel.name=Vibrant Lily
+item.Gelitizer Barrel.name=Gelitizer
+item.Ground Marrow Barrel.name=Ground Marrow
+item.Ground Flour Barrel.name=Ground Flour
+item.Ground Sugar Barrel.name=Ground Sugar
+item.Coal Barrel.name=Ground Coal
+item.Charcoal Barrel.name=Ground Charcoal
+item.Wood Pulp Barrel.name=Wood Pulp
+item.Priming Powder Barrel.name=Priming Powder
+item.Ground Trilite Barrel.name=Ground Trilite
+item.Ground RDX Barrel.name=Ground RDX
+item.Ground Meat Barrel.name=Ground Meat
 
 
 

@@ -229,7 +229,7 @@ public static void UtilRecipes(){
 
 //Distillery
 	GameRegistry.addShapedRecipe(new ItemStack(Utilities.Distillery), new Object []{
-		"BBB",
+		" B ",
 		"BJB",
 		"BBB",
 		
