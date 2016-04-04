@@ -187,26 +187,26 @@ public static void UtilRecipes(){
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
 		"I I",
 		"G G",
-		"III",
+		"IBI",
 		
-			'I', Items.iron_ingot, 'G', Blocks.glass_pane
+			'I', Items.iron_ingot, 'G', Blocks.glass_pane, 'B', Blocks.iron_block
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
 		"I I",
 		"G G",
-		"III",
+		"IBI",
 		
-			'I', Items.iron_ingot, 'G', "paneGlass"
+			'I', Items.iron_ingot, 'G', "paneGlass", 'B', Blocks.iron_block
 	}));
 	
 //Barrel
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Barrel, 8), new Object [] {
-		"P P",
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Barrel, 2), new Object [] {
+		"S S",
 		"R R",
-		"PPP",
+		"SSS",
 		
-			'P', Blocks.planks, 'R', Ingredients.IronRod
+			'S', Blocks.wooden_slab, 'R', Ingredients.IronRod
 	}));
 	
 //Smeltry
