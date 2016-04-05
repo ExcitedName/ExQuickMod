@@ -54,9 +54,9 @@ public class DragonCube extends Item {
 			this.setFifthPotionEffect(Potion.fireResistance.id, 20, 1, 1F);
 		}
 		
-		public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-			return true;
-		}
+		//public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
+		//	return true;
+		//}
 		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
 			super.onEaten(par1ItemStack,  par2World,  par3EntityPlayer);

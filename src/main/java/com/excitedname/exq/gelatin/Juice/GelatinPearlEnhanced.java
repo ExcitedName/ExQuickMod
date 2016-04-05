@@ -23,10 +23,6 @@ public class GelatinPearlEnhanced extends Item {
 		this.setCreativeTab(Tabs.GelatinTab);
 	}
 	
-	public boolean hasEffect(ItemStack par1GelatinPearl, int pass){
-		return true;
-	}
-	
 	public ItemStack onItemRightClick(ItemStack par1GelatinPearl, World par2World, EntityPlayer par3Player)
     {
         if (!par3Player.capabilities.isCreativeMode)

@@ -22,9 +22,9 @@ public class DragonBarrel extends Item {
 			this.setContainerItem(Utilities.Barrel);
 		}
 		
-		public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-			return true;
-		}
+		//public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
+			//return true;
+		//}
 
 	//Texture Icon	
 

@@ -1050,7 +1050,7 @@ public static void JuiceRecipes() {
 		"PJM",
 		"GBG",
 		
-			'J', Utilities.GChamberT3, 'P', "cropPineapple", 'C', "cropCoconut", 'M', "foodCoconutmilk",
+			'J', Utilities.GChamberT3, 'P', "foodPinacolada", 'C', "cropCoconut", 'M', "foodPinacolada",
 			'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
 	}));
 	
@@ -1090,18 +1090,18 @@ public static void PearlRecipes() {
 	
 	//Gelatin Pearl
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinPearl), new Object []{
-		"GGG",
+		"GSG",
 		"SGS",
-		"GGG",
+		"GSG",
 		
 			'S', Ingredients.GelatinShard, 'G', Gelatin.GelatinCube			
 	});	
 		
 	//Gelatin Pearl Enhanced
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.GelatinPearlEnhanced), new Object []{
-		"GGG",
+		"GSG",
 		"SGS",
-		"GGG",
+		"GSG",
 		
 			'S', Ingredients.GelatinShard, 'G', Gelatin.IronSkinCube			
 	});

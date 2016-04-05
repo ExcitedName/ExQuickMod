@@ -20,9 +20,9 @@ public class DragonJar extends Item {
 		this.setContainerItem(Ingredients.GlassJar);
 	}
 	
-	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-		return true;
-	}
+	//public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
+	//	return true;
+	//}
 	
 //Texture Icon
 	

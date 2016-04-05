@@ -26,9 +26,9 @@ public class DragonSolution extends Item {
 		this.setCreativeTab(Tabs.GelatinTab);
 	}
 	
-	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-		return true;
-	}
+	//public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
+		//return true;
+	//}
 	
 	
 //Texture Icon
