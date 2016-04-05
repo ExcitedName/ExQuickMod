@@ -35,10 +35,6 @@ public class GelatinJuiceHealing extends Item {
 		this.setCreativeTab(Tabs.GelatinTab);
 		this.setFirstPotionEffect(Potion.heal.id, 1, 0, 1F);
 	}
-	
-	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
-		return true;
-	}
 
 	public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
     {

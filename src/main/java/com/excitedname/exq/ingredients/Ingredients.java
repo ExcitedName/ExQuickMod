@@ -556,11 +556,11 @@ public static void DistRecipes() {
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Ingredients.Dist, 1, 5), new Object []{
 		"ySY",
 		"PDP",
-		"AsC",
+		"AFC",
 		
-			'D', Ingredients.DistH2O, 'P', "listAllpepper", 'C', Items.carrot, 
+			'D', Ingredients.DistH2O, 'P', "cropChilipepper", 'C', Items.carrot, 
 			'A', Items.apple, 'S', Ingredients.GelatinCrystal, 'Y', new ItemStack(Items.dye, 1, 1), 
-			'y', new ItemStack(Items.dye, 14, 14), 's', Items.sugar
+			'y', new ItemStack(Items.dye, 14, 14), 'F', Blocks.fire
 	}));		
 		
 //Creeper Dist

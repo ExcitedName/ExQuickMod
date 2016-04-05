@@ -1041,7 +1041,7 @@ public static void JuiceRecipes() {
 		"PJM",
 		"GBG",
 		
-			'J', Utilities.CeramicJuicer, 'P', "cropPineapple", 'C', "cropCoconut", 'M', "foodCoconutmilk",
+			'J', Utilities.CeramicJuicer, 'P', "foodPinacolada", 'C', "cropCoconut", 'M', "foodPinacolada",
 			'G', Gelatin.GelatinCube, 'B', Ingredients.GlassBottle
 	}));
 	
