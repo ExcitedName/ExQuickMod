@@ -43,7 +43,7 @@ public class HealthCube extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 1, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 2, this.FirstPotionAmplifier));
 			}
 			
 			return par1ItemStack;

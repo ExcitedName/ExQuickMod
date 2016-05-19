@@ -37,21 +37,17 @@ public class DragonCube extends Item {
 	public int FourthPotionAmplifier;
 	public float FourthPotionEffectProbability;
 	
-	public int FifthPotionid;
-	public int FifthPotionDuration;
-	public int FifthPotionAmplifier;
-	public float FifthPotionEffectProbability;
 
 		public DragonCube() {
 			
 			this.setUnlocalizedName("Dragon Cube");
 			this.setTextureName("Dragon Cube");
 			this.setCreativeTab(Tabs.GelatinTab);
-			this.setFirstPotionEffect(Potion.moveSpeed.id, 20, 1, 1F);
-			this.setSecondPotionEffect(Potion.jump.id, 20, 1, 1F);
+			this.setFirstPotionEffect(Potion.regeneration.id, 20, 1, 1F);
+			this.setSecondPotionEffect(Potion.fireResistance.id, 20, 1, 1F);
 			this.setThirdPotionEffect(Potion.resistance.id, 20, 1, 1F);
 			this.setFourthPotionEffect(Potion.damageBoost.id, 20, 1, 1F);
-			this.setFifthPotionEffect(Potion.fireResistance.id, 20, 1, 1F);
+			
 		}
 		
 		//public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){
@@ -67,23 +63,19 @@ public class DragonCube extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 300, this.FirstPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.SecondPotionid > 0 && par2World.rand.nextFloat() < this.SecondPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 540, this.SecondPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 300, this.SecondPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.ThirdPotionid > 0 && par2World.rand.nextFloat() < this.ThirdPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.ThirdPotionid, this.ThirdPotionDuration * 540, this.ThirdPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.ThirdPotionid, this.ThirdPotionDuration * 300, this.ThirdPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.FourthPotionid > 0 && par2World.rand.nextFloat() < this.FourthPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FourthPotionid, this.FourthPotionDuration * 540, this.FourthPotionAmplifier));
-			}
-			
-			if (!par2World.isRemote && this.FifthPotionid > 0 && par2World.rand.nextFloat() < this.FifthPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FifthPotionid, this.FifthPotionDuration * 540, this.FifthPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FourthPotionid, this.FourthPotionDuration * 300, this.FourthPotionAmplifier));
 			}
 						
 			return par1ItemStack;
@@ -139,15 +131,6 @@ public class DragonCube extends Item {
 			this.FourthPotionDuration = par2;
 			this.FourthPotionAmplifier = par3;
 			this.FourthPotionEffectProbability = par4;
-			return this;			
-		}
-		
-		public DragonCube setFifthPotionEffect(int par1, int par2, int par3, float par4){
-			
-			this.FifthPotionid = par1;
-			this.FifthPotionDuration = par2;
-			this.FifthPotionAmplifier = par3;
-			this.FifthPotionEffectProbability = par4;
 			return this;			
 		}
 

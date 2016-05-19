@@ -56,8 +56,8 @@ public void preInit(FMLPreInitializationEvent event){
 		Ingredients.Medallion();
 		Ingredients.Ground();		
 		Storage.Jar();
+		Storage.Barrel();
 		Storage.Vat();
-		Storage.Barrel();		
 				
 		
 	//Logger
@@ -79,8 +79,6 @@ public void Init(FMLInitializationEvent event){
 	
 	//Recipes
 		Utilities.LampRecipes();
-		Utilities.UtilRecipes();
-		Utilities.GChamberRecipes();
 		Gelatin.GelatinRecipes();
 		Gelatin.MinerRecipes();
 		Gelatin.TravellerRecipes();
@@ -117,6 +115,8 @@ public void Init(FMLInitializationEvent event){
 		Storage.CreeperJarRecipes();		
 		Storage.SkeletonJarRecipes();		
 		Storage.ZombieJarRecipes();
+		Utilities.UtilRecipes();
+		Utilities.GChamberRecipes();
 		Storage.BarrelRecipes();
 		Storage.VatRecipes();
 		VanillaRecipes.VanillaBlocks();

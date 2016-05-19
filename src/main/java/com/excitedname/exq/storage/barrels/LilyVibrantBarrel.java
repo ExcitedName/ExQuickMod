@@ -1,8 +1,7 @@
 package com.excitedname.exq.storage.barrels;
 
-import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
-import com.excitedname.exq.utilities.Utilities;
+import com.excitedname.exq.storage.Storage;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,7 +15,7 @@ public class LilyVibrantBarrel extends Item {
 		
 		this.setUnlocalizedName("Lily Vibrant Barrel");
 		this.setTextureName("Lily Vibrant Barrel");
-		this.setContainerItem(Utilities.Barrel);
+		this.setContainerItem(Storage.Barrel);
 	}
 	
 	public boolean hasEffect(ItemStack par1GelatinCrystal, int pass){

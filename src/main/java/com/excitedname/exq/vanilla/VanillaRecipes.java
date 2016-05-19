@@ -36,21 +36,21 @@ public static void VanillaBlocks() {
 		
 //Command Block
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.command_block), new Object []{
-		"DTD",
-		"SGS",
-		"DTD",
+		"STS",
+		"DGD",
+		"STS",
 		
-			'D', "shardDiamond", 'T', Blocks.crafting_table, 'S', Ingredients.GelatinShard, 'G', Utilities.GChamberT3
+			'D', Items.diamond, 'T', Blocks.crafting_table, 'S', Ingredients.GelatinShardVibrant, 'G', Utilities.GChamberT3
 	}));	
 		
 		
 //End Stone		
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.end_stone, 2), new Object []{
-		"NSN",
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.end_stone, 3), new Object []{
+		"NNN",
 		"SGS",
-		"NSN",
+		"NNN",
 		
-			'N', Blocks.netherrack, 'G', Utilities.GChamberT3, 'S', Ingredients.GelatinShard
+			'N', Blocks.netherrack, 'G', Utilities.GChamberT3, 'S', Ingredients.GelatinShardVibrant
 	});
 		
 		
@@ -70,7 +70,7 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Ingredients.CraftingMedallion
+			'S', Items.wheat_seeds, 'D', new ItemStack(Blocks.dirt, 1, 0), 'T', Ingredients.CraftingMedallion
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.grass), new Object []{
@@ -78,7 +78,7 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.dirt, 'T', Utilities.Terrarium
+			'S', Items.wheat_seeds, 'D', new ItemStack(Blocks.dirt, 1, 0), 'T', Utilities.Terrarium
 	});
 		
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.grass, 2), new Object []{
@@ -86,12 +86,12 @@ public static void VanillaBlocks() {
 		" G ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.dirt, 'G', Utilities.GChamberT3
+			'S', Items.wheat_seeds, 'D', new ItemStack(Blocks.dirt, 1, 0), 'G', Utilities.GChamberT3
 	});
 		
 		
 //Gravel
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 4), new Object [] {
 		"CCC",
 		"CSC",
 		"CCC",
@@ -99,7 +99,7 @@ public static void VanillaBlocks() {
 			'S', Utilities.StampMill, 'C', Blocks.cobblestone
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 4), new Object [] {
 		"CCC",
 		"CGC",
 		"CCC",
@@ -107,7 +107,7 @@ public static void VanillaBlocks() {
 			'G', Utilities.GChamberT1, 'C', Blocks.cobblestone
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 2), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 6), new Object [] {
 		"CCC",
 		"CGC",
 		"CCC",
@@ -115,7 +115,7 @@ public static void VanillaBlocks() {
 			'G', Utilities.GChamberT2, 'C', Blocks.cobblestone
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 3), new Object [] {
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.gravel, 8), new Object [] {
 		"CCC",
 		"CGC",
 		"CCC",
@@ -185,7 +185,7 @@ public static void VanillaBlocks() {
 		
 		
 //Mossy Cobble
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mossy_cobblestone, 2), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mossy_cobblestone, 6), new Object []{
 		"CCC",
 		"VPV",
 		"CCC",
@@ -193,7 +193,7 @@ public static void VanillaBlocks() {
 			'C', Blocks.cobblestone, 'V', Blocks.vine, 'P', Utilities.PackUlater
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mossy_cobblestone, 4), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mossy_cobblestone, 8), new Object []{
 		"CCC",
 		"VGV",
 		"CCC",
@@ -208,7 +208,7 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
-			'M', Blocks.red_mushroom, 'D', Blocks.dirt, 'T', Utilities.Terrarium
+			'M', Blocks.red_mushroom, 'D', new ItemStack(Blocks.dirt, 1, 2), 'T', Utilities.Terrarium
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mycelium), new Object []{
@@ -216,7 +216,7 @@ public static void VanillaBlocks() {
 		" T ",
 		" D ",
 		
-			'M', Blocks.brown_mushroom, 'D', Blocks.dirt, 'T', Utilities.Terrarium 
+			'M', Blocks.brown_mushroom, 'D', new ItemStack(Blocks.dirt, 1, 2), 'T', Utilities.Terrarium 
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mycelium, 2), new Object []{
@@ -224,7 +224,7 @@ public static void VanillaBlocks() {
 		" G ",
 		" D ",
 		
-			'M', Blocks.red_mushroom, 'D', Blocks.dirt, 'G', Utilities.GChamberT3
+			'M', Blocks.red_mushroom, 'D', new ItemStack(Blocks.dirt, 1, 2), 'G', Utilities.GChamberT3
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.mycelium, 2), new Object []{
@@ -232,7 +232,7 @@ public static void VanillaBlocks() {
 		" G ",
 		" D ",
 		
-			'M', Blocks.brown_mushroom, 'D', Blocks.dirt, 'G', Utilities.GChamberT3 
+			'M', Blocks.brown_mushroom, 'D', new ItemStack(Blocks.dirt, 1, 2), 'G', Utilities.GChamberT3 
 	});
 		
 		
@@ -292,50 +292,50 @@ public static void VanillaBlocks() {
 		
 //Podzal Block
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 1, 2), new Object []{
-		" S ",
+		" W ",
 		" T ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Ingredients.CraftingMedallion
+			'W', Items.wheat, 'D', Blocks.grass, 'T', Ingredients.CraftingMedallion
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 1, 2), new Object []{
+		" W ",
+		" T ",
+		" D ",
+		
+			'W', Items.wheat, 'D', Blocks.grass, 'T', Utilities.Terrarium
 	});
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 2, 2), new Object []{
-		" S ",
-		" T ",
-		" D ",
-		
-			'S', Items.wheat_seeds, 'D', Blocks.grass, 'T', Utilities.Terrarium
-	});
-	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dirt, 3, 2), new Object []{
-		" S ",
+		" W ",
 		" G ",
 		" D ",
 		
-			'S', Items.wheat_seeds, 'D', Blocks.grass, 'G', Utilities.GChamberT3
+			'W', Items.wheat, 'D', Blocks.grass, 'G', Utilities.GChamberT3
 	});
 		
 		
 //Red Sand
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sand, 4, 1), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sand, 6, 1), new Object []{
 		"SSS",
 		"DPD",
 		"SSS",
 		
-			'S', Blocks.sand, 'D', new ItemStack(Items.dye, 1, 1), 'P', Utilities.PackUlater
+			'S', new ItemStack(Blocks.sand, 1, 0), 'D', new ItemStack(Items.dye, 1, 1), 'P', Utilities.PackUlater
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sand, 6, 1), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sand, 8, 1), new Object []{
 		"SSS",
 		"DGD",
 		"SSS",
 		
-			'S', Blocks.sand, 'D', new ItemStack(Items.dye, 1, 1), 'G', Utilities.GChamberT3
+			'S', new ItemStack(Blocks.sand, 1, 0), 'D', new ItemStack(Items.dye, 1, 1), 'G', Utilities.GChamberT3
 	});
 			
 		
 //Vines
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 4), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 6), new Object []{
 		"L L",
 		"LTL",
 		"L L",
@@ -343,7 +343,7 @@ public static void VanillaBlocks() {
 			'L', Blocks.leaves, 'T', Utilities.Terrarium
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 6), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 8), new Object []{
 		"L L",
 		"LGL",
 		"L L",
@@ -351,7 +351,7 @@ public static void VanillaBlocks() {
 			'L', Blocks.leaves, 'G', Utilities.GChamberT3
 	});	
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 4), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine,6), new Object []{
 		"L L",
 		"LTL",
 		"L L",
@@ -359,7 +359,7 @@ public static void VanillaBlocks() {
 			'L', Blocks.leaves2, 'T', Utilities.Terrarium
 	});
 	
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 6), new Object []{
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.vine, 8), new Object []{
 		"L L",
 		"LGL",
 		"L L",
@@ -507,14 +507,13 @@ public static void VanillaMaterial() {
 		
 		
 //Dragon Egg
-	//GameRegistry.addShapedRecipe(new ItemStack(Blocks.dragon_egg), new Object []{
-		//"ODO",
-		//"SGS",
-		//"ODO",
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.dragon_egg, 2), new Object []{
+		"EVE",
+		"VGV",
+		"EDE",
 		
-			//'O', Blocks.obsidian, 'D', exqGelatin.DragonCubeVibrant, 'G', Utilities.GChamberT3, 'S', Utilities.GelatinShard
-	//});
-		
+			'E', Blocks.end_stone, 'D', Blocks.dragon_egg, 'G', Utilities.GChamberT3, 'V', Ingredients.GelatinCrystalVibrant
+	});
 		
 //Diamond
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.diamond), new Object []{
@@ -542,11 +541,14 @@ public static void VanillaMaterial() {
 		
 			'P', Items.baked_potato, 'M', Ingredients.PotatoMedallion
 	});
-		
-		
-//Feather
-	GameRegistry.addShapelessRecipe(new ItemStack(Items.feather, 8),
-			Storage.FeatherBarrel);
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.feather, 1), new Object [] {
+		" s ",
+		"sSs",
+		"Ss ",
+						
+			'S', Items.stick, 's', Items.string
+	});
 		
 		
 //Glass
@@ -583,13 +585,13 @@ public static void VanillaMaterial() {
 	});
 		
 //Paper
-	GameRegistry.addShapedRecipe(new ItemStack(Items.paper), new Object [] {
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.paper, 8), new Object [] {
 		"PPP",
 		"PJP",
 		"PPP",
 						
-			'P', Ingredients.WoodPulp, 'J', Storage.H2OHotJar
-	});
+			'P', "pulpWood", 'J', Storage.H2OHotJar
+	}));
 	
 		
 //Slime Ball
@@ -632,10 +634,10 @@ public static void VanillaMaterial() {
 		
 		
 //Sponge
-	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sponge), new Object [] {
-		"WWW",
+	GameRegistry.addShapedRecipe(new ItemStack(Blocks.sponge, 8), new Object [] {
+		" W ",
 		"WJW",
-		"WWW",
+		" W ",
 			
 			'W', Blocks.wool, 'J', Storage.H2OHotJar
 	});
@@ -666,12 +668,132 @@ public static void VanillaMaterial() {
 			'G', Utilities.GChamberT3, 'C', Items.reeds
 	});
 	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+			"   ",
+			" G ",
+			" C ",
+				
+				'G', Utilities.GChamberT1, 'C', new ItemStack(Items.dye, 1, 3)
+		});
+
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT2, 'C', new ItemStack(Items.dye, 1, 3)
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 3), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT3, 'C', new ItemStack(Items.dye, 1, 3)
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT1, 'C', Items.apple
+	});
+
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT2, 'C', Items.apple
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 3), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT3, 'C', Items.apple
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT1, 'C', Items.carrot
+	});
+
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT2, 'C', Items.carrot
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 3), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT3, 'C', Items.carrot
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT1, 'C', Items.potato
+	});
+
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT2, 'C', Items.potato
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 3), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT3, 'C', Items.potato
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT1, 'C', Items.melon
+	});
+
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 2), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT2, 'C', Items.melon
+	});
+	
+	GameRegistry.addShapedRecipe(new ItemStack(Items.sugar, 3), new Object [] {
+		"   ",
+		" G ",
+		" C ",
+			
+			'G', Utilities.GChamberT3, 'C', Items.melon
+	});
+	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
 		"   ",
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropBeet"
+			'G', Utilities.MortarandPestle, 'C', "cropBeet"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -703,7 +825,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropCranberry"
+			'G', Utilities.MortarandPestle, 'C', "cropCranberry"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -735,7 +857,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropBlackberry"
+			'G', Utilities.MortarandPestle, 'C', "cropBlackberry"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -767,7 +889,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropCandleberry"
+			'G', Utilities.MortarandPestle, 'C', "cropCandleberry"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -799,7 +921,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropRaspberry"
+			'G', Utilities.MortarandPestle, 'C', "cropRaspberry"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -831,7 +953,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropStrawberry"
+			'G', Utilities.MortarandPestle, 'C', "cropStrawberry"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -863,7 +985,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropGrape"
+			'G', Utilities.MortarandPestle, 'C', "cropGrape"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -895,7 +1017,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropPineapple"
+			'G', Utilities.MortarandPestle, 'C', "cropPineapple"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -927,7 +1049,7 @@ public static void VanillaMaterial() {
 		" G ",
 		" C ",
 		
-			'G', Utilities.MortarandPestel, 'C', "cropKiwi"
+			'G', Utilities.MortarandPestle, 'C', "cropKiwi"
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.sugar, 2), new Object [] {
@@ -1089,46 +1211,46 @@ public static void VanillaUtil() {
 //Name Tag
 	GameRegistry.addShapedRecipe(new ItemStack(Items.name_tag), new Object [] {
 		" S ",
-		" P ",
+		" C ",
 		" P ",
 			
-			'S', Items.string, 'P', Items.paper
+			'S', Items.string, 'P', Items.paper, 'C', Ingredients.CraftingMedallion
 	});
 		
 //Saddle
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.saddle), new Object [] {
 		"LLL",
-		"L L",
+		"LCL",
 		"SNS",
 			
-			'S', Items.string, 'L', Items.leather, 'N', "nuggetIron"
+			'S', Items.string, 'L', Items.leather, 'N', "nuggetIron", 'C', Ingredients.CraftingMedallion
 	}));
 		
 //Iron Horse Armor
 	GameRegistry.addShapedRecipe(new ItemStack(Items.iron_horse_armor), new Object [] {
 		" SI",
-		"IsS",
+		"ICS",
 		"II ",
 			
-			'S', Items.string, 's', Items.saddle, 'I', Items.iron_ingot
+			'S', Items.string, 'I', Items.iron_ingot, 'C', Ingredients.CraftingMedallion
 	});
 		
 //Gold Horse Armor
 	GameRegistry.addShapedRecipe(new ItemStack(Items.golden_horse_armor), new Object [] {
 		" SI",
-		"IsS",
+		"ICS",
 		"II ",
 			
-			'S', Items.string, 's', Items.saddle, 'I', Items.gold_ingot
+			'S', Items.string, 'I', Items.gold_ingot, 'C', Ingredients.CraftingMedallion
 	});
 		
 //Diamond Horse Armor
 	GameRegistry.addShapedRecipe(new ItemStack(Items.diamond_horse_armor), new Object [] {
 		" SD",
-		"DsS",
+		"DCS",
 		"DD ",
 			
-			'S', Items.string, 's', Items.saddle, 'D', Items.diamond
+			'S', Items.string, 'D', Items.diamond, 'C', Ingredients.CraftingMedallion
 	});
 	
 	}

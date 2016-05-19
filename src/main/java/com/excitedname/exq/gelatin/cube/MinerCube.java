@@ -26,8 +26,6 @@ public class MinerCube extends Item {
 	public float FirstPotionEffectProbability;
 	
 
-	//Declaration 
-
 		public MinerCube() {
 			
 			this.setUnlocalizedName("Miner Cube");
@@ -45,7 +43,7 @@ public class MinerCube extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 300, this.FirstPotionAmplifier));
 			}
 			return par1ItemStack;
 	    }

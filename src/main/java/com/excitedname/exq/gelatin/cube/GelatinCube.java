@@ -11,10 +11,9 @@ import net.minecraft.potion.Potion;
 
 public class GelatinCube extends ItemFood {
 
-	//Declaration (Boolean)}
 
 		public GelatinCube(int food, float saturation, boolean wolfFood) {
-			super(2, 1.5F, true);
+			super(2, 5.0F, true);
 			this.setUnlocalizedName("Gelatin Cube");
 			this.setTextureName("Gelatin Cube");
 			this.setCreativeTab(Tabs.GelatinTab);
@@ -29,4 +28,4 @@ public class GelatinCube extends ItemFood {
 		itemIcon = iconReg.registerIcon(Ref.MOD_ID + ":" + this.getUnlocalizedName()
 			.substring(this.getUnlocalizedName().indexOf(".")+1));
 	}
-	}
+}

@@ -1,9 +1,8 @@
 package com.excitedname.exq.storage.fluid;
 
 import com.excitedname.exq.creativetabs.Tabs;
-import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
-import com.excitedname.exq.utilities.Utilities;
+import com.excitedname.exq.storage.Storage;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +16,7 @@ public class H2OCoolVat extends Item {
 		this.setUnlocalizedName("Dihydrogen Monoxide Vat(Cool)");
 		this.setTextureName("Dihydrogen Monoxide Vat(Cool)");
 		this.setCreativeTab(Tabs.StorageTab);
-		this.setContainerItem(Utilities.TheVat);
+		this.setContainerItem(Storage.TheVat);
 	}
 	
 //Texture Icon

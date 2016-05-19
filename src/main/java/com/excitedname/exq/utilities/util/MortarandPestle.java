@@ -9,12 +9,12 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class MortarandPestel extends Item {
+public class MortarandPestle extends Item {
 
-	public MortarandPestel(){
+	public MortarandPestle(){
 		
-		this.setUnlocalizedName("Mortar and Pestel");
-		this.setTextureName("Mortar and Pestel");
+		this.setUnlocalizedName("Mortar and Pestle");
+		this.setTextureName("Mortar and Pestle");
 		this.setCreativeTab(Tabs.UtilTab);
 		this.setMaxStackSize(1);
 	}

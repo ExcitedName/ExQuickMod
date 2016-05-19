@@ -1,9 +1,8 @@
 package com.excitedname.exq.storage.barrels;
 
 import com.excitedname.exq.creativetabs.Tabs;
-import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ref.Ref;
-import com.excitedname.exq.utilities.Utilities;
+import com.excitedname.exq.storage.Storage;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,7 +18,7 @@ public class ExplosiveBarrel extends Item {
 			this.setUnlocalizedName("Explosive Barrel");
 			this.setTextureName("Explosive Barrel");
 			this.setCreativeTab(Tabs.StorageTab);
-			this.setContainerItem(Utilities.Barrel);
+			this.setContainerItem(Storage.Barrel);
 		}
 
 	//Texture Icon	

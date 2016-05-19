@@ -27,13 +27,7 @@ public class KrackenCube extends Item {
 	public int SecondPotionDuration;
 	public int SecondPotionAmplifier;
 	public float SecondPotionEffectProbability;
-	
-	public int ThirdPotionid;
-	public int ThirdPotionDuration;
-	public int ThirdPotionAmplifier;
-	public float ThirdPotionEffectProbability;
 
-	//Declaration (Boolean)}
 
 		public KrackenCube() {
 			
@@ -42,7 +36,6 @@ public class KrackenCube extends Item {
 			this.setCreativeTab(Tabs.GelatinTab);
 			this.setFirstPotionEffect(Potion.waterBreathing.id, 20, 1, 1F);			
 			this.setSecondPotionEffect(Potion.nightVision.id, 20, 1, 1F);
-			this.setThirdPotionEffect(Potion.digSpeed.id, 20, 1, 1F);
 		}
 		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
@@ -54,15 +47,11 @@ public class KrackenCube extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 300, this.FirstPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.SecondPotionid > 0 && par2World.rand.nextFloat() < this.SecondPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 540, this.SecondPotionAmplifier));
-			}
-			
-			if (!par2World.isRemote && this.ThirdPotionid > 0 && par2World.rand.nextFloat() < this.ThirdPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.ThirdPotionid, this.ThirdPotionDuration * 540, this.ThirdPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 300, this.SecondPotionAmplifier));
 			}
 			
 			return par1ItemStack;
@@ -101,15 +90,6 @@ public class KrackenCube extends Item {
 			this.SecondPotionDuration = par2;
 			this.SecondPotionAmplifier = par3;
 			this.SecondPotionEffectProbability = par4;
-			return this;			
-		}
-		
-		public KrackenCube setThirdPotionEffect(int par1, int par2, int par3, float par4){
-			
-			this.ThirdPotionid = par1;
-			this.ThirdPotionDuration = par2;
-			this.ThirdPotionAmplifier = par3;
-			this.ThirdPotionEffectProbability = par4;
 			return this;			
 		}
 

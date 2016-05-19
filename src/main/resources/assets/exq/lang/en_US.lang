@@ -4,7 +4,7 @@
 //Utilities
     
 item.Ceramic Juicer.name=Ceramic Juicer
-item.Mortar and Pestel.name=Mortar & Pestel
+item.Mortar and Pestle.name=Mortar & Pestle
 item.Stamp Mill.name=Stamp Mill
 item.The Vat.name=The Vat
 item.Barrel.name=Barrel
@@ -74,12 +74,12 @@ item.DistTra.name=Distillery(Traveller)
 item.DistIro.name=Distillery(Iron Skin)
 item.DistWar.name=Distillery(Warrior)
 item.DistHea.name=Distillery(Health)
-item.DistHot.name=Distillery(Hot Sauce)
+item.DistHot.name=Distillery(Hypno's Hot Sauce)
 item.DistNiV.name=Distillery(Night Vision)
 item.DistTor.name=Distillery(Torch)
 item.DistExp.name=Distillery(Explovise)
 item.DistKra.name=Distillery(Kracken)
-item.DistDra.name=Distillery(Dragon)
+item.DistDra.name=Distillery(Beatee03's Dragon)
 item.DistCre.name=Distillery(Creeper)
 item.DistSke.name=Distillery(Skeleton)
 item.DistZom.name=Distillery(Zombie)
@@ -95,8 +95,8 @@ item.Gelatin Orb(Tier 2).name=Gelatin Orb(Tier 2)
 item.Gelatin Orb(Tier 3).name=Gelatin Orb(Tier 3)
 
     //Solutions
-item.Miner SolutionGel.name=Gelatin Solution 
-item.Miner SolutionMin.name=Miner Solution
+item.Gelatin Solution.name=Gelatin Solution 
+item.Miner Solution.name=Miner Solution
 item.Traveller Solution.name=Traveller Solution
 item.Iron Skin Solution.name=Iron Skin Solution
 item.Warrior Solution.name=Warrior Solution
@@ -143,19 +143,19 @@ item.Steel Ingot.name=Steel Ingot
 item.Gelatin Alloy.name=Gelatin Alloy
 item.Dark Gelatin Alloy.name=Dark Gelatin Alloy
 item.Gelatin Crystal.name=Gelatin Crystal
-item.Gelatin Crystal Vibrant.name=Vibrant Gelatin Crystal
+item.Gelatin Crystal Vibrant.name=Excited Gelatin Crystal
 item.Gelatin Alloy Nugget.name=Gelatin Alloy Nugget
 item.Iron Nugget.name=Iron Nugget
 item.Diamond Shard.name=Diamond Shard
 item.Emerald Shard.name=Emerald Shard
 item.Gelatin Shard.name=Gelatin Shard
-item.Gelatin Shard Vibrant.name=Vibrant Gelatin Shard
+item.Gelatin Shard Vibrant.name=Excited Gelatin Shard
 item.Ice Shard.name=Ice Shard
 item.Iron Rod.name=Iron Rod
 item.Gelatin Alloy Gear.name=Gelatin Alloy Gear
 item.Cracked Bone.name=Cracked Bone
 item.Gelatin Lily.name=Gelatin Lily
-item.Gelatin Lily Vibrant.name=Vibrant Gelatin Lily
+item.Gelatin Lily Vibrant.name=Excited Gelatin Lily
 
     //Grounds
 item.Ground Gelatin.name=Ground Gelatin
@@ -251,11 +251,10 @@ item.Creeper Barrel.name=Creeper
 item.Skeleton Barrel.name=Skeleton
 item.Zombie Barrel.name=Zombie
 item.Glass Barrel.name=Glass
-item.Feather Barrel.name=Feather
 item.Bone Barrel.name=Bone
 item.Cracked Barrel.name=Cracked
 item.Lily Barrel.name=Lily
-item.Lily Vibrant Barrel.name=Vibrant Lily
+item.Lily Vibrant Barrel.name=Excited Lily
 item.Gelitizer Barrel.name=Gelitizer
 item.Ground Marrow Barrel.name=Ground Marrow
 item.Ground Flour Barrel.name=Ground Flour

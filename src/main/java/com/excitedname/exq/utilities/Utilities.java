@@ -3,7 +3,6 @@ package com.excitedname.exq.utilities;
 import com.excitedname.exq.gelatin.Gelatin;
 import com.excitedname.exq.ingredients.Ingredients;
 import com.excitedname.exq.ingredients.distilleries.Dist;
-import com.excitedname.exq.ingredients.glassware.GlassFunnel;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT1;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT2;
 import com.excitedname.exq.ingredients.glassware.UtilityGlassT3;
@@ -27,7 +26,7 @@ import com.excitedname.exq.utilities.lamp.GelatinLampSpectral;
 import com.excitedname.exq.utilities.util.Barrel;
 import com.excitedname.exq.utilities.util.CeramicJuicer;
 import com.excitedname.exq.utilities.util.Distillery;
-import com.excitedname.exq.utilities.util.MortarandPestel;
+import com.excitedname.exq.utilities.util.MortarandPestle;
 import com.excitedname.exq.utilities.util.PackUlater;
 import com.excitedname.exq.utilities.util.Smeltry;
 import com.excitedname.exq.utilities.util.Solidifier;
@@ -52,17 +51,11 @@ public static void Util() {
 		CeramicJuicer = new CeramicJuicer();
 		GameRegistry.registerItem(CeramicJuicer, "Ceramic Juicer");
 	
-		MortarandPestel = new MortarandPestel();
-		GameRegistry.registerItem(MortarandPestel, "Mortar and Pestel");
+		MortarandPestle = new MortarandPestle();
+		GameRegistry.registerItem(MortarandPestle, "Mortar and Pestle");
 	
 		StampMill = new StampMill();
 		GameRegistry.registerItem(StampMill, "Stamp Mill");
-		
-		TheVat = new TheVat();
-		GameRegistry.registerItem(TheVat, "The Vat");
-		
-		Barrel = new Barrel();
-		GameRegistry.registerItem(Barrel, "Barrel");
 		
 		Smeltry = new Smeltry();
 		GameRegistry.registerItem(Smeltry, "Smeltry");
@@ -81,10 +74,8 @@ public static void Util() {
 	}	
 	
 	public static Item CeramicJuicer;
-	public static Item MortarandPestel;
+	public static Item MortarandPestle;
 	public static Item StampMill;
-	public static Item TheVat;
-	public static Item Barrel;
 	public static Item Smeltry;
 	public static Item Solidifier;
 	public static Item Distillery;
@@ -164,13 +155,13 @@ public static void UtilRecipes(){
 			'G', Utilities.GChamberT3, 'C', Ingredients.ClayJuicer, 'S', "dustCharcoal"
 	}));
 	
-//Mortar & pestel
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.MortarandPestel), new Object [] { 
-		"  R",
-		"NFN",
-		"NIN",
+//Mortar & Pestle
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.MortarandPestle), new Object [] { 
+		"   ",
+		"NRN",
+		" N ",
 		
-			'R', Ingredients.IronRod, 'F', Ingredients.GlassFunnel, 'N', "nuggetIron", 'I', Items.iron_ingot
+			'R', Ingredients.IronRod, 'N', "nuggetIron"
 	}));
 	
 //Stamp Mill
@@ -179,52 +170,26 @@ public static void UtilRecipes(){
 		"RSR",
 		"PWP",
 		
-			'P', Blocks.planks, 'R', Ingredients.IronRod, 'S', Ingredients.IronStamp, 'W', Blocks.heavy_weighted_pressure_plate, 
+			'P', Blocks.wooden_slab, 'R', Ingredients.IronRod, 'S', Ingredients.IronStamp, 'W', Blocks.stone_pressure_plate, 
 			'B', "itemBasicGear"
-	}));
-	
-//The Vat
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
-		"I I",
-		"G G",
-		"IBI",
-		
-			'I', Items.iron_ingot, 'G', Blocks.glass_pane, 'B', Blocks.iron_block
-	}));
-	
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.TheVat, 4), new Object [] {
-		"I I",
-		"G G",
-		"IBI",
-		
-			'I', Items.iron_ingot, 'G', "paneGlass", 'B', Blocks.iron_block
-	}));
-	
-//Barrel
-	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Barrel, 2), new Object [] {
-		"S S",
-		"R R",
-		"SSS",
-		
-			'S', Blocks.wooden_slab, 'R', Ingredients.IronRod
 	}));
 	
 //Smeltry
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Smeltry), new Object [] {
 		"IBI",
-		"BCB",
-		"IHI",
+		"BHB",
+		"III",
 		
-			'H', Ingredients.HeatingElement, 'I', Items.iron_ingot, 'C', "itemMachineChassi", 'B', Blocks.furnace
+			'H', Ingredients.HeatingElement, 'I', Items.iron_ingot, 'B', Blocks.furnace
 	}));
 	
 //Solidifier
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Solidifier), new Object []{
 		"IBI",
 		"BCB",
-		"IcI",
+		"III",
 		
-			'c', Ingredients.CoolingElement, 'I', Items.iron_ingot, 'C', "itemMachineChassi", 'B', Blocks.furnace
+			'C', Ingredients.CoolingElement, 'I', Items.iron_ingot, 'B', Blocks.furnace
 	}));
 
 //Distillery
@@ -238,11 +203,11 @@ public static void UtilRecipes(){
 	
 //Terrarium
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Utilities.Terrarium), new Object []{
-		"GBG",
+		"GGG",
 		"GSG",
 		"CPC",
 		
-			'B', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
 			'G', Blocks.glass_pane
 	}));
 	
@@ -251,7 +216,7 @@ public static void UtilRecipes(){
 		"GSG",
 		"CPC",
 		
-			'B', Ingredients.GlassBlank, 'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
+			'S', Ingredients.GelatinousSoil, 'C', "ingotCopper", 'P', Blocks.planks, 
 			'G', Blocks.stained_glass_pane
 	}));
 	

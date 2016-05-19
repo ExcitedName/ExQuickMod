@@ -24,11 +24,6 @@ public class WarriorDish extends Item {
 	public int FirstPotionAmplifier;
 	public float FirstPotionEffectProbability;
 
-	public int SecondPotionid;
-	public int SecondPotionDuration;
-	public int SecondPotionAmplifier;
-	public float SecondPotionEffectProbability;
-
 
 		public WarriorDish() {
 			
@@ -48,11 +43,7 @@ public class WarriorDish extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
-			}
-			
-			if (!par2World.isRemote && this.SecondPotionid > 0 && par2World.rand.nextFloat() < this.SecondPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 540, this.SecondPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 480, this.FirstPotionAmplifier));
 			}
 			
 			return par1ItemStack;
@@ -82,15 +73,6 @@ public class WarriorDish extends Item {
 			this.FirstPotionDuration = par2;
 			this.FirstPotionAmplifier = par3;
 			this.FirstPotionEffectProbability = par4;
-			return this;			
-		}
-		
-		public WarriorDish setSecondPotionEffect(int par1, int par2, int par3, float par4){
-			
-			this.SecondPotionid = par1;
-			this.SecondPotionDuration = par2;
-			this.SecondPotionAmplifier = par3;
-			this.SecondPotionEffectProbability = par4;
 			return this;			
 		}
 

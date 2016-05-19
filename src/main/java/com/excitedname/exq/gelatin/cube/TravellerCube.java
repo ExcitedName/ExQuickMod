@@ -1,6 +1,7 @@
 package com.excitedname.exq.gelatin.cube;
 
 import com.excitedname.exq.creativetabs.Tabs;
+import com.excitedname.exq.ingredients.solution.TravellerSolution;
 import com.excitedname.exq.ref.Ref;
 
 import cpw.mods.fml.relauncher.Side;
@@ -27,15 +28,14 @@ public class TravellerCube extends Item {
 	public int SecondPotionAmplifier;
 	public float SecondPotionEffectProbability;
 
-	//Declaration (Boolean)}
 
 		public TravellerCube() {
 			
 			this.setUnlocalizedName("Traveller Cube");
 			this.setTextureName("Traveller Cube");
 			this.setCreativeTab(Tabs.GelatinTab);
-			this.setFirstPotionEffect(Potion.jump.id, 20, 0, 1F);
-			this.setSecondPotionEffect(Potion.moveSpeed.id, 20, 0, 1F);
+			this.setFirstPotionEffect(Potion.jump.id, 20, 1, 1F);
+			this.setSecondPotionEffect(Potion.moveSpeed.id, 20, 1, 1F);
 		}
 		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
@@ -47,25 +47,16 @@ public class TravellerCube extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 300, this.FirstPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.SecondPotionid > 0 && par2World.rand.nextFloat() < this.SecondPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 540, this.SecondPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 300, this.SecondPotionAmplifier));
 			}
 			
 			return par1ItemStack;
 			
 	     }
-		
-		public TravellerCube setFirstPotionEffect(int par1, int par2, int par3, float par4){
-			
-			this.FirstPotionid = par1;
-			this.FirstPotionDuration = par2;
-			this.FirstPotionAmplifier = par3;
-			this.FirstPotionEffectProbability = par4;
-			return this;			
-		}
 		
 		public int getMaxItemUseDuration(ItemStack par1ItemStack)
 	    {
@@ -82,6 +73,15 @@ public class TravellerCube extends Item {
 	    	par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
 	        return par1ItemStack;
 			
+		}
+	    
+	    public TravellerCube setFirstPotionEffect(int par1, int par2, int par3, float par4){
+			
+			this.FirstPotionid = par1;
+			this.FirstPotionDuration = par2;
+			this.FirstPotionAmplifier = par3;
+			this.FirstPotionEffectProbability = par4;
+			return this;			
 		}
 		
 		public TravellerCube setSecondPotionEffect(int par1, int par2, int par3, float par4){

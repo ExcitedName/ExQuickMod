@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.excitedname.exq.creativetabs.Tabs;
 import com.excitedname.exq.ref.Ref;
-import com.excitedname.exq.utilities.Utilities;
+import com.excitedname.exq.storage.Storage;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -27,7 +27,7 @@ public class GelatinSolutionVat extends Item {
 		this.setUnlocalizedName("Gelatin Solution Vat");
 		this.setCreativeTab(Tabs.StorageTab);	
 		this.setHasSubtypes(true);
-		this.setContainerItem(Utilities.TheVat);
+		this.setContainerItem(Storage.TheVat);
 	}
 	
 	@SideOnly(Side.CLIENT)

@@ -35,8 +35,8 @@ public class TravellerDish extends Item {
 			this.setTextureName("Traveller Dish");
 			this.setCreativeTab(Tabs.GelatinTab);
 			this.setContainerItem(Ingredients.GlassDish);
-			this.setFirstPotionEffect(Potion.moveSpeed.id, 20, 1, 1F);
-			this.setSecondPotionEffect(Potion.jump.id, 20, 1, 1F);
+			this.setFirstPotionEffect(Potion.moveSpeed.id, 20, 2, 1F);
+			this.setSecondPotionEffect(Potion.jump.id, 20, 2, 1F);
 		}
 		
 		public ItemStack onEaten(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){
@@ -48,11 +48,11 @@ public class TravellerDish extends Item {
 	        }
 			
 			if (!par2World.isRemote && this.FirstPotionid > 0 && par2World.rand.nextFloat() < this.FirstPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 540, this.FirstPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.FirstPotionid, this.FirstPotionDuration * 480, this.FirstPotionAmplifier));
 			}
 			
 			if (!par2World.isRemote && this.SecondPotionid > 0 && par2World.rand.nextFloat() < this.SecondPotionEffectProbability){
-				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 540, this.SecondPotionAmplifier));
+				par3EntityPlayer.addPotionEffect(new PotionEffect(this.SecondPotionid, this.SecondPotionDuration * 480, this.SecondPotionAmplifier));
 			}
 			
 			return par1ItemStack;

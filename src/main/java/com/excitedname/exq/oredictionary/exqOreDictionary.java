@@ -21,18 +21,16 @@ public class exqOreDictionary {
 		OreDictionary.registerOre("ingotGelatinAlloy", new ItemStack(Ingredients.GelatinAlloy));
 		
 		OreDictionary.registerOre("ingotDarkGelatinAlloy", new ItemStack(Ingredients.GelatinAlloyDark));
-		
-		OreDictionary.registerOre("gearGelatinAlloy", new ItemStack(Ingredients.GelatinAlloyGear));
-		
+				
 		OreDictionary.registerOre("dustCharcoal", new ItemStack(Ingredients.GroundCharcoal));
 		
 		OreDictionary.registerOre("dustCoal", new ItemStack(Ingredients.GroundCoal));
 		
-		OreDictionary.registerOre("nuggetIron", new ItemStack(Ingredients.IronNugget));
-		
 		OreDictionary.registerOre("foodFlour", new ItemStack(Ingredients.GroundFlour));
 		
 		OreDictionary.registerOre("ingotSteel", new ItemStack(Ingredients.SteelIngot));
+		
+		OreDictionary.registerOre("pulpWood", new ItemStack(Ingredients.WoodPulp));
 		
 	}
 }
