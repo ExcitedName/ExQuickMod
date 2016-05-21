@@ -805,7 +805,7 @@ public static void HotSauceRecipes() {
 		"sCS",
 		
 			'G', Utilities.GChamberT2, 'M', Ingredients.GlassGelatinMold, 'S', Ingredients.GelatinSolution, 
-			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinShardVibrant
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinShard
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 8), new Object []{
@@ -814,7 +814,7 @@ public static void HotSauceRecipes() {
 		"sCS",
 		
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Ingredients.GelatinSolution, 
-			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinShardVibrant
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinShard
 	}));
 	
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Gelatin.HotSauceCube, 16), new Object []{
@@ -823,7 +823,7 @@ public static void HotSauceRecipes() {
 		"sCS",
 		
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassGelatinMold, 'S', Ingredients.GelatinSolution, 
-			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinCrystalVibrant
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinCrystal
 	}));
 	
 
@@ -837,7 +837,7 @@ public static void HotSauceRecipes() {
 		"sCS",
 		
 			'G', Utilities.GChamberT3, 'M', Ingredients.GlassDish, 'S', Ingredients.GelatinSolution, 
-			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinCrystalVibrant
+			'H', Ingredients.HotSauceSolution, 'C', "dustCharcoal", 's', Ingredients.GelatinCrystal
 	}));
 	
 	GameRegistry.addShapedRecipe(new ItemStack(Gelatin.HotSauceDish, 4), new Object []{
