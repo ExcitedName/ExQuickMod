@@ -856,7 +856,7 @@ public static void DistRecipes() {
 //Zombie Dist
 	GameRegistry.addShapedRecipe(new ItemStack(Ingredients.Dist, 1, 13), new Object []{
 		"BSB",
-		"ydY",
+		"yDY",
 		"BSB",
 		
 			'D', Ingredients.DistH2O, 'B', Items.rotten_flesh, 'y', new ItemStack(Items.dye, 2, 2), 

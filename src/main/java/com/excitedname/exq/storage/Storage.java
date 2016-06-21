@@ -749,7 +749,7 @@ public static void CreeperJarRecipes() {
 		"HSM",
 		"HCG",
 		
-			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', Ingredients.GelatinSolution, 
 			'H', Ingredients.CreeperSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -758,7 +758,7 @@ public static void CreeperJarRecipes() {
 		"HGM",
 		"HCS",
 		
-			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.CreeperSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -767,7 +767,7 @@ public static void CreeperJarRecipes() {
 		"HGM",
 		" CS",
 		
-			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.CreeperSolution, 'C', "dustCharcoal"
 	}));
 
@@ -789,7 +789,7 @@ public static void SkeletonJarRecipes() {
 		"HSM",
 		"HCG",
 		
-			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', Ingredients.GelatinSolution, 
 			'H', Ingredients.SkeletonSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -798,7 +798,7 @@ public static void SkeletonJarRecipes() {
 		"HGM",
 		"HCS",
 		
-			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.SkeletonSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -807,7 +807,7 @@ public static void SkeletonJarRecipes() {
 		"HGM",
 		" CS",
 	
-			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.SkeletonSolution, 'C', "dustCharcoal"
 	}));
 
@@ -829,7 +829,7 @@ public static void ZombieJarRecipes() {
 		"HSM",
 		"HCG",
 		
-			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'S', Utilities.Solidifier, 'M', Ingredients.GlassJar, 'G', Ingredients.GelatinSolution, 
 			'H', Ingredients.ZombieSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -838,7 +838,7 @@ public static void ZombieJarRecipes() {
 		"HGM",
 		"HCS",
 		
-			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT2, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.ZombieSolution, 'C', "dustCharcoal"
 	}));
 	
@@ -847,7 +847,7 @@ public static void ZombieJarRecipes() {
 		"HGM",
 		" CS",
 		
-			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', new ItemStack(Ingredients.MinerSolution, 1, 0), 
+			'G', Utilities.GChamberT3, 'M', Ingredients.GlassJar, 'S', Ingredients.GelatinSolution, 
 			'H', Ingredients.ZombieSolution, 'C', "dustCharcoal"
 	}));
 
