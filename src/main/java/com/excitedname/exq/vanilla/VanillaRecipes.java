@@ -583,6 +583,15 @@ public static void VanillaMaterial() {
 						
 			'P', Utilities.GChamberT3, 'G', Blocks.glass_pane
 	});
+	
+//Paper
+	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.dye, 1, 0), new Object [] {
+		" G ",
+		" M ",
+		" J ",
+						
+			'G', "dustCharcoal", 'J', Storage.H2OHotJar, 'M', Utilities.MortarandPestle
+	}));
 		
 //Paper
 	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.paper, 8), new Object [] {
